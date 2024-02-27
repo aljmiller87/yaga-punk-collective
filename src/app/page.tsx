@@ -1,95 +1,51 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+// import styles from "./page.module.css";
+import "../styles/theme.css";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Section from "@/components/Section";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+    <div>
+      <main>
+        <Hero />
+        <Section>
+          <h2>About Emma</h2>
+          <h3>The 93rd Deserves Another Champion</h3>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            I’m a lifelong Kentuckian. I grew up on a tobacco farm that had been
+            in my family for three generations. I’ve spent my entire life in and
+            around Lexington, and I’m dedicated to the community I proudly call
+            home.
           </p>
-        </a>
-      </div>
-    </main>
+          <p>
+            I’m not a politician—just somebody who cares about Kentucky. Rep.
+            Lamin Swann was my mentor and my friend. He taught me that I didn’t
+            have to stand on the sidelines, and showed me how I could become a
+            leader in this fight.
+          </p>
+          <p>
+            This moment calls for leaders. The reality is this: radical
+            ideologues are running our government, Big Business is emptying our
+            treasury, and South Lexington deserves a champion who will fight to
+            restore the values we hold dear.
+          </p>
+          <p>
+            Kentuckians are deeply good people, but our government does not
+            represent us. We are going to win the 93rd District and send a
+            message to Frankfort: we will <b>Defent the Bluegrass.</b>
+          </p>
+        </Section>
+        <Section>
+          <h2>Join us.</h2>
+          <h3>Let's work & let's win</h3>
+          <p>
+            It’ll take all of us to defend Kentucky families and create a
+            Commonwealth that we can be proud of.{" "}
+          </p>
+        </Section>
+      </main>
+    </div>
   );
 }

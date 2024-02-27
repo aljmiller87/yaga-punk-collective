@@ -1,0 +1,32 @@
+:root {
+    --darkBlue: #232A34;
+    --darkTeal: #129499;
+    --lightTeal: #7CCFE5;
+    --text: #7e8890;
+    --darkText: #333c4e;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html,
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  body {
+    position: relative;
+  }
+
+  header {
+    z-index: 5;
+  }
+
+  main {
+    z-index: 1;
+  }
