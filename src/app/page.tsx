@@ -14,16 +14,16 @@ export default function Home() {
           <h2>About Emma</h2>
           <h3>The 93rd Deserves Another Champion</h3>
           <p>
-            I’m a lifelong Kentuckian. I grew up on a tobacco farm that had been
-            in my family for three generations. I’ve spent my entire life in and
-            around Lexington, and I’m dedicated to the community I proudly call
-            home.
+            I&apos;m a lifelong Kentuckian. I grew up on a tobacco farm that had
+            been in my family for three generations. I&apos;ve spent my entire
+            life in and around Lexington, and I&apos;m dedicated to the
+            community I proudly call home.
           </p>
           <p>
-            I’m not a politician—just somebody who cares about Kentucky. Rep.
-            Lamin Swann was my mentor and my friend. He taught me that I didn’t
-            have to stand on the sidelines, and showed me how I could become a
-            leader in this fight.
+            I&apos;m not a politician—just somebody who cares about Kentucky.
+            Rep. Lamin Swann was my mentor and my friend. He taught me that I
+            didn&apos;t have to stand on the sidelines, and showed me how I
+            could become a leader in this fight.
           </p>
           <p>
             This moment calls for leaders. The reality is this: radical
@@ -41,7 +41,7 @@ export default function Home() {
           <h2>Join us.</h2>
           <h3>Let's work & let's win</h3>
           <p>
-            It’ll take all of us to defend Kentucky families and create a
+            It&apos;ll take all of us to defend Kentucky families and create a
             Commonwealth that we can be proud of.{" "}
           </p>
         </Section>
