@@ -1,19 +1,9 @@
 .Header {
-    background-color: var(--darkBlue);
-    padding: 1.23rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &.v2 {
-        background-color: #fff;
-    }
-    &.v3 {
-        background-color: transparent;
-        position: fixed;
-        width: 100vw;
-        top: 0;
-        left: 0;
-        z-index: 5;
-    }
+  background-color: var(--darkBlue);
+  padding: 0 2rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
 }

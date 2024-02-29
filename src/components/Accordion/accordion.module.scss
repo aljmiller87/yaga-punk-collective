@@ -1,0 +1,53 @@
+.Accordion {
+  background: #fff;
+  border: 2px solid var(--darkTeal);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem 1rem 1rem;
+  box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.16);
+  margin-bottom: 2rem;
+
+  button {
+    width: 100%;
+    position: relative;
+    appearance: none;
+    border: none;
+    background: transparent;
+    text-align: left;
+    fill: var(--darkTeal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      color: var(--darkTeal);
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .icon {
+      transform: rotate(0deg);
+      transition: transform 0.15s ease;
+      position: relative;
+      left: 0.5rem;
+
+      &.isOpen {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .body {
+    transition: opacity 0.2s ease, transform 0.15s ease, height 0.15s ease;
+    opacity: 0;
+    height: 0;
+    transform: scale(1, 0);
+    transform-origin: center top;
+
+    &.isOpen {
+      background: #fff;
+      height: auto;
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }
+}

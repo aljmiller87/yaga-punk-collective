@@ -1,7 +1,14 @@
 import React, { ReactNode } from "react";
 import styles from "./section.module.scss";
-const Section = ({ children }: { children: ReactNode | ReactNode[] }) => {
-  return <div className={styles.Section}>{children}</div>;
+const Section = ({
+  children,
+  darkTheme = false,
+}: {
+  darkTheme?: boolean;
+  children: ReactNode | ReactNode[];
+}) => {
+  const themeClass = !!darkTheme ? styles.variant : ``;
+  return <div className={`${styles.Section} ${themeClass}`}>{children}</div>;
 };
 
 export default Section;

@@ -1,16 +1,27 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./Hero.module.scss";
-import BannerImg from "../../../public/assets/images/headshot.jpg";
+import BannerImg from "../../../public/assets/images/headshow-nobg.png";
 
 const Hero = () => {
   return (
     <div className={styles.Hero} role="banner">
-      <Image src={BannerImg} alt="Emma Curtis" className={styles["Hero-img"]} />
-      <div className={styles["Hero-gradient"]} />
-      <div className={styles["Hero-text"]}>
-        <h1 className={styles["Hero-title"]}>Emma Curtis</h1>
-        <p className={styles["Hero-subtitle"]}>Running for Lexington Council</p>
+      <div className={styles.imgWrapper}>
+        <div className={`${styles.text} ${styles.shadow}`}>
+          <p className={styles.title}>Welcome!</p>
+          <h1 className={styles.title}>
+            My name is Emma Curtis and I&apos;m running to be your next
+            Councilmember.
+          </h1>
+        </div>
+        <Image src={BannerImg} alt="Emma Curtis" className={styles.img} />
+      </div>
+      <div className={styles.text}>
+        <h2 className={styles.btmText}>Join our campaign</h2>
+        <div className={styles.buttons}>
+          <a>Donate</a>
+          <a>Volunteer</a>
+        </div>
       </div>
     </div>
   );

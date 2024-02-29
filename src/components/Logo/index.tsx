@@ -2,14 +2,13 @@ import React from "react";
 import Image from "next/image";
 import styles from "./logo.module.scss";
 
-const Logo = ({ version }: { version: number }) => {
+const Logo = ({ variant }: { variant: "light" | "dark" }) => {
   const path = `/assets/svgs/`;
-  const file = version === 3 ? `logo-light.svg` : `logo.svg`;
-  console.log(`${path}${file}`);
+
   return (
     <a href="/" className={styles.Logo}>
       <Image
-        src={`${path}${file}`}
+        src={`${path}logo-horizontal-color.png`}
         alt="Emma Curtis for Council"
         //   className={styles.vercelLogo}
         layout={"fill"}

@@ -1,11 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playpen+Sans:wght@100..800&display=swap');
+
 :root {
     --darkBlue: #232A34;
     --darkTeal: #129499;
+    --darkTealBg: #0F8185;
     --lightTeal: #7CCFE5;
     --text: #7e8890;
     --darkText: #333c4e;
 
 }
+
 
 * {
     box-sizing: border-box;

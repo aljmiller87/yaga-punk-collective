@@ -1,47 +1,106 @@
 .Hero {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 5rem);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  // justify-content: flex-end;
+  color: #fff;
+  // border: solid 0.5rem var(--darkBlue);
+  border-radius: 2rem;
+  background: var(--lightTeal);
+
+  .imgWrapper {
     position: relative;
     width: 100%;
-    height: 100vh;
-    // height: calc(100vh - 1.23rem - 5.15rem);
-    overflow: hidden;
+    height: 75%;
+    border: solid 0.5rem var(--darkBlue);
+    background: var(--darkTeal);
+    border-radius: 2rem;
+  }
+
+  .img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    z-index: 1;
+  }
+
+  .gradient {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    z-index: 3;
+  }
+
+  .text {
+    position: relative;
     display: flex;
     flex-direction: column;
-    // align-items: center;
-    justify-content: flex-end;
-    color: #fff;
+    gap: 1rem;
+    z-index: 5;
+    padding: 2rem 1rem;
+    text-align: center;
+    // margin-bottom: 15vh;
+  }
 
-    &-img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-    }
-    
-    &-gradient {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background: linear-gradient(0deg, rgba(0,0,0, 0.6) 0%, rgba(0,0,0,0) 100%);
-        z-index: 3;
-    }
+  .shadow {
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+      0px -4px 10px rgba(255, 255, 255, 0.1);
+  }
 
-    &-text {
-        position: relative;
-        z-index: 5;
-        padding: 2rem;
-        margin-bottom: 15vh;
-    }
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+  }
 
-    &-title {
-        font-size: 3rem;
-        font-weight: 600;
-        letter-spacing: -1.5px;
-    }
+  .subtitle {
+    font-size: 1.23rem;
+  }
 
-    &-subtitle {
-        font-size: 1.23rem;
+  .btmText {
+    color: #000;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 1.75rem;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    a {
+      padding: 1rem 1.5rem;
+      display: flex;
+      font-size: 1.25rem;
+      justify-content: center;
+      align-items: center;
+      color: #000;
+      background: #fff;
+      border-radius: 2rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      border: 3px solid var(--darkTeal);
+      flex: 1 1 0;
+      letter-spacing: 1px;
     }
+  }
 }
