@@ -1,3 +1,15 @@
+# To do list
+
+- mobile menu
+- newsroom
+- hero with image background
+- content with image card
+- horizontal on desktop depending on amount of teaser text
+- vertical on mobile
+- Issues page
+- donate page
+- signup form
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

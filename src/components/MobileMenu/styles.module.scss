@@ -1,0 +1,99 @@
+.MobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  transform: translateX(100vw);
+  transition-delay: 0.1s;
+  transition: transform 0s linear;
+
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+    transition: transform 0.2s ease-out;
+    transform: translateX(100%);
+    background: linear-gradient(
+      270deg,
+      rgba(8, 65, 67, 1) 0%,
+      rgba(15, 129, 133, 0.9010197829131653) 50%,
+      rgba(15, 129, 133, 0.2) 100%
+    );
+  }
+
+  .ImageWrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    z-index: 10;
+    transform: scaleX(-1) translateY(100vh);
+    object-fit: cover;
+    object-position: 50% 50%;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+  }
+  .Image {
+    color: transparent;
+    object-fit: contain;
+    height: 100%;
+    position: absolute;
+    right: -115%;
+    top: 0%;
+  }
+
+  ul {
+    position: absolute;
+    z-index: 16;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.4rem;
+    color: #fff;
+    padding-right: 2rem;
+    list-style: none;
+    font-family: "Playpen Sans", Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+
+    li {
+      display: inline-block;
+
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+      }
+    }
+  }
+
+  &.isActive {
+    transform: translateX(0);
+    transition-delay: 0s;
+    .bg {
+      transform: translateX(0);
+      transition: transform 0.1s ease-in;
+    }
+    .ImageWrapper {
+      transform: scaleX(-1) translateY(0);
+      opacity: 1;
+      transition: opacity 0.2s ease-in;
+    }
+  }
+}
