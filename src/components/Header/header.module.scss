@@ -1,11 +1,12 @@
 .Header {
-  background-color: var(--darkBlue);
-  padding: 0 2rem;
-  height: 5rem;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  position: relative;
+  background-color: transparent;
+  // background-color: var(--darkBlue);
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  padding: 0 2rem;
+  position: fixed;
+  width: 100vw;
   z-index: 10;
 }

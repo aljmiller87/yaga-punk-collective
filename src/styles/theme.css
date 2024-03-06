@@ -35,3 +35,8 @@
   main {
     z-index: 1;
   }
+
+  .container {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
