@@ -8,7 +8,7 @@ const MobileMenu = ({ isActive }: { isActive: boolean }) => {
   const isActiveClass = isActive
     ? `${styles.MobileMenu} ${styles.isActive}`
     : styles.MobileMenu;
-  console.log(`isActive: ${isActive}`);
+
   return (
     <nav className={isActiveClass}>
       <div className={styles.bg} />
@@ -27,16 +27,16 @@ const MobileMenu = ({ isActive }: { isActive: boolean }) => {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/">Issues</Link>
+          <Link href="/issues">Issues</Link>
         </li>
         <li>
-          <Link href="/">In</Link> the news
+          <Link href="/newsroom">In the news</Link>
         </li>
         <li>
-          <Link href="/">Volunteer</Link>
+          <Link href="/volunteer">Volunteer</Link>
         </li>
         <li>
-          <Link href="/">Donate</Link>
+          <Link href="/donate">Donate</Link>
         </li>
       </ul>
     </nav>

@@ -1,6 +1,6 @@
 # To do list
 
-- mobile menu
+- ~mobile menu~
 - newsroom
 - hero with image background
 - content with image card
