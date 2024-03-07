@@ -5,31 +5,51 @@ import { ReactComponent as Arrow } from "../../../public/assets/svgs/arrow_right
 
 import styles from "./styles.module.scss";
 
-const Card = () => {
+const Card = ({
+  title,
+  url,
+  day,
+  month,
+  img,
+  subheading,
+  teaser,
+}: {
+  title: string;
+  url: string;
+  day: number;
+  month: string;
+  img: string;
+  subheading: string;
+  teaser?: string;
+}) => {
   return (
     <div className={styles.Card}>
       <div className={styles.ImageWrapper}>
         <div className={styles.ImageBg} />
-        <Image src={CardImg} alt="Emma Curtis" className={styles.img} fill />
+        <Image
+          src={`/assets/images/news/${img}`}
+          alt="Emma Curtis"
+          className={styles.img}
+          fill
+        />
       </div>
       <div className={styles.Content}>
         <div className={styles.Meta}>
           <div className={styles.Date}>
-            <span>15</span>
-            <span>Feb</span>
+            <span>{day}</span>
+            <span>{month}</span>
           </div>
           <div className={styles.Copy}>
             <h2>
-              <a href="/">Emma Speaks at Fairness Rally</a>
+              <a href={url} target="_blank" rel="noopener noreferrer">
+                {title}
+              </a>
             </h2>
-            <p className={styles.Venue}>Kentucky Capital Rotunda</p>
+            <p className={styles.Venue}>{subheading}</p>
           </div>
         </div>
-        <p className={styles.Teaser}>
-          To make sure all Citizen rights, you have to work together better
-          country our for human rights
-        </p>
-        <a href="/">
+        <p className={styles.Teaser}>{teaser && teaser}</p>
+        <a href={url} target="_blank" rel="noopener noreferrer">
           Read More{" "}
           <Image
             priority

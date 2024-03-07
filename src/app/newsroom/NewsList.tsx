@@ -6,12 +6,105 @@ const NewsList = () => {
   return (
     <Section>
       <div className={styles.Cards}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card
+          title={`‘Love Transcends’:`}
+          url="https://kykernel.com/100355/news/love-transcends-outlaw-hosts-second-annual-banquet/"
+          day={27}
+          month={"Feb"}
+          img={"ky-kernal.jpg"}
+          subheading={"Kentucky Kernel"}
+          teaser="OUTLaw hosts second annual banquet with keynote speakers Suzanne Goldberg and Emma Curtis"
+        />
+        <Card
+          title="Emma Curtis speaks at 2024 Fairness Rally"
+          url="https://twitter.com/emmacurtislex/status/1761150558637842455"
+          day={24}
+          month={"Feb"}
+          img={"2024-fairness-speaking1.jpg"}
+          subheading={"Kentucky State Capitol Rotunda"}
+          // teaser="OUTLaw hosts second annual banquet with keynote speakers Suzanne Goldberg and Emma Curtis"
+        />
+        <Card
+          title="Emma Curtis officially launches Lexington Council campaign"
+          url="https://twitter.com/emmacurtislex/status/1761150558637842455"
+          day={18}
+          month={"Feb"}
+          img={"launch-event.jpg"}
+          subheading={"Cumberland Hill Clubhouse"}
+          // teaser="OUTLaw hosts second annual banquet with keynote speakers Suzanne Goldberg and Emma Curtis"
+        />
+        <Card
+          title="Emma Curtis at CivicLex Community Breakfast"
+          url="https://kykernel.com/99384/news/civiclex-pancake-breakfast-engages-community-in-local-government/"
+          day={29}
+          month={"Jan"}
+          img={"CivicLexPancakeBfast.jpg"}
+          subheading={"Kentucky Kernel"}
+          teaser={`“I am so glad that we have an organization like CivicLex that is focused on the civic health of our city.”`}
+        />
+        <Card
+          title="Emma Curtis testifies on Source-of-Income Discrimination"
+          url="https://twitter.com/emmacurtislex/status/1748777015950328166"
+          day={20}
+          month={"Jan"}
+          img={"testifying.jpg"}
+          subheading={"KET & LexTV"}
+          // teaser={`“I am so glad that we have an organization like CivicLex that is focused on the civic health of our city.”`}
+        />
+        <Card
+          title="Emma Curtis at Lexington’s MLK Freedom March"
+          url="https://kykernel.com/98993/news/lexington-citizens-gather-for-martin-luther-king-jr-freedom-march/"
+          day={15}
+          month={"Jan"}
+          img={"mlk-march.jpeg"}
+          subheading={"Kentucky Kernel"}
+          teaser={`“I think it’s really important that we acknowledge publicly and vocally that Dr. King’s work is not finished.”`}
+        />
+        <Card
+          title="Community advocate Emma Curtis files to run for Lexington Council"
+          url="https://www.lex18.com/news/community-advocate-emma-curtis-files-to-run-for-lexington-council"
+          day={4}
+          month={"Jan"}
+          img={"files_to_run.jpg"}
+          subheading={"LEX18 News"}
+          // teaser={`“I think it’s really important that we acknowledge publicly and vocally that Dr. King’s work is not finished.”`}
+        />
+        <Card
+          title="Emma Curtis named a 2023 Rising Star"
+          url="https://twitter.com/MyOldKYPod/status/1741521101354635534"
+          day={31}
+          month={"Dec"}
+          img={"MOKP.jpg"}
+          subheading={"My Old Kentucky Podcast"}
+          // teaser={`“I think it’s really important that we acknowledge publicly and vocally that Dr. King’s work is not finished.”`}
+        />
+        <Card
+          title={`“Nobody likes a bully” - Emma Curtis on Daniel Cameron’s election loss`}
+          url="https://www.kentucky.com/news/politics-government/article281609593.html"
+          day={9}
+          month={"Nov"}
+          img={"daniel.jpeg"}
+          subheading={"Lexington Herald-Leader"}
+          // teaser={`“I think it’s really important that we acknowledge publicly and vocally that Dr. King’s work is not finished.”`}
+        />
+        <Card
+          title={`Emma Curtis on Gov. Beshear’s re-election victory`}
+          url="https://www.nytimes.com/2023/11/08/us/kentucky-democrat-andy-beshear.html#:~:text=But%20with%20his%20re%2Delection,than%20his%20win%20in%202019"
+          day={8}
+          month={"Nov"}
+          img={"nyt-andy-victory.jpg"}
+          subheading={"The New York Times"}
+          teaser={`“It shows that running campaigns based on hatred and identity politics isn’t an effective strategy.”`}
+        />
+        <Card
+          title={`Emma Curtis reflects on how Gen Z, LGBTQ+ people approach political organizing`}
+          url="https://www.lpm.org/news/2023-08-19/emma-curtis-reflects-on-how-gen-z-lgbtq-people-approach-political-organizing"
+          day={19}
+          month={"Aug"}
+          img={"emma-2023.jpg"}
+          subheading={"WFPL News"}
+          teaser={`“It shows that running campaigns based on hatred and identity politics isn’t an effective strategy.”`}
+        />
       </div>
     </Section>
   );
