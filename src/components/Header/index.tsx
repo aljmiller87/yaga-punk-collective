@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 import styles from "./header.module.scss";
@@ -11,14 +11,38 @@ import MobileMenu from "../MobileMenu";
 const Header = () => {
   const pathname = usePathname();
   const [isActive, setIsActive] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = useCallback(() => {
+    const scrollY = window.scrollY;
+    if (scrollY >= 300 && !isScrolled) {
+      setIsScrolled(true);
+    } else if (scrollY < 300 && isScrolled) {
+      setIsScrolled(false);
+    }
+  }, [isScrolled]);
+
+  useEffect(() => {
+    document.addEventListener("scroll", handleScroll);
+    return () => document.removeEventListener("scroll", handleScroll);
+  }, [handleScroll]);
+
   useEffect(() => {
     setIsActive(false);
   }, [pathname]);
 
+  const headerClass = isScrolled
+    ? `${styles.Header} ${styles.isScrolled}`
+    : styles.Header;
+
   return (
-    <header className={styles.Header}>
+    <header className={headerClass}>
       <Logo variant="dark" />
-      <MenuIcon isActive={isActive} setIsActive={setIsActive} />
+      <MenuIcon
+        isActive={isActive}
+        setIsActive={setIsActive}
+        isScrolled={isScrolled}
+      />
       <MobileMenu isActive={isActive} />
     </header>
   );

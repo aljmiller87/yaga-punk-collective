@@ -101,6 +101,24 @@ textarea {
   width: 100%;
 }
 
+h1 {
+  /* font-size: 64px; */
+  /* line-height: 70px; */
+}
+h2 {
+  font-size: 48px;
+  line-height: 58px;
+}
+h3 {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
 /* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
