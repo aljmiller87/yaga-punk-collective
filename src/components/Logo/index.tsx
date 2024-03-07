@@ -8,7 +8,7 @@ const Logo = ({ variant }: { variant: "light" | "dark" }) => {
   return (
     <a href="/" className={styles.Logo}>
       <Image
-        src={`${path}logo-horizontal-color.png`}
+        src={`${path}Horizontal-Logo.svg`}
         alt="Emma Curtis for Council"
         //   className={styles.vercelLogo}
         layout={"fill"}
