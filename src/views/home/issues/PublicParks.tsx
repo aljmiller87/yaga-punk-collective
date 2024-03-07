@@ -3,7 +3,7 @@ import React from "react";
 
 const PublicParks = () => {
   return (
-    <Accordion title="Clean Public Parks">
+    <Accordion title="Clean Public Parks" icon="park">
       <p>
         The cornerstone of a strong community is safe and well-maintained public
         spaces that people want to use. From Veterans Park to Kirklevington

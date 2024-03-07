@@ -3,7 +3,7 @@ import React from "react";
 
 const WorkerRights = () => {
   return (
-    <Accordion title="Protecting Workers' Rights">
+    <Accordion title="Protecting Workers' Rights" icon="worker">
       <p>
         Lexington was, and continues to be, built by union workers. I will
         always have their backs.

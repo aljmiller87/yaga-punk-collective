@@ -3,7 +3,7 @@ import React from "react";
 
 const UrbanGrowth = () => {
   return (
-    <Accordion title="Advancing Urban Growth">
+    <Accordion title="Advancing Urban Growth" icon="growth">
       <p>
         I opposed the urban service boundary expansion. However, I am fully
         committed to implementing it in an equitable way that increases our

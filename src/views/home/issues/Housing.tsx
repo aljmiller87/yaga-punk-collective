@@ -3,7 +3,7 @@ import React from "react";
 
 const Housing = () => {
   return (
-    <Accordion title="Housing for All Lexingtonians">
+    <Accordion title="Housing for All Lexingtonians" icon="house">
       <p>
         Renters and homeowners alike deserve homes they can thrive in at prices
         they can afford. That&apos;s why I fought hard to ensure our Council

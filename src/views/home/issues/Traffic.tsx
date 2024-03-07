@@ -3,7 +3,7 @@ import React from "react";
 
 const Traffic = () => {
   return (
-    <Accordion title="Safer Roads and Reduced Traffic">
+    <Accordion title="Safer Roads and Reduced Traffic" icon="road">
       <p>
         District 4 spans from Nicholasville Road to Tates Creek Road—and like
         most in our community, I&apos;ve spent far too much time sitting in

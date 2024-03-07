@@ -3,7 +3,7 @@ import React from "react";
 
 const GunViolence = () => {
   return (
-    <Accordion title="Ending Gun Violence">
+    <Accordion title="Ending Gun Violence" icon="safety">
       <p>
         Gun violence is a public health crisis and it should be treated as such.
         The best way to end gun violence is to address its underlying causes:

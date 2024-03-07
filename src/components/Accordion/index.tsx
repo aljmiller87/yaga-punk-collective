@@ -5,9 +5,11 @@ import { ReactComponent as Chevron } from "../../../public/assets/svgs/chevron.s
 
 const Accordion = ({
   title,
+  icon,
   children,
 }: {
   title: string;
+  icon?: string;
   children: ReactNode | ReactNode[];
 }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,10 +19,26 @@ const Accordion = ({
   const isOpenIconClass = isOpen
     ? `${styles.icon} ${styles.isOpen} `
     : styles.icon;
+
+  const renderIcon = () => {
+    if (!icon) return null;
+    return (
+      <Image
+        priority
+        alt={`Click to read more about ${title}`}
+        src={`./assets/svgs/${icon}.svg`}
+        width={35}
+        height={35}
+      />
+    );
+  };
   return (
     <div className={styles.Accordion}>
       <button onClick={() => setIsOpen(!isOpen)}>
-        <h3>{title}</h3>
+        <h3>
+          {renderIcon()}
+          <span>{title}</span>
+        </h3>
         <div className={isOpenIconClass}>
           <Image
             priority

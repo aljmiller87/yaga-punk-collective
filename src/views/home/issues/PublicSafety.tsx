@@ -3,7 +3,7 @@ import React from "react";
 
 const PublicSafety = () => {
   return (
-    <Accordion title="Supporting Public Safety">
+    <Accordion title="Supporting Public Safety" icon="handshake">
       <p>
         With long shifts, dangerous working conditions, and low pay, it&apos;s
         no wonder our police remain short-staffed. To allow police to focus on

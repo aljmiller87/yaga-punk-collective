@@ -3,7 +3,7 @@ import React from "react";
 
 const EconomicDevelopment = () => {
   return (
-    <Accordion title="Winning Economic Development">
+    <Accordion title="Winning Economic Development" icon="construction">
       <p>
         I support local businesses and entrepreneurs. Lexington has become the
         economic engine of central Kentucky because we have attracted large

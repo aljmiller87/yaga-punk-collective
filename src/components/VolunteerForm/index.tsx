@@ -26,7 +26,9 @@ const VolunteerForm = () => {
         />
       </form>
       <div className={styles.btn}>
-        <button type="submit">Join Us!</button>
+        <button type="submit" className="Btn-primary">
+          Join Us!
+        </button>
       </div>
     </Section>
   );

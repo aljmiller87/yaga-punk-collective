@@ -3,7 +3,7 @@ import React from "react";
 
 const PublicTransit = () => {
   return (
-    <Accordion title="Fixing Public Transit">
+    <Accordion title="Fixing Public Transit" icon="bus">
       <p>
         LexTran needs to be fast, reliable, and cheap. Currently, it&apos;s
         slow, inconsistent, and expensive. We need to increase bus frequency,

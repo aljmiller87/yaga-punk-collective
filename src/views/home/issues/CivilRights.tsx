@@ -3,7 +3,7 @@ import React from "react";
 
 const CivilRights = () => {
   return (
-    <Accordion title="Civil Rights for Marginalized Groups">
+    <Accordion title="Civil Rights for Marginalized Groups" icon="vote">
       <p>
         In Frankfort, our legislature has chosen to waste time and taxpayer
         money attacking marginalized communities. In Lexington, we have proudly

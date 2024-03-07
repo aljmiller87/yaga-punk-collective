@@ -3,7 +3,7 @@ import React from "react";
 
 const PublicEd = () => {
   return (
-    <Accordion title="Excellent Public Education">
+    <Accordion title="Excellent Public Education" icon="school">
       <p>
         Fayette County should continue to fight our teacher shortage by raising
         pay, not lowering standards. I support our union teachers, and I will
