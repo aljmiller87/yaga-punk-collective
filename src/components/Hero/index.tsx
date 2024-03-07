@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./Hero.module.scss";
 import BannerImg from "../../../public/assets/images/headshow-nobg.png";
 import FireWorks from "../Fireworks";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -17,8 +18,14 @@ const Hero = () => {
           Councilmember.
         </h1>
         <div className={styles.buttons}>
-          <a>Donate</a>
-          <a>Volunteer</a>
+          <Link
+            href="https://secure.actblue.com/donate/emmacurtislex"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Donate
+          </Link>
+          <Link href="/volunteer">Volunteer</Link>
         </div>
       </div>
       <div className={styles.imgWrapper}>

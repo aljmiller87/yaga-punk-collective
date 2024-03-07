@@ -85,8 +85,20 @@ body {
   overflow-x: hidden;
 }
 
-main {
-  /* padding-top: 5rem; */
+.PageContainer {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+a,button {
+  cursor: pointer;
+}
+
+textarea {
+  padding: 1rem;
+  font-size: 1.3rem;
+  width: 100%;
 }
 
 /* body {

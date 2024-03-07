@@ -5,12 +5,13 @@ const Input = ({
   pattern = ".+@example.com",
   id,
   required = false,
+  ...rest
 }: {
   type?: HTMLInputTypeAttribute;
   pattern?: string;
   id: string;
   required?: boolean;
-}) => {
+} & InputHTMLAttributes<HTMLInputElement>) => {
   return (
     <input
       className={styles.input}
@@ -18,8 +19,7 @@ const Input = ({
       id={id}
       pattern={pattern}
       size={30}
-      required
-      placeholder="you@email.com"
+      {...rest}
     />
   );
 };

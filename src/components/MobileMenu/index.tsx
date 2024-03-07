@@ -36,7 +36,13 @@ const MobileMenu = ({ isActive }: { isActive: boolean }) => {
           <Link href="/volunteer">Volunteer</Link>
         </li>
         <li>
-          <Link href="/donate">Donate</Link>
+          <Link
+            href="https://secure.actblue.com/donate/emmacurtislex"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Donate
+          </Link>
         </li>
       </ul>
     </nav>

@@ -50,4 +50,27 @@
       }
     }
   }
+
+  ul {
+    margin: 1rem 0 1rem 1.5rem;
+
+    li {
+      font-size: 1.5rem;
+      line-height: 1.5;
+
+      span {
+        position: relative;
+        font-size: 1rem;
+        bottom: 0.1rem;
+      }
+
+      &::marker {
+        color: var(--darkTeal);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 5rem 0;
+  }
 }
