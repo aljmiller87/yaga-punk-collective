@@ -7,12 +7,14 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div className={styles.Hero} role="banner">
-      <div className={styles.text}>
-        <p>Welcome!</p>
-        <h1 className={styles.title}>
-          My name is Emma Curtis and I&apos;m running to be your next
-          Councilmember.
-        </h1>
+      <div className="PageContainer">
+        <div className={styles.text}>
+          <p>Welcome!</p>
+          <h1 className={styles.title}>
+            My name is Emma Curtis and I&apos;m running to be your next
+            Councilmember.
+          </h1>
+        </div>
       </div>
       <div className={styles.imgWrapper}>
         <div className={styles.imgGradient} />

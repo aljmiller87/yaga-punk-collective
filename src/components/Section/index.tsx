@@ -8,7 +8,11 @@ const Section = ({
   children: ReactNode | ReactNode[];
 }) => {
   const themeClass = !!darkTheme ? styles.variant : ``;
-  return <div className={`${styles.Section} ${themeClass}`}>{children}</div>;
+  return (
+    <div className={`${styles.Section} ${themeClass} PageContainer`}>
+      {children}
+    </div>
+  );
 };
 
 export default Section;

@@ -198,6 +198,36 @@
       }
     }
   }
+
+  @media screen and (min-width: 1024px) {
+    gap: 3rem;
+    padding: 3rem;
+    &:after {
+      background: linear-gradient(
+        90deg,
+        rgb(15, 129, 133) 0%,
+        rgb(15, 129, 133) 30%,
+        rgba(15, 129, 133, 0.2) 60%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+    .text {
+      bottom: 0;
+      padding-left: 0;
+    }
+    .buttons {
+      flex-direction: row;
+      max-width: 1440px;
+      width: 100%;
+      margin: 0 auto;
+      justify-content: flex-start;
+
+      a {
+        width: 24%;
+        flex: 0 1 220px;
+      }
+    }
+  }
 }
 
 @keyframes slidein {

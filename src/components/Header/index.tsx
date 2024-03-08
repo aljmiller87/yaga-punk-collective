@@ -7,6 +7,7 @@ import styles from "./header.module.scss";
 import Logo from "../Logo";
 import MenuIcon from "../MenuIcon";
 import MobileMenu from "../MobileMenu";
+import DesktopMenu from "../DesktopMenu";
 
 const Header = () => {
   const pathname = usePathname();
@@ -37,13 +38,16 @@ const Header = () => {
 
   return (
     <header className={headerClass}>
-      <Logo variant="dark" />
-      <MenuIcon
-        isActive={isActive}
-        setIsActive={setIsActive}
-        isScrolled={isScrolled}
-      />
-      <MobileMenu isActive={isActive} />
+      <div className="PageContainer">
+        <Logo variant="dark" />
+        <MenuIcon
+          isActive={isActive}
+          setIsActive={setIsActive}
+          isScrolled={isScrolled}
+        />
+        <MobileMenu isActive={isActive} />
+        <DesktopMenu />
+      </div>
     </header>
   );
 };
