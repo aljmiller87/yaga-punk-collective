@@ -83,8 +83,6 @@
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: -1.5px;
-    text-align: center;
-    font-weight: 600;
   }
 
   .subtitle {
@@ -137,6 +135,38 @@
       &:last-child {
         animation-delay: 0.1s;
       }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background: var(--darkTeal);
+    justify-content: center;
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(
+        90deg,
+        rgba(15, 129, 133, 1) 0%,
+        rgba(15, 129, 133, 1) 35%,
+        rgba(15, 129, 133, 0.2) 75%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+    .imgWrapper {
+      height: 100%;
+      width: 70%;
+    }
+
+    .text {
+      text-align: left;
+      color: #fff;
+      width: 45%;
+      position: relative;
+      bottom: 5rem;
+      gap: 2rem;
     }
   }
 }
