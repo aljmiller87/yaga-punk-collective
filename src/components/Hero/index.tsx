@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./Hero.module.scss";
-import BannerImg from "../../../public/assets/images/headshot.jpg";
+import BannerImg from "../../../public/assets/images/hero-headshot.jpeg";
 import Link from "next/link";
 
 const Hero = () => {

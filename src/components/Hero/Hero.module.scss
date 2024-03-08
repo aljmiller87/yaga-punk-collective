@@ -157,16 +157,45 @@
     }
     .imgWrapper {
       height: 100%;
-      width: 70%;
+      width: 80%;
+      transform: scaleX(-1);
+
+      .imgGradient {
+        display: none;
+      }
+    }
+
+    .img {
+      object-position: 65% 50%;
     }
 
     .text {
       text-align: left;
       color: #fff;
-      width: 45%;
+      width: 55%;
       position: relative;
       bottom: 5rem;
       gap: 2rem;
+      p {
+        font-size: 36px;
+        line-height: 48px;
+      }
+    }
+
+    .title {
+      font-size: 48px;
+      line-height: 58px;
+    }
+
+    .buttons {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 55%;
+      position: static;
+
+      a {
+        width: 100%;
+      }
     }
   }
 }
