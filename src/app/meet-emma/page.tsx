@@ -16,9 +16,7 @@ const MeetEmma = () => {
     <div>
       <PageBanner title="Meet Emma" img={BannerImg} imgPosition="50% 25%" />
       <CopyAndImage img={EmmaAndMom}>
-        <p>
-          <b>Emma Curtis was born here in Lexington in 1996.</b>
-        </p>
+        <h3>Emma Curtis was born in Lexington in 1996.</h3>
         <p>
           Growing up on her family&apos;s farm, she learned quickly how to work
           hard and get the job done. She&apos;s carried that work ethic with her
@@ -37,11 +35,11 @@ const MeetEmma = () => {
       </CopyAndImage>
       <div style={{ margin: "-2rem 0" }}>
         <Section>
-          <blockquote>
+          <h3>
             Emma became politically active during the 2016 presidential
             election, working to push back against the cruelty and
             mean-spiritedness she saw brewing in her community.
-          </blockquote>
+          </h3>
         </Section>
       </div>
       <CopyAndImage img={RegVote} reverse imgPosition="50% 5%">
@@ -60,12 +58,10 @@ const MeetEmma = () => {
         </p>
       </CopyAndImage>
       <CopyAndImage img={EmmaAndGeorge} imgPosition="50% 25%">
-        <p>
-          <b>
-            After graduating from Centre in 2018, Emma has spent her entire
-            adult life working and living in Lexington.
-          </b>
-        </p>
+        <h3>
+          After graduating from Centre in 2018, Emma has spent her entire adult
+          life working and living in Lexington.
+        </h3>
         <p>
           Currently, she works as an independent filmmaker telling the stories
           of the remarkable people that make Lexington so special. Her most
@@ -83,7 +79,7 @@ const MeetEmma = () => {
           building a better future for her community and her commonwealth.
         </p>
       </CopyAndImage>
-      <CopyAndImage img={EmmaAndBenny} imgPosition="50% 35%">
+      <CopyAndImage img={EmmaAndBenny} mobileReverse imgPosition="50% 35%">
         <p>
           She is a member of several community-focused organizations, from
           CivicLex to the Lexington Forum, which are focused on bringing people
@@ -97,13 +93,11 @@ const MeetEmma = () => {
           long walks at Veterans Park.
         </p>
       </CopyAndImage>
-      <CopyAndImage img={ComMeeting} reverse>
-        <p>
-          <b>
-            Emma is running for Council because she loves her neighbors and
-            community in South Lexington.
-          </b>
-        </p>
+      <CopyAndImage img={ComMeeting} mobileReverse reverse>
+        <h3>
+          Emma is running for Council because she loves her neighbors and
+          community in South Lexington.
+        </h3>
         <p>
           She knows that running for office is serious business. It&apos;s not
           something to do because you want a job that you can keep regardless of
@@ -113,7 +107,7 @@ const MeetEmma = () => {
         </p>
       </CopyAndImage>
 
-      <CopyAndImage img={EmmaAndGov}>
+      <CopyAndImage img={EmmaAndGov} mobileReverse>
         <p>
           It&apos;s something to do because you care deeply about the people and
           communities you wish to serve.
