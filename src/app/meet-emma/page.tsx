@@ -16,7 +16,7 @@ const MeetEmma = () => {
     <div>
       <PageBanner title="Meet Emma" img={BannerImg} imgPosition="50% 25%" />
       <CopyAndImage img={EmmaAndMom}>
-        <h3>Emma Curtis was born in Lexington in 1996.</h3>
+        <h2>Emma Curtis was born in Lexington in 1996.</h2>
         <p>
           Growing up on her family&apos;s farm, she learned quickly how to work
           hard and get the job done. She&apos;s carried that work ethic with her
@@ -33,16 +33,12 @@ const MeetEmma = () => {
           day-to-day work that goes into making effective public policy.
         </p>
       </CopyAndImage>
-      <div style={{ margin: "-2rem 0" }}>
-        <Section>
-          <h3>
-            Emma became politically active during the 2016 presidential
-            election, working to push back against the cruelty and
-            mean-spiritedness she saw brewing in her community.
-          </h3>
-        </Section>
-      </div>
       <CopyAndImage img={RegVote} reverse imgPosition="50% 5%">
+        <h2>
+          Emma became politically active during the 2016 presidential election,
+          working to push back against the cruelty and mean-spiritedness she saw
+          brewing in her community.
+        </h2>
         <p>
           As a student at Centre College, she helped organize and participated
           in several campaigns and events aimed at increasing administrative
@@ -58,10 +54,10 @@ const MeetEmma = () => {
         </p>
       </CopyAndImage>
       <CopyAndImage img={EmmaAndGeorge} imgPosition="50% 25%">
-        <h3>
+        <h2>
           After graduating from Centre in 2018, Emma has spent her entire adult
           life working and living in Lexington.
-        </h3>
+        </h2>
         <p>
           Currently, she works as an independent filmmaker telling the stories
           of the remarkable people that make Lexington so special. Her most
@@ -94,10 +90,10 @@ const MeetEmma = () => {
         </p>
       </CopyAndImage>
       <CopyAndImage img={ComMeeting} mobileReverse reverse>
-        <h3>
+        <h2>
           Emma is running for Council because she loves her neighbors and
           community in South Lexington.
-        </h3>
+        </h2>
         <p>
           She knows that running for office is serious business. It&apos;s not
           something to do because you want a job that you can keep regardless of

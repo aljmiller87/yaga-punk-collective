@@ -28,13 +28,6 @@
   .CopyBlock {
     width: 100%;
     max-width: 36rem;
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 2.5rem;
-      line-height: 1.2;
-      font-weight: 700;
-      //   color: var(--darkText);
-    }
   }
 
   @media screen and (min-width: 1024px) {
@@ -48,7 +41,7 @@
     .CopyBlock {
       flex: 1 0 60%;
       max-width: none;
-      padding: 0 4rem;
+      padding: 0 0 0 4rem;
 
       p,
       li {
@@ -68,6 +61,9 @@
 
     &.reverse {
       flex-direction: row-reverse;
+      .CopyBlock {
+        padding: 0 4rem 0 0;
+      }
     }
   }
 
