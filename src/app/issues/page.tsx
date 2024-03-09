@@ -5,7 +5,7 @@ import React from "react";
 const IssuesPage = () => {
   return (
     <div>
-      <PageBanner title="On the Issues" />
+      <PageBanner title="On the Issues" imgPosition="50% 35%" />
       <Issues />
     </div>
   );
