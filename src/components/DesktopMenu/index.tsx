@@ -7,7 +7,7 @@ const DesktopMenu = () => {
     <nav className={styles.DesktopMenu}>
       <ul>
         <li>
-          <Link href="/about-emma">About Emma</Link>
+          <Link href="/meet-emma">Meet Emma</Link>
         </li>
         <li>
           <Link href="/issues">On the Issues</Link>
@@ -16,7 +16,7 @@ const DesktopMenu = () => {
           <Link href="/newsroom">In the News</Link>
         </li>
         <li>
-          <Link href="/volunteer">Volunteer</Link>
+          <Link href="/join-us">Join Us</Link>
         </li>
         <li>
           <Link

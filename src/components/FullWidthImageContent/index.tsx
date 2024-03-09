@@ -17,9 +17,9 @@ const FullWidthImageContent = () => {
         />
       </div>
       <div className={styles.text}>
-        <h2 className={styles.title}>Join our campaign</h2>
+        <h2 className={styles.title}>Join our campaign!</h2>
         <p className={styles.subtitle}>
-          Whether you can donate or volunteer, you can make a difference!
+          Help us move Lexington forward together.
         </p>
         <div className={styles.buttons}>
           <Link

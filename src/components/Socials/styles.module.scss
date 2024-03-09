@@ -1,0 +1,40 @@
+.Socials {
+  fill: var(--lightTeal);
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    svg {
+      height: 1.5rem;
+      width: 1.5rem;
+      transition: all 0.2s linear;
+    }
+
+    a:hover {
+      svg {
+        fill: #fff;
+        color: #fff;
+      }
+    }
+  }
+
+  &.isHeader {
+    fill: var(--darkTeal);
+    svg {
+      height: 1rem;
+      width: 1rem;
+    }
+
+    ul {
+      a:hover {
+        svg {
+          fill: var(--darkText);
+          color: var(--darkText);
+        }
+      }
+    }
+  }
+}

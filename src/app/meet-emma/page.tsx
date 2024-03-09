@@ -5,7 +5,7 @@ import React from "react";
 const MeetEmma = () => {
   return (
     <div>
-      <PageBanner title="About Emma" />
+      <PageBanner title="Meet Emma" />
       <Section>
         <p>
           <b>Emma Curtis was born here in Lexington in 1996.</b>

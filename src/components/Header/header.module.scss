@@ -1,13 +1,14 @@
 .Header {
   align-items: center;
-  background-color: transparent;
+  background: #fff;
   // background-color: var(--darkBlue);
   display: flex;
   height: 5rem;
   justify-content: space-between;
   padding: 0 2rem;
-  position: fixed;
+  position: sticky;
   width: 100vw;
+  top: 0;
   z-index: 10;
   transition: all 0.2s ease-in-out;
 
@@ -18,7 +19,8 @@
   }
 
   &.isScrolled {
-    background: #fff;
+    position: sticky;
+    // background: #fff;
     border-bottom: 1px solid #555;
     -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);

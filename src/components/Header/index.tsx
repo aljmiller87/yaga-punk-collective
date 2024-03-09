@@ -16,9 +16,9 @@ const Header = () => {
 
   const handleScroll = useCallback(() => {
     const scrollY = window.scrollY;
-    if (scrollY >= 10 && !isScrolled) {
+    if (scrollY >= 20 && !isScrolled) {
       setIsScrolled(true);
-    } else if (scrollY < 10 && isScrolled) {
+    } else if (scrollY < 20 && isScrolled) {
       setIsScrolled(false);
     }
   }, [isScrolled]);

@@ -1,0 +1,23 @@
+.UtilityHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 2rem;
+  position: relative;
+  top: 0.5rem;
+  height: 1.25rem;
+  z-index: 11;
+
+  p {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--darkText);
+  }
+
+  @media screen and (min-width: 560px) {
+    justify-content: flex-end;
+  }
+}
