@@ -9,14 +9,19 @@ const CopyAndImage = ({
   img = VolunteerImage,
   children,
   imgPosition = "50% 50%",
+  reverse = false,
 }: {
   img?: StaticImageData;
   children: ReactNode | ReactNode[];
   imgPosition?: string;
+  reverse?: boolean;
 }) => {
+  const componentClass = reverse
+    ? `${styles.CopyAndImage} && ${styles.reverse}`
+    : styles.CopyAndImage;
   return (
     <Section>
-      <div className={styles.CopyAndImage}>
+      <div className={componentClass}>
         <div className={styles.ImageBlock}>
           <div>
             <Image

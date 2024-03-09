@@ -50,6 +50,11 @@
       max-width: none;
       padding: 0 4rem;
 
+      p,
+      li {
+        font-size: 1.25rem;
+      }
+
       h2 {
         margin-bottom: 1.5rem;
       }
@@ -59,6 +64,10 @@
         grid-template-columns: 1fr 1fr;
         column-gap: 1rem;
       }
+    }
+
+    &.reverse {
+      flex-direction: row-reverse;
     }
   }
 }
