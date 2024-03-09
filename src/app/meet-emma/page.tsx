@@ -3,12 +3,12 @@ import PageBanner from "@/components/PageBanner";
 import Section from "@/components/Section";
 import BannerImg from "../../../public/assets/images/speaking-to-person1.jpg";
 import CopyAndImage from "@/components/CopyAndImage";
-import EmmaAndMom from "../../../public/assets/images/meet-emma/Emma with her mom.jpeg";
-import RegVote from "../../../public/assets/images/meet-emma/Emma holding register to vote sign.jpeg";
-import EmmaAndGeorge from "../../../public/assets/images/meet-emma/Emma with George Szekely.jpeg";
-import ComMeeting from "../../../public/assets/images/meet-emma/Emma leads community meeting.jpeg";
-import EmmaAndBenny from "../../../public/assets/images/meet-emma/Emma with Benny.jpeg";
-import KFTC from "../../../public/assets/images/meet-emma/Emma with KFTC.jpeg";
+import EmmaAndMom from "../../../public/assets/images/meet-emma/Emma with her mom.jpg";
+import RegVote from "../../../public/assets/images/meet-emma/Emma holding register to vote sign.jpg";
+import EmmaAndGeorge from "../../../public/assets/images/meet-emma/Emma with George Szekely.jpg";
+import ComMeeting from "../../../public/assets/images/meet-emma/Emma leads community meeting.jpg";
+import EmmaAndBenny from "../../../public/assets/images/meet-emma/Emma with Benny.jpg";
+import KFTC from "../../../public/assets/images/meet-emma/Emma with KFTC.jpg";
 import EmmaAndGov from "../../../public/assets/images/Emma-with-andy-jacq.jpg";
 
 const MeetEmma = () => {
