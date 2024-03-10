@@ -10,7 +10,10 @@
   flex-wrap: wrap;
 
   @media screen and (min-width: 560px) {
-    input {
+    .fullWidth {
+      width: 100%;
+    }
+    input:not(.fullWidth) {
       width: calc(50% - 1rem);
     }
     textarea {

@@ -33,7 +33,7 @@ const Hero = () => {
         >
           Donate
         </Link>
-        <Link href="/volunteer">Volunteer</Link>
+        <Link href="/join-us">Join Us</Link>
       </div>
     </div>
   );

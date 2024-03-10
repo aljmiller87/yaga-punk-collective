@@ -1,0 +1,13 @@
+.Checkbox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  input {
+    width: 1rem !important;
+  }
+
+  label {
+    margin-left: 0.25rem;
+  }
+}
