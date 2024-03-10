@@ -13,10 +13,12 @@ const PublicSafety = () => {
       <p>
         I also believe that our tax dollars are best spent on public safety
         programs that bring our communities together, not on ones that are
-        focused on increasing incarceration. That&apos;s why I will introduce
-        and fight for legislation to expand the number of Neighborhood Resource
-        Officer districts from 3 to 12—one for each council district—to allow
-        for more effective and direct community policing.
+        focused on increasing incarceration.
+      </p>
+      <p>
+        That&apos;s why I will fight to expand our Community Paramedicine
+        Program and advocate for hiring additional mental health professionals
+        and social workers to assist in cases of non-violent crime.
       </p>
     </Accordion>
   );

@@ -4,12 +4,14 @@ import React from "react";
 const ReproductiveJustice = () => {
   return (
     <Accordion title="Defending Reproductive Justice" icon="pregnant">
+      <p>I support abortion rights.</p>
       <p>
-        I support abortion rights. No government—whether in Washington or in
-        Frankfort—should stand in the way of the decision whether and when to
-        have children. I will fight to make sure our LPD resources are never
-        used to enforce the out-of-control legislature&apo;s efforts to control
-        our bodies.
+        No government—whether in Washington or in Frankfort—should stand in the
+        way of the decision whether and when to have children.
+      </p>
+      <p>
+        I will fight to prevent our LPD resources from ever being used to
+        enforce the State Legislature’s efforts to control our bodies.
       </p>
     </Accordion>
   );

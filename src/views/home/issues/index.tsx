@@ -19,7 +19,20 @@ import Environment from "./Environment";
 const Issues = () => {
   return (
     <Section>
-      <h2>The issues</h2>
+      <p>
+        Like most folks in the 4th District, I'm tired of the team sports
+        element of politics—pitting neighbor against neighbor, us vs. them.
+      </p>
+      <p>
+        That's why I'm focused on the day-to-day, boots-on-the-ground issues
+        that bring us together, not the divisive culture war policies that would
+        rip our community apart.
+      </p>
+      <p style={{ marginBottom: "3rem;" }}>
+        I believe this platform will help us get past the hatred, the division,
+        and the mean-spiritedness that has plagued our politics and{" "}
+        <b>move Lexington forward together.</b>
+      </p>
       <Traffic />
       <Housing />
       <PublicSafety />

@@ -11,12 +11,15 @@ const Traffic = () => {
       </p>
       <p>
         But these roads aren&apos;t just inconvenient and
-        inaccessible—-they&apos;re dangerous.
+        inaccessible—they&apos;re dangerous.
       </p>
       <p>
-        In 2023, Kentucky State Police data showed that we saw a 566% increase
-        in pedestrian fatalities from car crashes in Lexington over what we saw
-        in 2022.
+        In 2023, Kentucky State Police data showed that we saw{" "}
+        <a href="https://www.kentucky.com/news/local/counties/fayette-county/article283593513.html">
+          a 566% increase in pedestrian fatalities from car crashes in Lexington
+          over what we saw in 2022
+        </a>
+        .
       </p>
       <p>
         Along with my colleagues, community partners, and constituents, I will

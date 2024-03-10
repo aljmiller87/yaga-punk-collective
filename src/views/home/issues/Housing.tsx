@@ -6,15 +6,19 @@ const Housing = () => {
     <Accordion title="Housing for All Lexingtonians" icon="house">
       <p>
         Renters and homeowners alike deserve homes they can thrive in at prices
-        they can afford. That&apos;s why I fought hard to ensure our Council
-        passed a ban on source-of-income discrimination and why I support a
-        complete and thorough overhaul of our zoning ordinances and land-use
-        guidelines.
+        they can afford.
       </p>
       <p>
-        As your councilmember, I will advocate for policies that prioritize
-        Lexingtonians, not predatory out-of-state corporations or
-        special-interest groups.
+        That&apos;s why I fought hard to ensure our Council passed a ban on
+        source-of-income discrimination and why I will always advocate for
+        policies that prioritize Lexingtonians, not predatory out-of-state
+        corporations or special-interest groups.
+      </p>
+      <p>
+        As your councilmember, I will push to create more emergency housing for
+        those experiencing homelessness, overhaul our zoning ordinances and
+        land-use guidelines, and fight to significantly increase the amount of
+        money we allocate to the Affordable Housing Fund.
       </p>
     </Accordion>
   );

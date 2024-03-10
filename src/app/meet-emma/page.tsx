@@ -34,23 +34,22 @@ const MeetEmma = () => {
         </p>
       </CopyAndImage>
       <CopyAndImage img={RegVote} reverse imgPosition="50% 5%">
-        <h2>
-          Emma became politically active during the 2016 presidential election,
-          working to push back against the cruelty and mean-spiritedness she saw
-          brewing in her community.
-        </h2>
+        <h2>Emma became politically active in 2016.</h2>
+        <p>
+          She wanted to push back against the cruelty and mean-spiritedness she
+          saw brewing in her community during that year's presidential election.
+        </p>
         <p>
           As a student at Centre College, she helped organize and participated
           in several campaigns and events aimed at increasing administrative
-          transparency, reducing sexual assault and harassment on campus, and
+          transparency, preventing sexual assault and harassment on campus, and
           promoting inclusion and equality for students of color and LGBTQ+
           students.
         </p>
         <p>
           She also began knocking doors and phone-banking for the political
-          campaigns of candidates she believed in, as well as attending rallies
-          and community organizing meetings to support the causes that impacted
-          her community.
+          campaigns of candidates she believed in, as well as attending rallies,
+          marches, and community organizing meetings.
         </p>
       </CopyAndImage>
       <CopyAndImage img={EmmaAndGeorge} imgPosition="50% 25%">
@@ -66,9 +65,7 @@ const MeetEmma = () => {
         </p>
       </CopyAndImage>
       <CopyAndImage img={KFTC} reverse>
-        <h2>
-          She also works as a community organizer and issue-based advocate.
-        </h2>
+        <h2>She also works as an issue-based organizer and advocate.</h2>
         <p>
           Whether registering Lexingtonians to vote through her work as a voter
           engagement organizer at Kentuckians for the Commonwealth or
@@ -78,11 +75,13 @@ const MeetEmma = () => {
         </p>
       </CopyAndImage>
       <CopyAndImage img={EmmaAndBenny} mobileReverse imgPosition="50% 35%">
+        <h2>Outside of work, she is extremely active in her community.</h2>
         <p>
-          She is a member of several community-focused organizations, from
-          CivicLex to the Lexington Forum, which are focused on bringing people
-          together, having good-faith conversations, and improving
-          Lexington&apos;s civic health.
+          She is a member of several community-focused organizations, including
+          CivicLex, the Lexington Branch of the Kentucky Women's network, and
+          the Lexington Forum, which are focused on bringing people together,
+          having good-faith conversations, and improving Lexington&apos;s civic
+          health.
         </p>
         <p>
           When she&apos;s not working, Emma enjoys spending quality time with
@@ -103,25 +102,33 @@ const MeetEmma = () => {
           you&apos;re retired, wealthy, and want to put another feather in your
           cap.
         </p>
-      </CopyAndImage>
-
-      <CopyAndImage img={EmmaAndGov} mobileReverse>
         <p>
           It&apos;s something to do because you care deeply about the people and
           communities you wish to serve.
         </p>
         <p>
           A Councilmember&apos;s job is to advocate for the people who live in
-          their district and address the issues that matter to{" "}
-          <b>them—and that&apos;s exactly what Emma will do</b>.
+          their district and address the issues that matter to them—
+          <b>and that&apos;s exactly what Emma will do</b>.
         </p>
-        <p>
+      </CopyAndImage>
+
+      <CopyAndImage img={EmmaAndGov} mobileReverse>
+        <h2
+          style={{
+            textAlign: "center",
+            color: "#129499",
+            fontSize: "1.8rem",
+            lineHeight: "1.5",
+          }}
+        >
           <b>
             With your support, Emma Curtis will continue her record of choosing
             people over politics, community over division, and tangible good
-            over empty gestures as the next Councilmember for District 4.
+            over empty gestures
+            <br /> as the next Councilmember for District 4.
           </b>
-        </p>
+        </h2>
       </CopyAndImage>
     </div>
   );
