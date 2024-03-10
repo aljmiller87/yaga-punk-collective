@@ -2,7 +2,6 @@ import React, { HTMLInputTypeAttribute, InputHTMLAttributes } from "react";
 import styles from "./input.module.scss";
 const Input = ({
   type = "email",
-  pattern = ".+@example.com",
   id,
   required = false,
   ...rest
@@ -13,14 +12,7 @@ const Input = ({
   required?: boolean;
 } & InputHTMLAttributes<HTMLInputElement>) => {
   return (
-    <input
-      className={styles.input}
-      type={type}
-      id={id}
-      pattern={pattern}
-      size={30}
-      {...rest}
-    />
+    <input className={styles.input} type={type} id={id} size={30} {...rest} />
   );
 };
 
