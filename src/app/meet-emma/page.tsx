@@ -6,8 +6,8 @@ import CopyAndImage from "@/components/CopyAndImage";
 import EmmaAndMom from "../../../public/assets/images/meet-emma/Emmawithhermom.jpg";
 import RegVote from "../../../public/assets/images/meet-emma/Emmaholdingregistertovotesign.jpg";
 import EmmaAndGeorge from "../../../public/assets/images/meet-emma/EmmawithGeorgeSzekely.jpg";
-import ComMeeting from "../../../public/assets/images/meet-emma/Emmaleadscommunitymeeting.jpg";
-import EmmaAndBenny from "../../../public/assets/images/meet-emma/EmmawithBenny.jpg";
+import ComMeeting from "../../../public/assets/images/meet-emma/Emma_community_meeting.jpeg";
+import EmmaAndBenny from "../../../public/assets/images/meet-emma/Emma_with_Benny.jpg";
 import KFTC from "../../../public/assets/images/meet-emma/EmmawithKFTC.jpg";
 import EmmaAndGov from "../../../public/assets/images/Emma-with-andy-jacq.jpg";
 
@@ -66,8 +66,10 @@ const MeetEmma = () => {
         </p>
       </CopyAndImage>
       <CopyAndImage img={KFTC} reverse>
-        <p>
+        <h2>
           She also works as a community organizer and issue-based advocate.
+        </h2>
+        <p>
           Whether registering Lexingtonians to vote through her work as a voter
           engagement organizer at Kentuckians for the Commonwealth or
           volunteering with organizations like the ACLU of Kentucky and the

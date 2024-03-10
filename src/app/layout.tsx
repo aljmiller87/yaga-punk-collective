@@ -12,11 +12,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
-  ...rest
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  console.log(`rest: ${rest}`);
   return (
     <html lang="en">
       {/* <Head></Head> */}
