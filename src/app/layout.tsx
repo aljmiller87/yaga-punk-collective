@@ -10,16 +10,13 @@ import FullWidthImageContent from "@/components/FullWidthImageContent";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Emma Curtis for Council",
-  description: "Emma Curtis is running for 4th Council District",
-};
-
 export default function RootLayout({
   children,
+  ...rest
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  console.log(`rest: ${rest}`);
   return (
     <html lang="en">
       {/* <Head></Head> */}
