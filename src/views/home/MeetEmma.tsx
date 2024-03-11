@@ -5,11 +5,10 @@ import React from "react";
 const MeetEmma = () => {
   return (
     <Section>
-      <h2>Meet Emma</h2>
-      <p>
-        I&apos;m a lifelong Kentuckian. I was born in Lexington and have spent
-        my entire adult life here.
-      </p>
+      <h2 style={{ textAlign: "center", marginBottom: "2rem" }}>
+        I&apos;m a lifelong Kentuckian.
+      </h2>
+      <p>I was born in Lexington and have spent my entire adult life here.</p>
       <p>
         As a young, working class person, I know what it&apos;s like to watch my
         tax dollars go towards policies that actively make it harder for folks
@@ -32,9 +31,9 @@ const MeetEmma = () => {
         Our district deserves a Councilmember with the drive to show up, stand
         for working families, and move Lexington forward together.
       </p>
-      <p>
-        <b>Let&apos;s elect one who will.</b>
-      </p>
+      <h2 style={{ textAlign: "center", margin: "3rem auto -3rem" }}>
+        Let&apos;s elect one who will.
+      </h2>
     </Section>
   );
 };

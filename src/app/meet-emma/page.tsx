@@ -75,7 +75,7 @@ const MeetEmma = () => {
           building a better future for her community and her commonwealth.
         </p>
       </CopyAndImage>
-      <CopyAndImage img={EmmaAndBenny} mobileReverse imgPosition="50% 35%">
+      <CopyAndImage img={EmmaAndBenny} imgPosition="50% 35%">
         <h2>Outside of work, she is extremely active in her community.</h2>
         <p>
           She is a member of several community-focused organizations, including
@@ -91,7 +91,7 @@ const MeetEmma = () => {
           long walks at Veterans Park.
         </p>
       </CopyAndImage>
-      <CopyAndImage img={ComMeeting} mobileReverse reverse>
+      <CopyAndImage img={ComMeeting} reverse>
         <h2>
           Emma is running for Council because she loves her neighbors and
           community in South Lexington.
@@ -114,7 +114,7 @@ const MeetEmma = () => {
         </p>
       </CopyAndImage>
 
-      <CopyAndImage img={EmmaAndGov} mobileReverse>
+      <CopyAndImage img={EmmaAndGov}>
         <h2
           style={{
             textAlign: "center",

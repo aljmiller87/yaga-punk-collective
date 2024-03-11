@@ -10,7 +10,7 @@ const Socials = ({ isHeader = false }: { isHeader?: boolean }) => {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            href="https://facebook.com/emmaforky"
+            href="https://www.facebook.com/EmmaForLexingtonCouncil"
           >
             <svg
               fill="#000000"
@@ -35,7 +35,11 @@ const Socials = ({ isHeader = false }: { isHeader?: boolean }) => {
           </Link>
         </li>
         <li>
-          <Link target="_blank" rel="noopener noreferrer" href="/">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/emmacurtislex/"
+          >
             <svg
               width="800px"
               height="800px"
@@ -63,7 +67,11 @@ const Socials = ({ isHeader = false }: { isHeader?: boolean }) => {
           </Link>
         </li>
         <li>
-          <Link target="_blank" rel="noopener noreferrer" href="/">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/emmacurtislex"
+          >
             <svg
               width="800px"
               height="800px"
@@ -99,7 +107,11 @@ const Socials = ({ isHeader = false }: { isHeader?: boolean }) => {
           </Link>
         </li>
         <li>
-          <Link target="_blank" rel="noopener noreferrer" href="/">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.tiktok.com/@emmacurtislex"
+          >
             <svg
               fill="currentColor"
               width="800px"

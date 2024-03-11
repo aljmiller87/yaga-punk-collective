@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import MeetEmma from "@/views/home/MeetEmma";
 import Issues from "@/views/home/issues";
 import "../styles/theme.css";
+import ImageWithGradient from "@/components/ImageWithGradient";
 
 export const metadata: Metadata = {
   title: "Emma Curtis for Council",
@@ -72,7 +73,8 @@ export default function Home() {
     <>
       <Hero />
       <MeetEmma />
-      <FullWidthImageContent />
+      <ImageWithGradient />
+      {/* <FullWidthImageContent /> */}
       <Issues />
     </>
   );

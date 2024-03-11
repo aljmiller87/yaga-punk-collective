@@ -7,7 +7,7 @@ const NewsList = () => {
     <Section>
       <div className={styles.Cards}>
         <Card
-          title={`‘Love Transcends’:`}
+          title={`"Love Transcends"`}
           url="https://kykernel.com/100355/news/love-transcends-outlaw-hosts-second-annual-banquet/"
           day={27}
           month={"Feb"}
@@ -26,12 +26,12 @@ const NewsList = () => {
         />
         <Card
           title="Emma Curtis officially launches Lexington Council campaign"
-          url="https://twitter.com/emmacurtislex/status/1761150558637842455"
+          url="https://twitter.com/emmacurtislex/status/1759376116651855898?s=46"
           day={18}
           month={"Feb"}
           img={"launch-event.jpg"}
           subheading={"Cumberland Hill Clubhouse"}
-          // teaser="OUTLaw hosts second annual banquet with keynote speakers Suzanne Goldberg and Emma Curtis"
+          teaser={`“We are ready to hit the ground running to win in the primary election on May 21st and in the general election on November 5th!”`}
         />
         <Card
           title="Emma Curtis at CivicLex Community Breakfast"
@@ -67,7 +67,7 @@ const NewsList = () => {
           month={"Jan"}
           img={"files_to_run.jpg"}
           subheading={"LEX18 News"}
-          // teaser={`“I think it’s really important that we acknowledge publicly and vocally that Dr. King’s work is not finished.”`}
+          teaser={`“I wanna bring something back to this seat which is servant leadership.”`}
         />
         <Card
           title="Emma Curtis named a 2023 Rising Star"
@@ -79,13 +79,13 @@ const NewsList = () => {
           // teaser={`“I think it’s really important that we acknowledge publicly and vocally that Dr. King’s work is not finished.”`}
         />
         <Card
-          title={`“Nobody likes a bully” - Emma Curtis on Daniel Cameron’s election loss`}
+          title={`Emma Curtis on Daniel Cameron’s election loss`}
           url="https://www.kentucky.com/news/politics-government/article281609593.html"
           day={9}
           month={"Nov"}
           img={"daniel.jpeg"}
           subheading={"Lexington Herald-Leader"}
-          // teaser={`“I think it’s really important that we acknowledge publicly and vocally that Dr. King’s work is not finished.”`}
+          teaser={`“Nobody likes a bully.”`}
         />
         <Card
           title={`Emma Curtis on Gov. Beshear’s re-election victory`}
@@ -103,7 +103,7 @@ const NewsList = () => {
           month={"Aug"}
           img={"emma-2023.jpg"}
           subheading={"WFPL News"}
-          teaser={`“It shows that running campaigns based on hatred and identity politics isn’t an effective strategy.”`}
+          teaser={`“Our futures are being decided by people who will not likely live to see the consequences of their actions.”`}
         />
       </div>
     </Section>

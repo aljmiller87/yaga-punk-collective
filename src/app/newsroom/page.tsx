@@ -21,7 +21,11 @@ const NewsRoom = () => {
           people that need them to deliver.&quot;
         </p>
         <p></p>
-        <a href="https://www.kentucky.com/news/local/counties/fayette-county/article283777298.html">
+        <a
+          href="https://www.kentucky.com/news/local/counties/fayette-county/article283777298.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Read More
         </a>
       </CopyAndImage>

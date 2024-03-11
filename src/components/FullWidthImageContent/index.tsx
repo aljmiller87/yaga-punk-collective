@@ -29,7 +29,20 @@ const FullWidthImageContent = () => {
           >
             Donate
           </Link>
-          <Link href="/join-us">Join Us</Link>
+          <Link
+            href="https://forms.gle/3RwUsGhbmbEXSwC3A"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Volunteer
+          </Link>
+          <Link
+            href="https://forms.gle/suukLVa9ZrQLqWpi7"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Request a Yard Sign
+          </Link>
         </div>
       </div>
     </div>

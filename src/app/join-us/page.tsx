@@ -67,9 +67,9 @@ const Volunteer = () => {
         </p>
         <p>
           Unlike the other candidates running in this race, Emma is a
-          working-class person who doesn&apo;t have an out-of-state donor base
+          working-class person who doesn&apos;t have an out-of-state donor base
           or enough wealth to self-finance her own campaign. You can make sure
-          that we&apo;re able to reach as many voters as possible by making a
+          that we&apos;re able to reach as many voters as possible by making a
           donation{" "}
           <a
             href="https://secure.actblue.com/donate/emmacurtislex"
@@ -82,7 +82,7 @@ const Volunteer = () => {
         </p>
         <p>
           Any amount you&apos;re able to give is greatly appreciated and brings
-          us one step closer to building a brighter future for <b>ALL</b>
+          us one step closer to building a brighter future for <b>ALL</b>{" "}
           Lexingtonians. Individuals can donate up to $2,100 in the primary, but
           there is no minimum.{" "}
         </p>
@@ -105,8 +105,9 @@ const Volunteer = () => {
           . <b>Proceeds go towards supporting Emma&apos;s campaign!</b>
         </p>
         <p>
-          We&apos;d love for you to show your support with a <b>free</b> yard
-          sign and/or bumper sticker. You can sign up to request them{" "}
+          We&apos;d love for you to show your support with a{" "}
+          <b>free yard sign and/or bumper sticker.</b> You can sign up to
+          request them{" "}
           <a
             href="https://forms.gle/suukLVa9ZrQLqWpi7"
             target="_blank"
