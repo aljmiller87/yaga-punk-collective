@@ -35,10 +35,6 @@ const MeetEmma = () => {
       <p>
         <b>Let&apos;s elect one who will.</b>
       </p>
-      <p></p>
-      <p>
-        For full bio, please see <Link href={"/about-emma"}>About Emma</Link>
-      </p>
     </Section>
   );
 };

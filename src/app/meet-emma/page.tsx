@@ -37,7 +37,8 @@ const MeetEmma = () => {
         <h2>Emma became politically active in 2016.</h2>
         <p>
           She wanted to push back against the cruelty and mean-spiritedness she
-          saw brewing in her community during that year's presidential election.
+          saw brewing in her community during that year&apos;s presidential
+          election.
         </p>
         <p>
           As a student at Centre College, she helped organize and participated
@@ -78,10 +79,10 @@ const MeetEmma = () => {
         <h2>Outside of work, she is extremely active in her community.</h2>
         <p>
           She is a member of several community-focused organizations, including
-          CivicLex, the Lexington Branch of the Kentucky Women's network, and
-          the Lexington Forum, which are focused on bringing people together,
-          having good-faith conversations, and improving Lexington&apos;s civic
-          health.
+          CivicLex, the Lexington Branch of the Kentucky Women&apos;s network,
+          and the Lexington Forum, which are focused on bringing people
+          together, having good-faith conversations, and improving
+          Lexington&apos;s civic health.
         </p>
         <p>
           When she&apos;s not working, Emma enjoys spending quality time with
