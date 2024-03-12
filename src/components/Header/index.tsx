@@ -25,6 +25,7 @@ const Header = () => {
 
   useEffect(() => {
     document.addEventListener("scroll", handleScroll);
+    handleScroll();
     return () => document.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
