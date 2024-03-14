@@ -4,20 +4,6 @@ import client from "../../../../tina/__generated__/client";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 import Section from "@/components/Section";
-import Traffic from "./Traffic";
-import Housing from "./Housing";
-import PublicSafety from "./PublicSafety";
-import FairTaxation from "./FairTaxation";
-import PublicTransit from "./PublicTransit";
-import WorkerRights from "./WorkerRights";
-import GunViolence from "./GunViolence";
-import PublicEd from "./PublicEd";
-import PublicParks from "./PublicParks";
-import CivilRights from "./CivilRights";
-import EconomicDevelopment from "./EconomicDevelopment";
-import UrbanGrowth from "./UrbanGrowth";
-import ReproductiveJustice from "./ReproductiveJustice";
-import Environment from "./Environment";
 import Accordion from "@/components/Accordion";
 
 type IIssue = {
@@ -54,7 +40,7 @@ const Issues = () => {
   return (
     <Section>
       {issues.map((issue) => (
-        <Accordion title={issue.title} icon={issue.icon}>
+        <Accordion key={issue.title} title={issue.title} icon={issue.icon}>
           <TinaMarkdown content={issue.body} />
         </Accordion>
       ))}
