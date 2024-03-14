@@ -26,7 +26,7 @@ const Accordion = ({
       <Image
         priority
         alt={`Click to read more about ${title}`}
-        src={`./assets/svgs/${icon}.svg`}
+        src={icon}
         width={35}
         height={35}
       />

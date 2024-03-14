@@ -100,6 +100,38 @@ export default defineConfig({
         //   router: ({ document }) => `/demo/blog/${document._sys.filename}`,
         // },
       },
+      {
+        name: "issue",
+        label: "Issue",
+        path: "content/issues",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "rich-text",
+            name: "teaserText",
+            label: "Teaser Text",
+            isBody: true,
+          },
+          {
+            type: "image",
+            name: "icon",
+            label: "Icon",
+            required: true,
+          },
+
+          {
+            type: "number",
+            name: "order",
+            label: "Order Displayed",
+          },
+        ],
+      },
     ],
   },
 });
