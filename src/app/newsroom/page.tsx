@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import PageBanner from "@/components/PageBanner";
 import NewsList from "./NewsList";
