@@ -1,37 +1,19 @@
 import React from "react";
 import Image from "next/image";
-import CardImg from "../../../public/assets/images/speaking-to-group.jpg";
-import { ReactComponent as Arrow } from "../../../public/assets/svgs/arrow_right.svg";
 
 import styles from "./styles.module.scss";
+import { INewsItem } from "@/app/newsroom/NewsList";
 
-const Card = ({
-  title,
-  url,
-  day,
-  month,
-  img,
-  subheading,
-  teaser,
-}: {
-  title: string;
-  url: string;
-  day: number;
-  month: string;
-  img: string;
-  subheading: string;
-  teaser?: string;
-}) => {
+const Card = ({ title, url, img, teaser, venue, date }: INewsItem) => {
+  const fullDate = new Date(date);
+  const day = fullDate.getDate();
+  const month = fullDate.toLocaleString("default", { month: "short" });
+
   return (
     <div className={styles.Card}>
       <div className={styles.ImageWrapper}>
         <div className={styles.ImageBg} />
-        <Image
-          src={`/assets/images/news/${img}`}
-          alt="Emma Curtis"
-          className={styles.img}
-          fill
-        />
+        <Image src={img} alt="Emma Curtis" className={styles.img} fill />
       </div>
       <div className={styles.Content}>
         <div className={styles.Meta}>
@@ -45,7 +27,7 @@ const Card = ({
                 {title}
               </a>
             </h2>
-            <p className={styles.Venue}>{subheading}</p>
+            <p className={styles.Venue}>{venue}</p>
           </div>
         </div>
         <p className={styles.Teaser}>{teaser && teaser}</p>

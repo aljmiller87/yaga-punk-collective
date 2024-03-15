@@ -1,38 +1,49 @@
 "use client";
+import React, { useEffect, useState } from "react";
+import client from "../../../../tina/__generated__/client";
+import { TinaMarkdown } from "tinacms/dist/rich-text";
+
 import Section from "@/components/Section";
-import React from "react";
-import Traffic from "./Traffic";
-import Housing from "./Housing";
-import PublicSafety from "./PublicSafety";
-import FairTaxation from "./FairTaxation";
-import PublicTransit from "./PublicTransit";
-import WorkerRights from "./WorkerRights";
-import GunViolence from "./GunViolence";
-import PublicEd from "./PublicEd";
-import PublicParks from "./PublicParks";
-import CivilRights from "./CivilRights";
-import EconomicDevelopment from "./EconomicDevelopment";
-import UrbanGrowth from "./UrbanGrowth";
-import ReproductiveJustice from "./ReproductiveJustice";
-import Environment from "./Environment";
+import Accordion from "@/components/Accordion";
+
+type IIssue = {
+  title: string;
+  icon: string;
+  body: any;
+  order: number;
+};
 
 const Issues = () => {
+  const [issues, setIssues] = useState<IIssue[]>([]);
+  useEffect(() => {
+    const fetchIssues = async () => {
+      const allIssues = await client.queries.issueConnection();
+      if (allIssues?.data?.issueConnection?.edges) {
+        const fetchedIssues = allIssues?.data?.issueConnection?.edges
+          .filter((issue) => !!issue?.node?.order)
+          //@ts-ignore
+          .sort((a, b) => a?.node?.order - b?.node?.order)
+          .map((longIssue) => {
+            return {
+              title: longIssue?.node?.title,
+              icon: longIssue?.node?.icon,
+              body: longIssue?.node?.teaserText,
+            };
+          });
+        // @ts-ignore
+        setIssues(fetchedIssues);
+      }
+    };
+    fetchIssues();
+  }, []);
+
   return (
     <Section>
-      <Traffic />
-      <Housing />
-      <PublicSafety />
-      <FairTaxation />
-      <PublicTransit />
-      <WorkerRights />
-      <GunViolence />
-      <PublicEd />
-      <PublicParks />
-      <CivilRights />
-      <EconomicDevelopment />
-      <UrbanGrowth />
-      <ReproductiveJustice />
-      <Environment />
+      {issues.map((issue) => (
+        <Accordion key={issue.title} title={issue.title} icon={issue.icon}>
+          <TinaMarkdown content={issue.body} />
+        </Accordion>
+      ))}
     </Section>
   );
 };

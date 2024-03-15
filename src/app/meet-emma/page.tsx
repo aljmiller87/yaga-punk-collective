@@ -79,7 +79,7 @@ const MeetEmma = () => {
         <h2>Outside of work, she is extremely active in her community.</h2>
         <p>
           She is a member of several community-focused organizations, including
-          CivicLex, the Lexington Branch of the Kentucky Women&apos;s network,
+          CivicLex, the Lexington Branch of the Kentucky Women&apos;s Network,
           and the Lexington Forum, which are focused on bringing people
           together, having good-faith conversations, and improving
           Lexington&apos;s civic health.
