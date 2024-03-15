@@ -10,8 +10,8 @@ const ReproductiveJustice = () => {
         way of the decision whether and when to have children.
       </p>
       <p>
-        I will fight to prevent our LPD resources from ever being used to
-        enforce the State Legislature’s efforts to control our bodies.
+        I will fight to prevent our LFUCG resources from ever being used to
+        enforce the State Legislature&apos;s efforts to control our bodies.
       </p>
     </Accordion>
   );

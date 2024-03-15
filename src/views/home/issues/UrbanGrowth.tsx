@@ -18,8 +18,8 @@ const UrbanGrowth = () => {
       <p>
         At the same time, we must prioritize infill and redevelopment projects,
         assess the status of the thousands of acres of undeveloped and
-        underutilized land within the urban service boundary, and create a
-        pathway for truly sustainable growth.
+        underutilized land within the urban service boundary, reduce the
+        pressure, and create a pathway for truly sustainable growth.
       </p>
     </Accordion>
   );
