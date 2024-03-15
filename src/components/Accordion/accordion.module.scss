@@ -1,6 +1,6 @@
 .Accordion {
   background: #fff;
-  border: 2px solid var(--darkTeal);
+  border: 2px solid var(--darkTealBg);
   border-radius: 1rem;
   padding: 1rem 1.5rem 1rem 1rem;
   box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.16);
@@ -13,13 +13,13 @@
     border: none;
     background: transparent;
     text-align: left;
-    fill: var(--darkTeal);
+    fill: var(--darkTealBg);
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     h3 {
-      color: var(--darkTeal);
+      color: var(--darkTealBg);
       font-size: 1rem;
       margin: 0;
       display: flex;

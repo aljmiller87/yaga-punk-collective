@@ -41,7 +41,7 @@ a,button {
 }
 
 a {
-  color: var(--darkTeal);
+  color: var(--darkTealBg);
   font-weight: 600;
   text-decoration: none;
 }
