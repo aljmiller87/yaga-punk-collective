@@ -22,7 +22,7 @@ const NewsList = () => {
           month={"Feb"}
           img={"2024-fairness-speaking1.jpg"}
           subheading={"Kentucky State Capitol Rotunda"}
-          // teaser="OUTLaw hosts second annual banquet with keynote speakers Suzanne Goldberg and Emma Curtis"
+          teaser={`“This place is our home and it is worth fighting for. You are worth fighting for.”`}
         />
         <Card
           title="Emma Curtis officially launches Lexington Council campaign"
@@ -49,7 +49,7 @@ const NewsList = () => {
           month={"Jan"}
           img={"testifying.jpg"}
           subheading={"KET & LexTV"}
-          // teaser={`“I am so glad that we have an organization like CivicLex that is focused on the civic health of our city.”`}
+          teaser={`“Our state and local governments need to collaborate, not antagonize.”`}
         />
         <Card
           title="Emma Curtis at Lexington’s MLK Freedom March"
@@ -70,13 +70,13 @@ const NewsList = () => {
           teaser={`“I wanna bring something back to this seat which is servant leadership.”`}
         />
         <Card
-          title="Emma Curtis named a 2023 Rising Star"
+          title="My Old Kentucky Podcast 2023 Superlatives"
           url="https://twitter.com/MyOldKYPod/status/1741521101354635534"
           day={31}
           month={"Dec"}
           img={"MOKP.jpg"}
           subheading={"My Old Kentucky Podcast"}
-          // teaser={`“I think it’s really important that we acknowledge publicly and vocally that Dr. King’s work is not finished.”`}
+          teaser="Emma Curtis and Sen. Cassie Chambers-Armstrong named 2023 Rising Stars"
         />
         <Card
           title={`Emma Curtis on Daniel Cameron’s election loss`}

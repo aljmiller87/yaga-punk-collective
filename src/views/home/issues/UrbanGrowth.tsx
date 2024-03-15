@@ -12,8 +12,8 @@ const UrbanGrowth = () => {
         However, I am fully committed to implementing the expansion in as
         thoughtful, intentional, and equitable a way as possible. That means
         increasing our stock of affordable housing, prioritizing road safety,
-        preventing the growth of urban sprawl, and ensuring we don’t repeat the
-        mistakes of the 1996 expansion.
+        preventing the growth of urban sprawl, and ensuring we don&apos;t repeat
+        the mistakes of the 1996 expansion.
       </p>
       <p>
         At the same time, we must prioritize infill and redevelopment projects,
