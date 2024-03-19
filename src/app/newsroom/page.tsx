@@ -4,12 +4,15 @@ import PageBanner from "@/components/PageBanner";
 import NewsList from "./NewsList";
 import CopyAndImage from "@/components/CopyAndImage";
 import Top24 from "../../../public/assets/images/top-24-ky.jpg";
-import BannerImg from "../../../public/assets/images/Emma_with_news_camera.jpeg";
 
 const NewsRoom = () => {
   return (
     <div>
-      <PageBanner title="In the News" img={BannerImg} imgPosition="50% 16%" />
+      <PageBanner
+        title="In the News"
+        img={"/assets/images/Emma_with_news_camera.jpeg"}
+        imgPosition="50% 16%"
+      />
       <CopyAndImage img={Top24} imgPosition="50% 25%">
         <h2>
           Emma Curtis named one of Lexington Herald-Leader&apos;s 24 to watch in
