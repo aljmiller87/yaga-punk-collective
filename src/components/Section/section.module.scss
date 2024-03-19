@@ -28,6 +28,9 @@
     margin-top: 0.89rem;
   }
 
+  p + h2 {
+    margin-top: 3rem;
+  }
   p + h3 {
     margin-top: 1.5rem;
   }
@@ -77,6 +80,10 @@
 
   @media screen and (min-width: 1024px) {
     padding: 5rem 0;
+
+    + .Section {
+      padding-top: 0;
+    }
   }
   @media screen and (max-width: 767px) {
     h2 {

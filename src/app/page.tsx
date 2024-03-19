@@ -1,10 +1,13 @@
 import { Metadata } from "next";
-import FullWidthImageContent from "@/components/FullWidthImageContent";
+import { TinaMarkdown } from "tinacms/dist/rich-text";
+
+// Components
 import Hero from "@/components/Hero";
-import MeetEmma from "@/views/home/MeetEmma";
-import Issues from "@/views/home/issues";
-import "../styles/theme.css";
+import Section from "@/components/Section";
+import Issues from "@/components/Issues";
 import ImageWithGradient from "@/components/ImageWithGradient";
+import "../styles/theme.css";
+import { getPageData } from "./utils";
 
 export const metadata: Metadata = {
   title: "Emma Curtis for Council",
@@ -68,13 +71,20 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home() {
+export default async function Home() {
+  const {
+    data: {
+      pages: { title, bannerImage, bodyText },
+    },
+  } = await getPageData("Homepage.md");
+
   return (
     <>
-      <Hero />
-      <MeetEmma />
+      <Hero title={title} bannerImage={bannerImage} />
+      <Section>
+        <TinaMarkdown content={bodyText} />
+      </Section>
       <ImageWithGradient />
-      {/* <FullWidthImageContent /> */}
       <Issues />
     </>
   );
