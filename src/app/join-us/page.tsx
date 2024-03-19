@@ -46,21 +46,21 @@ const Volunteer = () => {
           <b>there is a place for you on this campaign!</b>
         </p>
         <p>
-          You can sign up to help us knock doors, make phone calls, write
-          postcards, host an event, or help in whatever way you&apos;re able to{" "}
+          You can{" "}
           <a
             href="https://forms.gle/3RwUsGhbmbEXSwC3A"
             target="_blank"
             rel="noopener noreferrer"
           >
-            here
-          </a>
-          .
+            sign up
+          </a>{" "}
+          to help us knock doors, make phone calls, write postcards, host an
+          event, or help in whatever way you&apos;re able to.
         </p>
         <p></p>
         <h3>Donate</h3>
         <p>
-          Emma is running a grassroots, people-focused, people-funded campaign.{" "}
+          Emma is running a grassroots, people-focused, people-funded campaign.
         </p>
         <p>
           <b>In a race like this, every dollar counts.</b>
@@ -69,14 +69,13 @@ const Volunteer = () => {
           Unlike the other candidates running in this race, Emma is a
           working-class person who doesn&apos;t have an out-of-state donor base
           or enough wealth to self-finance her own campaign. You can make sure
-          that we&apos;re able to reach as many voters as possible by making a
-          donation{" "}
+          that we&apos;re able to reach as many voters as possible by{" "}
           <a
             href="https://secure.actblue.com/donate/emmacurtislex"
             target="_blank"
             rel="noopener noreferrer"
           >
-            here
+            making a donation
           </a>
           .
         </p>
@@ -94,26 +93,24 @@ const Volunteer = () => {
           item—an Emma for Council shirt!
         </p>
         <p>
-          You can purchase shirts and other merchandise{" "}
+          You can purchase{" "}
           <a
             href="https://www.bonfire.com/store/emmaforlex/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            here
+            shirts and other merchandise
           </a>
           . <b>Proceeds go towards supporting Emma&apos;s campaign!</b>
         </p>
         <p>
           We&apos;d love for you to show your support with a{" "}
-          <b>free yard sign and/or bumper sticker.</b> You can sign up to
-          request them{" "}
           <a
             href="https://forms.gle/suukLVa9ZrQLqWpi7"
             target="_blank"
             rel="noopener noreferrer"
           >
-            here
+            free yard sign and/or bumper sticker
           </a>
           .
         </p>
