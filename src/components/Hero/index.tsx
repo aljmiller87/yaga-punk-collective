@@ -1,27 +1,30 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./Hero.module.scss";
-import BannerImg from "../../../public/assets/images/hero-headshot.jpeg";
 import Link from "next/link";
 
-const Hero = () => {
+const Hero = ({
+  title,
+  bannerImage,
+}: {
+  title: string;
+  bannerImage: string;
+}) => {
   return (
     <div className={styles.Hero} role="banner">
       <div className="PageContainer">
         <div className={styles.text}>
           <p>Welcome!</p>
-          <h1 className={styles.title}>
-            My name is Emma Curtis and I&apos;m running to be your next
-            Councilmember.
-          </h1>
+          <h1 className={styles.title}>{title}</h1>
         </div>
       </div>
       <div className={styles.imgWrapper}>
         <div className={styles.imgGradient} />
         <Image
-          src={BannerImg}
+          src={bannerImage}
           alt="Emma Curtis"
           className={styles.img}
+          fill={true}
           priority
         />
       </div>

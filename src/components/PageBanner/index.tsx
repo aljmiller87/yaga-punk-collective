@@ -1,15 +1,14 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
-import BannerImg from "../../../public/assets/images/speaking-to-group.jpg";
+import Image from "next/image";
 import styles from "./styles.module.scss";
 
 const PageBanner = ({
   title,
-  img = BannerImg,
+  img = "/assets/images/speaking-to-group.jpg",
   imgPosition = "50% 50%",
 }: {
   title: string;
-  img?: StaticImageData;
+  img?: string;
   imgPosition?: string;
 }) => {
   return (
@@ -21,6 +20,7 @@ const PageBanner = ({
           alt="Emma Curtis"
           className={styles.img}
           priority
+          fill={true}
           style={{ objectPosition: imgPosition }}
         />
       </div>

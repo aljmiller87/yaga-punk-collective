@@ -29,9 +29,9 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        name: "post",
-        label: "Posts",
-        path: "content/posts",
+        label: "Pages",
+        name: "pages",
+        path: "content/pages",
         fields: [
           {
             type: "string",
@@ -41,16 +41,18 @@ export default defineConfig({
             required: true,
           },
           {
+            type: "image",
+            name: "bannerImage",
+            label: "Banner Image",
+            required: true,
+          },
+          {
             type: "rich-text",
-            name: "body",
-            label: "Body",
+            name: "bodyText",
+            label: "Body Text (leave empty if not wanted on page)",
             isBody: true,
           },
         ],
-        ui: {
-          // This is an DEMO router. You can remove this to fit your site
-          router: ({ document }) => `/demo/blog/${document._sys.filename}`,
-        },
       },
       {
         name: "newsItems",
@@ -95,10 +97,6 @@ export default defineConfig({
             isBody: true,
           },
         ],
-        // ui: {
-        //   // This is an DEMO router. You can remove this to fit your site
-        //   router: ({ document }) => `/demo/blog/${document._sys.filename}`,
-        // },
       },
       {
         name: "issue",

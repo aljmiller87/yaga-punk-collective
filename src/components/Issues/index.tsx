@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import client from "../../../../tina/__generated__/client";
+import client from "../../../tina/__generated__/client";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 import Section from "@/components/Section";

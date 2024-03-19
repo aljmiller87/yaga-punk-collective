@@ -1,7 +1,5 @@
 import React from "react";
 import PageBanner from "@/components/PageBanner";
-import Section from "@/components/Section";
-import BannerImg from "../../../public/assets/images/speaking-to-person1.jpg";
 import CopyAndImage from "@/components/CopyAndImage";
 import EmmaAndMom from "../../../public/assets/images/meet-emma/Emmawithhermom.jpg";
 import RegVote from "../../../public/assets/images/meet-emma/Emmaholdingregistertovotesign.jpg";
@@ -14,7 +12,11 @@ import EmmaAndGov from "../../../public/assets/images/Emma-with-andy-jacq.jpg";
 const MeetEmma = () => {
   return (
     <div>
-      <PageBanner title="Meet Emma" img={BannerImg} imgPosition="50% 25%" />
+      <PageBanner
+        title="Meet Emma"
+        img="/assets/images/speaking-to-person1.jpg"
+        imgPosition="50% 15%"
+      />
       <CopyAndImage img={EmmaAndMom}>
         <h2>Emma Curtis was born in Lexington in 1996.</h2>
         <p>
