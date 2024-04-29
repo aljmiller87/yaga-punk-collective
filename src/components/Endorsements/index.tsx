@@ -1,14 +1,17 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import client from "../../../tina/__generated__/client";
-import Image, { StaticImageData } from "next/image";
-
+import { StaticImageData } from "next/image";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 
-import Section from "@/components/Section";
+import CopyAndImage from "../CopyAndImage";
+
 import styles from "./styles.module.scss";
 type IEndorsement = {
-  image: string;
+  title: string;
+  image: StaticImageData;
+  url: string;
+  body: any;
 };
 
 const Endorsements = () => {
@@ -20,35 +23,35 @@ const Endorsements = () => {
         const fetchedEndorsements =
           allEndorsements?.data?.endorsementsConnection?.edges.map(
             (longIssue) => {
+              //   console.log(JSON.stringify(longIssue, null, 2));
               return {
+                title: longIssue?.node?.title,
                 image: longIssue?.node?.image,
+                url: longIssue?.node?.url,
+                body: longIssue?.node?.bodyText,
               };
             }
           );
         // @ts-ignore
         setEndorsements(fetchedEndorsements);
+        console.log(JSON.stringify(fetchedEndorsements, null, 2));
       }
     };
     fetchEndorsements();
   }, []);
 
   return (
-    <Section>
-      <div className={styles.Endorsements}>
-        {endorsements.map((endorsement) => (
-          <div className={styles["Endorsements-item"]}>
-            <Image
-              style={{ objectPosition: "50% 50%" }}
-              src={endorsement.image}
-              alt="Emma Curtis"
-              fill
-              //   className={styles.img}
-              priority
-            />
-          </div>
-        ))}
-      </div>
-    </Section>
+    <div className={styles.Endorsements}>
+      {endorsements.map((endorsement, index) => (
+        <CopyAndImage reverse={index % 2 === 1} img={endorsement.image}>
+          <h2>{endorsement.title}</h2>
+          <TinaMarkdown content={endorsement.body} />
+          <p>
+            <a href={endorsement.url}>See More...</a>
+          </p>
+        </CopyAndImage>
+      ))}
+    </div>
   );
 };
 
