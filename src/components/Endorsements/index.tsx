@@ -43,7 +43,11 @@ const Endorsements = () => {
   return (
     <div className={styles.Endorsements}>
       {endorsements.map((endorsement, index) => (
-        <CopyAndImage reverse={index % 2 === 1} img={endorsement.image}>
+        <CopyAndImage
+          key={endorsement.title}
+          reverse={index % 2 === 1}
+          img={endorsement.image}
+        >
           <h2>{endorsement.title}</h2>
           <TinaMarkdown content={endorsement.body} />
           <p>
