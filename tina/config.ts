@@ -55,6 +55,19 @@ export default defineConfig({
         ],
       },
       {
+        name: "endorsements",
+        label: "Endorsement",
+        path: "content/endorsements",
+        fields: [
+          {
+            type: "image",
+            name: "image",
+            label: "Image",
+            required: true,
+          }
+        ]
+      },
+      {
         name: "newsItems",
         label: "News Item",
         path: "content/newsItems",

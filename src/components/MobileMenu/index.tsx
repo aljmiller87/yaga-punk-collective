@@ -27,6 +27,9 @@ const MobileMenu = ({ isActive }: { isActive: boolean }) => {
           <Link href="/">Home</Link>
         </li>
         <li>
+          <Link href="/endorsements">Endorsements</Link>
+        </li>
+        <li>
           <Link href="/meet-emma">Meet Emma</Link>
         </li>
         <li>
