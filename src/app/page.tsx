@@ -8,6 +8,7 @@ import Issues from "@/components/Issues";
 import ImageWithGradient from "@/components/ImageWithGradient";
 import "../styles/theme.css";
 import { getPageData } from "./utils";
+import EndorsementsCarousel from "@/components/Endorsements/Carousel";
 
 export const metadata: Metadata = {
   title: "Emma Curtis for Council",
@@ -85,7 +86,13 @@ export default async function Home() {
         <TinaMarkdown content={bodyText} />
       </Section>
       <ImageWithGradient />
-      <Issues />
+      <EndorsementsCarousel />
+      <Section>
+        <h2 style={{ margin: "0 0 3rem", textAlign: "center" }}>
+          On the Issues
+        </h2>
+        <Issues />
+      </Section>
     </>
   );
 }

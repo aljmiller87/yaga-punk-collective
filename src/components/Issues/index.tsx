@@ -38,13 +38,13 @@ const Issues = () => {
   }, []);
 
   return (
-    <Section>
+    <>
       {issues.map((issue) => (
         <Accordion key={issue.title} title={issue.title} icon={issue.icon}>
           <TinaMarkdown content={issue.body} />
         </Accordion>
       ))}
-    </Section>
+    </>
   );
 };
 
