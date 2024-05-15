@@ -7,6 +7,7 @@ import { TinaMarkdown } from "tinacms/dist/rich-text";
 import CopyAndImage from "../CopyAndImage";
 
 import styles from "./styles.module.scss";
+import Button from "../Button";
 type IEndorsement = {
   title: string;
   image: StaticImageData;
@@ -51,7 +52,9 @@ const Endorsements = () => {
           <h2>{endorsement.title}</h2>
           <TinaMarkdown content={endorsement.body} />
           <p>
-            <a href={endorsement.url}>See More...</a>
+            <a href={endorsement.url} target="_blank" rel="noopener noreferrer">
+              <Button>See More...</Button>
+            </a>
           </p>
         </CopyAndImage>
       ))}

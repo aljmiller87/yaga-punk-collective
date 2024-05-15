@@ -1,6 +1,6 @@
 ---
 title: C Fair
-image: /IMG_8708.jpeg
+image: /assets/images/endorsements/C-FAIR endorsement.jpg
 url: 'https://www.fairness.org/cfair/'
 ---
 

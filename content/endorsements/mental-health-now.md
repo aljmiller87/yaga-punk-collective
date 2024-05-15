@@ -1,6 +1,6 @@
 ---
 title: Mental Health Now
-image: /IMG_8709.jpg
+image: /assets/images/endorsements/mental health now endorsement.jpg
 url: www.google.com
 ---
 

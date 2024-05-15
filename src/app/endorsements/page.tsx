@@ -8,14 +8,14 @@ export default async function IssuesPage() {
     data: {
       pages: { title, bannerImage, bodyText },
     },
-  } = await getPageData("Issues.md");
+  } = await getPageData("Endorsements.md");
 
   return (
     <div>
       <PageBanner
         title={"Endorsements"}
         img={bannerImage}
-        imgPosition="50% 35%"
+        imgPosition="50% 40%"
       />
       <Endorsements />
     </div>
