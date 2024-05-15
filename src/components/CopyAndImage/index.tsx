@@ -35,6 +35,7 @@ const CopyAndImage = ({
               alt="Emma Curtis"
               className={styles.img}
               priority
+              fill
             />
           </div>
         </div>

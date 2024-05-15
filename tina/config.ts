@@ -55,6 +55,43 @@ export default defineConfig({
         ],
       },
       {
+        name: "endorsements",
+        label: "Endorsement",
+        path: "content/endorsements",
+        fields: [
+          {
+            type: "number",
+            name: "order",
+            label: "Order Displayed",
+          },
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "image",
+            name: "image",
+            label: "Image",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "url",
+            label: "Url to organization's website",
+            required: true,
+          },
+          {
+            type: "rich-text",
+            name: "bodyText",
+            label: "Body Text (leave empty if not wanted on page)",
+            isBody: true,
+          },
+        ]
+      },
+      {
         name: "newsItems",
         label: "News Item",
         path: "content/newsItems",
