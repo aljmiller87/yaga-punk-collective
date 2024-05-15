@@ -1,18 +1,19 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import client from "../../../tina/__generated__/client";
-import { StaticImageData } from "next/image";
-import { TinaMarkdown } from "tinacms/dist/rich-text";
+import Image, { StaticImageData } from "next/image";
 
 import CopyAndImage from "../CopyAndImage";
 
 import styles from "./styles.module.scss";
 import Button from "../Button";
+import Section from "../Section";
 type IEndorsement = {
   title: string;
   image: StaticImageData;
   url: string;
   body: any;
+  order: number;
 };
 
 const Endorsements = () => {
@@ -30,6 +31,7 @@ const Endorsements = () => {
                 image: longIssue?.node?.image,
                 url: longIssue?.node?.url,
                 body: longIssue?.node?.bodyText,
+                order: longIssue?.node?.order,
               };
             }
           );
@@ -42,23 +44,23 @@ const Endorsements = () => {
   }, []);
 
   return (
-    <div className={styles.Endorsements}>
-      {endorsements.map((endorsement, index) => (
-        <CopyAndImage
-          key={endorsement.title}
-          reverse={index % 2 === 1}
-          img={endorsement.image}
-        >
-          <h2>{endorsement.title}</h2>
-          <TinaMarkdown content={endorsement.body} />
-          <p>
-            <a href={endorsement.url} target="_blank" rel="noopener noreferrer">
-              <Button>See More...</Button>
-            </a>
-          </p>
-        </CopyAndImage>
-      ))}
-    </div>
+    <Section className={styles.Endorsements}>
+      {endorsements
+        .sort((a, b) => a.order - b.order)
+        .map((endorsement, index) => (
+          <div key={endorsement.title} className={styles.ImageBlock}>
+            <div>
+              <Image
+                src={endorsement.image}
+                alt="Emma Curtis"
+                className={styles.img}
+                priority
+                fill
+              />
+            </div>
+          </div>
+        ))}
+    </Section>
   );
 };
 

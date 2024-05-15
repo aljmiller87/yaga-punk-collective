@@ -60,6 +60,11 @@ export default defineConfig({
         path: "content/endorsements",
         fields: [
           {
+            type: "number",
+            name: "order",
+            label: "Order Displayed",
+          },
+          {
             type: "string",
             name: "title",
             label: "Title",

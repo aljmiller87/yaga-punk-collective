@@ -1,4 +1,5 @@
 ---
+order: 3
 title: Run For Something
 image: /assets/images/endorsements/RFS endorsement.jpg
 url: >-
