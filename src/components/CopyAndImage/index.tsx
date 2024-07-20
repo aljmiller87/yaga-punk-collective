@@ -12,7 +12,7 @@ const CopyAndImage = ({
   reverse = false,
   mobileReverse = false,
 }: {
-  img?: StaticImageData;
+  img?: StaticImageData | string;
   children: ReactNode | ReactNode[];
   imgPosition?: string;
   reverse?: boolean;

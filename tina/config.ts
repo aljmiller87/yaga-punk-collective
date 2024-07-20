@@ -52,6 +52,33 @@ export default defineConfig({
             label: "Body Text (leave empty if not wanted on page)",
             isBody: true,
           },
+          {      label: "Page Blocks",
+          name: "pageBlocks",
+          type: "object",
+          list: true,
+          templates: [
+            {
+              label: "Image And Text",
+              name: "ImageAndTet",
+              fields: [
+                {
+                  label: "Header",
+                  name: "header",
+                  type: "string"
+                },
+                {
+                  label: "Description",
+                  name: "description",
+                  type: "rich-text",      
+                },
+                {
+                  type: "image",
+                  name: "image",
+                  label: "Image",
+                },
+              ]
+            },          ]
+    }
         ],
       },
       {
