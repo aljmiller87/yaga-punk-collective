@@ -82,7 +82,7 @@ pageBlocks:
       A Councilmember's job is to advocate for the people who live in their
       district and address the issues that matter to them—and that's exactly
       what Emma will do.
-    image: /assets/assets/images/meet-emma/Emmaleadscommunitymeeting.jpg
+    image: /assets/public/assets/images/meet-emma/EmmawithBeshear&Coleman.jpg
     _template: ImageAndTet
   - header: >-
       With your support, Emma Curtis will continue her record of choosing people
