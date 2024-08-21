@@ -1,6 +1,6 @@
 ---
 title: Supporting Public Safety
-icon: /assets/svgs/handshake.svg
+icon: /public/assets/svgs/worker.svg
 order: 2
 ---
 
