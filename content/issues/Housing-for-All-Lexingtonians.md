@@ -1,6 +1,6 @@
 ---
 title: Housing for All Lexingtonians
-icon: /public/assets/svgs/house.svg
+icon: /assets/public/assets/svgs/house.svg
 order: 2
 ---
 
