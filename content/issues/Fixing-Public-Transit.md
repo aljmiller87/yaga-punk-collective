@@ -1,6 +1,6 @@
 ---
 title: Fixing Public Transit
-icon: /public/assets/svgs/bus.svg
+icon: /assets/public/assets/svgs/bus.svg
 order: 5
 ---
 
