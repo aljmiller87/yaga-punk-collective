@@ -63,7 +63,7 @@ pageBlocks:
       and family, going to see classic movies at The Kentucky Theatre, playing
       music with her friends, and taking her dog Benny for long walks at
       Veterans Park.
-    image: /assets/assets/images/meet-emma/Emma_with_Benny.jpg
+    image: /assets/public/assets/images/meet-emma/EmmawithBenny.jpg
     _template: ImageAndTet
   - header: >-
       Emma is running for Council because she loves her neighbors and community
