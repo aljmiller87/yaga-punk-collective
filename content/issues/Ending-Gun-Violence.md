@@ -1,6 +1,6 @@
 ---
 title: Ending Gun Violence
-icon: /assets/svgs/safety.svg
+icon: /public/assets/svgs/handshake.svg
 order: 7
 ---
 
