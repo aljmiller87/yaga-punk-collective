@@ -1,6 +1,6 @@
 ---
 title: Protecting Our Environment
-icon: /public/assets/svgs/park.svg
+icon: /assets/public/assets/svgs/energy_FILL0_wght400_GRAD0_opsz24.svg
 order: 14
 ---
 
