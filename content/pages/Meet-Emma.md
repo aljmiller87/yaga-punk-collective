@@ -1,6 +1,6 @@
 ---
 title: Meet Emma
-bannerImage: /public/assets/images/endorsements hero.png
+bannerImage: /public/assets/images/speaking-to-person1.jpg
 pageBlocks:
   - header: Emma Curtis was born in Lexington in 1996.
     description: >
