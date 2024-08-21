@@ -1,6 +1,6 @@
 ---
 title: Join Us
-bannerImage: /assets/images/speaking-to-group.jpg
+bannerImage: /public/assets/images/speaking-to-group.jpg
 ---
 
 ## Here's How You Can Help Emma Win!
