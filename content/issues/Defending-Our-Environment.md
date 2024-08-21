@@ -1,6 +1,6 @@
 ---
 title: Defending Our Environment
-icon: /assets/svgs/earth.svg
+icon: /public/assets/svgs/park.svg
 ---
 
 Protecting our environment protects our future.
