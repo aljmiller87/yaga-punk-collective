@@ -49,7 +49,7 @@ pageBlocks:
       with organizations like the ACLU of Kentucky and the Fairness Campaign,
       Emma has demonstrated a relentless commitment to building a better future
       for her community and her commonwealth.
-    image: /assets/assets/images/meet-emma/EmmawithKFTC.jpg
+    image: /assets/public/assets/images/speaking-to-group.jpg
     _template: ImageAndTet
   - header: 'Outside of work, she is extremely active in her community.'
     description: >
