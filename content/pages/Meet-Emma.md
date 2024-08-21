@@ -34,7 +34,7 @@ pageBlocks:
       She also began knocking doors and phone-banking for the political
       campaigns of candidates she believed in, as well as attending rallies,
       marches, and community organizing meetings.
-    image: /assets/images/meet-emma/Emmaholdingregistertovotesign.jpg
+    image: /public/assets/images/meet-emma/EmmawithGeorgeSzekely.jpg
     _template: ImageAndTet
   - header: >-
       After graduating from Centre in 2018, Emma has spent her entire adult life
