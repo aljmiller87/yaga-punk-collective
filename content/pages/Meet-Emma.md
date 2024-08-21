@@ -16,7 +16,7 @@ pageBlocks:
       for everybody from the Legislative Research Commission to former Governor
       Steve Beshear. This gave Emma a front row seat to the day-to-day work that
       goes into making effective public policy.
-    image: /assets/images/meet-emma/Emmawithhermom.jpg
+    image: /public/assets/images/meet-emma/Emmawithhermom.jpg
     _template: ImageAndTet
   - header: Emma became politically active in 2016.
     description: >
