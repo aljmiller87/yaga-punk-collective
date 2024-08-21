@@ -89,7 +89,7 @@ pageBlocks:
       over politics, community over division, and tangible good over empty
       gestures as the next Councilmember for District 4.
     description: ''
-    image: /assets/assets/images/meet-emma/EmmawithBeshear&Coleman.jpg
+    image: /assets/public/assets/images/meet-emma/Emmaleadscommunitymeeting.jpg
     _template: ImageAndTet
 ---
 
