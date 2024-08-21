@@ -1,6 +1,6 @@
 ---
 title: Winning Economic Development
-icon: /assets/svgs/construction.svg
+icon: /public/assets/svgs/earth.svg
 order: 11
 ---
 
