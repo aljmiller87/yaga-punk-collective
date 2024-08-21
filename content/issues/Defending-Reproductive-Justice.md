@@ -1,6 +1,6 @@
 ---
 title: Defending Reproductive Justice
-icon: /public/assets/svgs/pregnant.svg
+icon: /assets/public/assets/svgs/pregnant.svg
 order: 13
 ---
 
