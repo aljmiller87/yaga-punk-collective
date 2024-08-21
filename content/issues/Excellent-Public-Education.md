@@ -1,6 +1,6 @@
 ---
 title: Excellent Public Education
-icon: /public/assets/svgs/school.svg
+icon: /assets/public/assets/svgs/school.svg
 order: 8
 ---
 
