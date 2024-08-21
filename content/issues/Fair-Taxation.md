@@ -1,6 +1,6 @@
 ---
 title: Fair Taxation
-icon: /public/assets/svgs/taxes.svg
+icon: /assets/public/assets/svgs/growth.svg
 order: 4
 ---
 
