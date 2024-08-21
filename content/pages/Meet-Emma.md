@@ -1,6 +1,6 @@
 ---
 title: Meet Emma
-bannerImage: /assets/images/speaking-to-person1.jpg
+bannerImage: /public/assets/images/speaking-to-person1.jpg
 pageBlocks:
   - header: Emma Curtis was born in Lexington in 1996.
     description: >
@@ -16,7 +16,7 @@ pageBlocks:
       for everybody from the Legislative Research Commission to former Governor
       Steve Beshear. This gave Emma a front row seat to the day-to-day work that
       goes into making effective public policy.
-    image: /assets/images/meet-emma/Emmawithhermom.jpg
+    image: /public/assets/images/meet-emma/Emmawithhermom.jpg
     _template: ImageAndTet
   - header: Emma became politically active in 2016.
     description: >
@@ -34,7 +34,7 @@ pageBlocks:
       She also began knocking doors and phone-banking for the political
       campaigns of candidates she believed in, as well as attending rallies,
       marches, and community organizing meetings.
-    image: /assets/images/meet-emma/Emmaholdingregistertovotesign.jpg
+    image: /public/assets/images/meet-emma/EmmawithGeorgeSzekely.jpg
     _template: ImageAndTet
   - header: >-
       After graduating from Centre in 2018, Emma has spent her entire adult life

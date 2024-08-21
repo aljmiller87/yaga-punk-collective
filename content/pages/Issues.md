@@ -1,6 +1,6 @@
 ---
 title: On the Issues
-bannerImage: /assets/images/uaw-strike1.jpg
+bannerImage: /public/assets/images/uaw-strike1.jpg
 ---
 
 Like most folks in the 4th District, I'm tired of the team sports element of politics—pitting neighbor against neighbor, us vs. them.

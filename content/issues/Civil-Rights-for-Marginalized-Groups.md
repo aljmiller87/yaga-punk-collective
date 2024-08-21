@@ -1,6 +1,6 @@
 ---
 title: Civil Rights for Marginalized Groups
-icon: /assets/svgs/vote.svg
+icon: /public/assets/svgs/handshake.svg
 order: 10
 ---
 

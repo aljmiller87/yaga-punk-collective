@@ -1,6 +1,6 @@
 ---
 title: Protecting Our Environment
-icon: /assets/svgs/earth.svg
+icon: /public/assets/svgs/park.svg
 order: 14
 ---
 

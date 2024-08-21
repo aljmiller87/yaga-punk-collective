@@ -1,5 +1,5 @@
 ---
 title: Endorsements
-bannerImage: /assets/images/endorsements hero.png
+bannerImage: /public/assets/images/endorsements hero.png
 ---
 

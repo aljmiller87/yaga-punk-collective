@@ -1,6 +1,6 @@
 ---
 title: Clean Public Parks
-icon: /assets/svgs/park.svg
+icon: /public/assets/svgs/park.svg
 order: 9
 ---
 

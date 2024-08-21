@@ -1,6 +1,6 @@
 ---
 title: Protecting Workers' Rights
-icon: /assets/svgs/worker.svg
+icon: /public/assets/svgs/construction.svg
 order: 6
 ---
 
