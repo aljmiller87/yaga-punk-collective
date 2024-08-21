@@ -1,7 +1,7 @@
 ---
 order: 4
 title: LGBTQ+ Victory Fund
-image: /public/assets/images/endorsements/LPAC endorsement.jpeg
+image: /public/assets/images/endorsements/Victory Fund endorsement.jpg
 url: 'https://victoryfund.org/candidate/emma-curtis/'
 ---
 
