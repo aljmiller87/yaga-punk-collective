@@ -1,6 +1,6 @@
 ---
 title: My name is Emma Curtis and I'm running to be your next Councilmember.
-bannerImage: /assets/public/assets/images/headshot.jpg
+bannerImage: /assets/public/assets/images/meet-emma/Emma_community_meeting.jpeg
 ---
 
 ## I'm a lifelong Kentuckian.
