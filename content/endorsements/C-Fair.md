@@ -1,7 +1,7 @@
 ---
 order: 2
 title: C Fair
-image: /public/assets/images/endorsements/C-FAIR endorsement.jpg
+image: /assets/public/IMG_8708.jpeg
 url: 'https://www.fairness.org/cfair/'
 ---
 
