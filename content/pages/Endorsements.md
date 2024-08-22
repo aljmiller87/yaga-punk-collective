@@ -1,5 +1,5 @@
 ---
 title: Endorsements
-bannerImage: /public/assets/images/endorsements hero.png
+bannerImage: /assets/public/assets/images/uaw-strike1.jpg
 ---
 
