@@ -1,6 +1,6 @@
 ---
 title: Advancing Urban Growth
-icon: /assets/public/assets/svgs/growth.svg
+icon: /assets/public/assets/svgs/taxes.svg
 order: 12
 ---
 
