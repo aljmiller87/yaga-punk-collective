@@ -1,7 +1,7 @@
 ---
 order: 10
 title: Kentucky High School Democrats
-image: /assets/public/assets/images/endorsements/KYHSD endorsement.jpg
+image: /assets/public/assets/images/register-to-vote.jpg
 url: 'https://www.facebook.com/kyhsdems/'
 ---
 
