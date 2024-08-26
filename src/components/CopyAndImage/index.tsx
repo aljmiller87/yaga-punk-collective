@@ -2,11 +2,11 @@ import React, { ReactNode } from "react";
 import Image, { StaticImageData } from "next/image";
 
 import Section from "../Section";
-// import VolunteerImage from "../../../public/assets/images/speaking-to-group.jpg";
+import VolunteerImage from "../../../public/assets/images/speaking-to-group.jpg";
 import styles from "./styles.module.scss";
 
 const CopyAndImage = ({
-  // img = VolunteerImage,
+  img = VolunteerImage,
   children,
   imgPosition = "50% 50%",
   reverse = false,
@@ -29,14 +29,14 @@ const CopyAndImage = ({
       <div className={componentClass()}>
         <div className={styles.ImageBlock}>
           <div>
-            {/* <Image
+            <Image
               style={{ objectPosition: imgPosition }}
               src={img}
               alt="Emma Curtis"
               className={styles.img}
               priority
               fill
-            /> */}
+            />
           </div>
         </div>
         <div className={styles.CopyBlock}>{children}</div>

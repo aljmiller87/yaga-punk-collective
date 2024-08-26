@@ -7,20 +7,19 @@ import { getPageData } from "../utils";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 export default async function IssuesPage() {
-  // const {
-  //   data: {
-  //     pages: { title, bannerImage, bodyText },
-  //   },
-  // } = await getPageData("Issues.md");
+  const {
+    data: {
+      pages: { title, bannerImage, bodyText },
+    },
+  } = await getPageData("Issues.md");
 
   return (
     <div>
-      <h1>issues page</h1>
-      {/* <PageBanner title={title} img={bannerImage} imgPosition="50% 35%" />
+      <PageBanner title={title} img={bannerImage} imgPosition="50% 35%" />
       <Section>
         <TinaMarkdown content={bodyText} />
       </Section>
-      <Section>
+      {/* <Section>
         <Issues />
       </Section> */}
     </div>

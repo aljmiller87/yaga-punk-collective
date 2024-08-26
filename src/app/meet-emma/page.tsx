@@ -5,16 +5,15 @@ import { getPageData } from "../utils";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 export default async function () {
-  // const {
-  //   data: {
-  //     pages: { bannerImage, title, bodyText, pageBlocks },
-  //   },
-  // } = await getPageData("Meet-Emma.md");
+  const {
+    data: {
+      pages: { bannerImage, title, bodyText, pageBlocks },
+    },
+  } = await getPageData("Meet-Emma.md");
 
   return (
     <div>
-      <h1>meet emma page</h1>
-      {/* <PageBanner title={title} img={bannerImage} imgPosition="50% 15%" />
+      <PageBanner title={title} img={bannerImage} imgPosition="50% 15%" />
       {pageBlocks?.map((block, index) => (
         <CopyAndImage
           key={index}
@@ -24,7 +23,7 @@ export default async function () {
           {block?.header && <h2>{block?.header}</h2>}
           {block?.description && <TinaMarkdown content={block?.description} />}
         </CopyAndImage>
-      ))} */}
+      ))}
     </div>
   );
 }
