@@ -73,16 +73,19 @@ export const metadata: Metadata = {
 };
 
 export default async function Home() {
-  // const {
-  //   data: {
-  //     pages: { title, bannerImage, bodyText },
-  //   },
-  // } = await getPageData("Homepage.md");
+  const {
+    data: {
+      pages: { title, bannerImage, bodyText },
+    },
+  } = await getPageData("Homepage.md");
 
   return (
     <>
-      {/* <Hero title={title} bannerImage={bannerImage} /> */}
-      {/* <Section> <TinaMarkdown content={bodyText} /></Section> */}
+      <Hero title={title} bannerImage={bannerImage} />
+      <Section>
+        {" "}
+        <TinaMarkdown content={bodyText} />
+      </Section>
       <ImageWithGradient />
       <EndorsementsCarousel />
       <Section>

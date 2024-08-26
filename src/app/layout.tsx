@@ -19,21 +19,11 @@ export default function RootLayout({
     <html lang="en">
       {/* <Head></Head> */}
       <body className={`${inter.className} `}>
-        {/* <UtilityHeader />
+        <UtilityHeader />
         <Header />
         <main>{children}</main>
         <FullWidthImageContent />
-        <Footer /> */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <h1>under construction...</h1>
-          <h2>brb...</h2>
-        </div>
+        <Footer />
       </body>
     </html>
   );
