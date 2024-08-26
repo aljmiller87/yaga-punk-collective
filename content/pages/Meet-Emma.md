@@ -32,7 +32,15 @@ pageBlocks:
       marches, and community organizing meetings.
     image: /assets/images/meet-emma/Emmaholdingregistertovotesign.jpg
     _template: ImageAndTet
-  - description: ''
+  - header: >-
+      After graduating from Centre in 2018, Emma has spent her entire adult
+      life       working and living in Lexington.
+    description: >
+      "Currently, she works as an independent filmmaker telling the stories of
+      the remarkable people that make Lexington so special. Her most recent
+      film,\_There Is No Answer: A Film About George Szekely, will be airing on
+      KET this year.\n"
+    image: /assets/images/meet-emma/EmmawithGeorgeSzekely.jpg
     _template: ImageAndTet
   - description: ''
     _template: ImageAndTet
