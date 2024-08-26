@@ -3,7 +3,7 @@ import React from "react";
 import PageBanner from "@/components/PageBanner";
 import NewsList from "./NewsList";
 import CopyAndImage from "@/components/CopyAndImage";
-import Top24 from "../../../public/assets/images/top-24-ky.jpg";
+// import Top24 from "../../../public/assets/images/top-24-ky.jpg";
 
 const NewsRoom = () => {
   return (
@@ -13,7 +13,7 @@ const NewsRoom = () => {
         img={"/assets/images/Emma_with_news_camera.jpeg"}
         imgPosition="50% 16%"
       />
-      <CopyAndImage img={Top24} imgPosition="50% 25%">
+      {/* <CopyAndImage img={Top24} imgPosition="50% 25%">
         <h2>
           Emma Curtis named one of Lexington Herald-Leader&apos;s 24 to watch in
           2024
@@ -32,7 +32,7 @@ const NewsRoom = () => {
         >
           Read More
         </a>
-      </CopyAndImage>
+      </CopyAndImage> */}
       <NewsList />
     </div>
   );
