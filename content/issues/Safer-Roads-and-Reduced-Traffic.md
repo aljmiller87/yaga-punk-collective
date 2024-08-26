@@ -1,6 +1,6 @@
 ---
 title: Safer Roads and Reduced Traffic
-icon: /assets/icons/road.svg
+icon: /uploads/icons/road.svg
 order: 1
 ---
 

@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./logo.module.scss";
 
 const Logo = ({ variant }: { variant: "light" | "dark" }) => {
-  const path = `/assets/logos/`;
+  const path = `/uploads/logos/`;
 
   return (
     <a href="/" className={styles.Logo}>

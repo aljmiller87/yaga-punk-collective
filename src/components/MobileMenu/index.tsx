@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import Image from "next/image";
 
-import BgImage from "../../../public/assets/images/2024-fairness-speaking1.jpg";
+import BgImage from "../../../public/uploads/images/2024-fairness-speaking1.jpg";
 import Link from "next/link";
 const MobileMenu = ({ isActive }: { isActive: boolean }) => {
   const isActiveClass = isActive

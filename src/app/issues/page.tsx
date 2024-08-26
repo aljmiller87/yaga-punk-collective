@@ -1,7 +1,7 @@
 import React from "react";
 import PageBanner from "@/components/PageBanner";
 import Issues from "@/components/Issues";
-import BannerImg from "../../../public/assets/images/uaw-strike1.jpg";
+import BannerImg from "../../../public/uploads/images/uaw-strike1.jpg";
 import Section from "@/components/Section";
 import { getPageData } from "../utils";
 import { TinaMarkdown } from "tinacms/dist/rich-text";

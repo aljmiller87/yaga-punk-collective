@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./fullwidthimagecontent.module.scss";
-import BgImg from "../../../public/assets/images/speaking-to-group.jpg";
+import BgImg from "../../../public/uploads/images/speaking-to-group.jpg";
 import Input from "../Input";
 import Link from "next/link";
 

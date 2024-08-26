@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     siteName: "Emma Curtis for Council",
     images: [
       {
-        url: "https://main--emma-for-council.netlify.app/assets/images/hero-headshot.jpeg",
+        url: "https://main--emma-for-council.netlify.app/uploads/images/hero-headshot.jpeg",
       },
     ],
   },

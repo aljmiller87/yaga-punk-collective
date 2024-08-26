@@ -1,8 +1,7 @@
 ---
 title: Join Us
-bannerImage: /assets/images/speaking-to-group.jpg
+bannerImage: /uploads/images/speaking-to-group.jpg
 ---
-
 
 ### MAKE A PLAN TO VOTE
 

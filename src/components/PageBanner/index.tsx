@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 
 const PageBanner = ({
   title,
-  img = "/assets/images/speaking-to-group.jpg",
+  img = "/uploads/images/speaking-to-group.jpg",
   imgPosition = "50% 50%",
 }: {
   title: string;
