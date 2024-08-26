@@ -1,6 +1,6 @@
 ---
 title: Meet Emma
-bannerImage: /uploads/images/2024 fairness 2.jpg
+bannerImage: /uploads/images/speaking-to-person1.jpg
 pageBlocks:
   - header: Emma Curtis was born in Lexington in 1996.
     description: |
@@ -51,7 +51,7 @@ pageBlocks:
       for her community and her commonwealth.
     image: /uploads/images/meet-emma/EmmawithKFTC.jpg
     _template: ImageAndTet
-  - header: "'Outside of work, she is extremely active in her community.'"
+  - header: '''Outside of work, she is extremely active in her community.'''
     description: |
       She is a member of several community-focused organizations, including
       CivicLex, the Lexington Branch of the Kentucky Women's Network, and the
@@ -85,7 +85,8 @@ pageBlocks:
       With your support, Emma Curtis will continue her record of choosing people
       over politics, community over division, and tangible good over empty
       gestures as the next Councilmember for District 4.
-    description: ""
+    description: ''
     image: /uploads/images/meet-emma/EmmawithBeshear&Coleman.jpg
     _template: ImageAndTet
 ---
+
