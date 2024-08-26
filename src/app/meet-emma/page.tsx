@@ -10,7 +10,6 @@ export default async function () {
       pages: { bannerImage, title, bodyText, pageBlocks },
     },
   } = await getPageData("Meet-Emma.md");
-  console.log(`pages: ${JSON.stringify(pageBlocks, null, 2)}`);
 
   return (
     <div>

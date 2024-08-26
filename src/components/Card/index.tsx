@@ -36,7 +36,7 @@ const Card = ({ title, url, img, teaser, venue, date }: INewsItem) => {
           <Image
             priority
             alt={`Click to read more about title`}
-            src="./assets/svgs/arrow_right.svg"
+            src="./assets/logos/arrow_right.svg"
             width={16}
             height={16}
           />
