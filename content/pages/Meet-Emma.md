@@ -64,7 +64,22 @@ pageBlocks:
       Veterans Park.
     image: /assets/images/meet-emma/Emma_with_Benny.jpg
     _template: ImageAndTet
-  - description: ''
+  - header: >-
+      Emma is running for Council because she loves her neighbors and community
+      in South Lexington.
+    description: |
+      She knows that running for office is serious business. It's not something
+      to do because you want a job that you can keep regardless of how often you
+      miss work. It's not something to do because you're retired, wealthy, and
+      want to put another feather in your cap.
+
+      It's something to do because you care deeply about the people and
+      communities you wish to serve.
+
+      A Councilmember's job is to advocate for the people who live in their
+      district and address the issues that matter to them—and that's exactly
+      what Emma will do.
+    image: /assets/images/meet-emma/Emmaleadscommunitymeeting.jpg
     _template: ImageAndTet
   - header: '      With your support, Emma Curtis will continue her record of choosing people       over politics, community over division, and tangible good over empty       gestures as the next Councilmember for District 4.'
     description: ''
