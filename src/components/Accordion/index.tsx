@@ -1,7 +1,6 @@
 import React, { ReactNode, useState } from "react";
 import Image from "next/image";
 import styles from "./accordion.module.scss";
-import { ReactComponent as Chevron } from "../../../public/assets/logos/chevron.svg";
 
 const Accordion = ({
   title,
@@ -43,7 +42,7 @@ const Accordion = ({
           <Image
             priority
             alt={`Click to read more about ${title}`}
-            src="./assets/logos/chevron.svg"
+            src={"./assets/icons/chevron.svg"}
             width={45}
             height={45}
           />

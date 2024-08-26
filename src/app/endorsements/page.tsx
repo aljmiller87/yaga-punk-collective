@@ -17,7 +17,7 @@ export default async function IssuesPage() {
         img={bannerImage}
         imgPosition="50% 40%"
       />
-      {/* <Endorsements /> */}
+      <Endorsements />
     </div>
   );
 }

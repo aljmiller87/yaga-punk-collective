@@ -19,9 +19,9 @@ export default async function IssuesPage() {
       <Section>
         <TinaMarkdown content={bodyText} />
       </Section>
-      {/* <Section>
+      <Section>
         <Issues />
-      </Section> */}
+      </Section>
     </div>
   );
 }
