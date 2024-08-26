@@ -9,12 +9,12 @@ const NewsRoom = () => {
   return (
     <div>
       <h1>newsroom page</h1>
-      {/* <PageBanner
+      <PageBanner
         title="In the News"
         img={"/assets/images/Emma_with_news_camera.jpeg"}
         imgPosition="50% 16%"
-      /> */}
-      {/* <CopyAndImage img={Top24} imgPosition="50% 25%">
+      />
+      <CopyAndImage img={Top24} imgPosition="50% 25%">
         <h2>
           Emma Curtis named one of Lexington Herald-Leader&apos;s 24 to watch in
           2024
@@ -33,7 +33,7 @@ const NewsRoom = () => {
         >
           Read More
         </a>
-      </CopyAndImage> */}
+      </CopyAndImage>
       <NewsList />
     </div>
   );
