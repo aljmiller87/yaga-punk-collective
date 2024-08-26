@@ -8,7 +8,6 @@ import Top24 from "../../../public/uploads/images/top-24-ky.jpg";
 const NewsRoom = () => {
   return (
     <div>
-      <h1>newsroom page</h1>
       <PageBanner
         title="In the News"
         img={"/uploads/images/Emma_with_news_camera.jpeg"}
