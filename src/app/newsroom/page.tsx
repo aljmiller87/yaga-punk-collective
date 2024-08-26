@@ -3,7 +3,7 @@ import React from "react";
 import PageBanner from "@/components/PageBanner";
 import NewsList from "./NewsList";
 import CopyAndImage from "@/components/CopyAndImage";
-// import Top24 from "../../../public/assets/images/top-24-ky.jpg";
+import Top24 from "../../../public/assets/images/top-24-ky.jpg";
 
 const NewsRoom = () => {
   return (
