@@ -51,7 +51,18 @@ pageBlocks:
       for her community and her commonwealth.
     image: /assets/images/meet-emma/EmmawithKFTC.jpg
     _template: ImageAndTet
-  - description: ''
+  - header: '''Outside of work, she is extremely active in her community.'''
+    description: |
+      She is a member of several community-focused organizations, including
+      CivicLex, the Lexington Branch of the Kentucky Women's Network, and the
+      Lexington Forum, which are focused on bringing people together, having
+      good-faith conversations, and improving Lexington's civic health.
+
+      When she's not working, Emma enjoys spending quality time with her partner
+      and family, going to see classic movies at The Kentucky Theatre, playing
+      music with her friends, and taking her dog Benny for long walks at
+      Veterans Park.
+    image: /assets/images/meet-emma/Emma_with_Benny.jpg
     _template: ImageAndTet
   - description: ''
     _template: ImageAndTet
