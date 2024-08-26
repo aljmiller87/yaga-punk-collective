@@ -42,7 +42,14 @@ pageBlocks:
       KET this year.\n"
     image: /assets/images/meet-emma/EmmawithGeorgeSzekely.jpg
     _template: ImageAndTet
-  - description: ''
+  - header: She also works as an issue-based organizer and advocate
+    description: |
+      Whether registering Lexingtonians to vote through her work as a voter
+      engagement organizer at Kentuckians for the Commonwealth or volunteering
+      with organizations like the ACLU of Kentucky and the Fairness Campaign,
+      Emma has demonstrated a relentless commitment to building a better future
+      for her community and her commonwealth.
+    image: /assets/images/meet-emma/EmmawithKFTC.jpg
     _template: ImageAndTet
   - description: ''
     _template: ImageAndTet
