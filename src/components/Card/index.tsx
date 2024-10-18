@@ -2,16 +2,16 @@ import React from "react";
 import Image from "next/image";
 
 import styles from "./styles.module.scss";
-import { INewsItem } from "@/app/newsroom/NewsList";
+// import { INewsItem } from "@/app/newsroom/NewsList";
 
-const Card = ({ title, url, img, teaser, venue, date }: INewsItem) => {
-  const fullDate = new Date(date);
-  const day = fullDate.getDate();
-  const month = fullDate.toLocaleString("default", { month: "short" });
+const Card = () => {
+  // const fullDate = new Date(date);
+  // const day = fullDate.getDate();
+  // const month = fullDate.toLocaleString("default", { month: "short" });
 
   return (
     <div className={styles.Card}>
-      <div className={styles.ImageWrapper}>
+      {/* <div className={styles.ImageWrapper}>
         <div className={styles.ImageBg} />
         <Image src={img} alt="" className={styles.img} fill />
       </div>
@@ -41,7 +41,7 @@ const Card = ({ title, url, img, teaser, venue, date }: INewsItem) => {
             height={16}
           />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

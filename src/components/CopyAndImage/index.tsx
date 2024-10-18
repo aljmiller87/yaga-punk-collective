@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import Image, { StaticImageData } from "next/image";
 
 import Section from "../Section";
-import VolunteerImage from "../../../public/uploads/images/speaking-to-group.jpg";
+import VolunteerImage from "../../../public/uploads/logos/nozen-logo.png";
 import styles from "./styles.module.scss";
 
 const CopyAndImage = ({
