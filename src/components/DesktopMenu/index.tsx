@@ -7,9 +7,9 @@ const DesktopMenu = () => {
     <nav className={styles.DesktopMenu}>
       <ul>
         <li>
-          <Link href="/meet-emma">Meet Emma</Link>
+          <Link href="/about-us">About Us</Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/endorsements">Endorsements</Link>
         </li>
         <li>
@@ -20,16 +20,7 @@ const DesktopMenu = () => {
         </li>
         <li>
           <Link href="/join-us">Join Us</Link>
-        </li>
-        <li>
-          <Link
-            href="https://secure.actblue.com/donate/emmacurtislex"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Donate
-          </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

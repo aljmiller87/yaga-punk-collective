@@ -13,7 +13,7 @@ const Card = ({ title, url, img, teaser, venue, date }: INewsItem) => {
     <div className={styles.Card}>
       <div className={styles.ImageWrapper}>
         <div className={styles.ImageBg} />
-        <Image src={img} alt="Emma Curtis" className={styles.img} fill />
+        <Image src={img} alt="" className={styles.img} fill />
       </div>
       <div className={styles.Content}>
         <div className={styles.Meta}>
@@ -36,7 +36,7 @@ const Card = ({ title, url, img, teaser, venue, date }: INewsItem) => {
           <Image
             priority
             alt={`Click to read more about title`}
-            src="./uploads/logos/arrow_right.svg"
+            src="./uploads/icons/arrow_right.svg"
             width={16}
             height={16}
           />

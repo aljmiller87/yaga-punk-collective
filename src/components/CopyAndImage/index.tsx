@@ -32,7 +32,7 @@ const CopyAndImage = ({
             <Image
               style={{ objectPosition: imgPosition }}
               src={img}
-              alt="Emma Curtis"
+              alt=""
               className={styles.img}
               priority
               fill

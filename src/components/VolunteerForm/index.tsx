@@ -95,11 +95,6 @@ const VolunteerForm = () => {
             value="write postcards"
           />
           <CheckBox id="hostEvent" label="Host an event" value="host event" />
-          <CheckBox
-            id="inviteEmma"
-            label="Invite Emma to an event"
-            value="invite emma to event"
-          />
         </div>
         <Input
           type="text"

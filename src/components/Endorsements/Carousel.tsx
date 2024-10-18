@@ -89,7 +89,7 @@ const EndorsementsCarousel = () => {
               <div key={endorsement.title} className={styles["Carousel-slide"]}>
                 <Image
                   src={endorsement.image}
-                  alt="Emma Curtis"
+                  alt=""
                   className={styles.img}
                   priority
                   fill

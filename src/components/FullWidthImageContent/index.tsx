@@ -1,47 +1,33 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./fullwidthimagecontent.module.scss";
-import BgImg from "../../../public/uploads/images/speaking-to-group.jpg";
 import Input from "../Input";
 import Link from "next/link";
 
 const FullWidthImageContent = () => {
+  const BgImg = "https://placehold.jp/336x280.png";
   return (
     <div className={styles.FullWidthImageContent}>
       <div className={styles.img}>
-        <Image
-          src={BgImg}
-          alt="Emma Curtis"
-          className={styles.img}
-          fill={true}
-        />
+        <Image src={BgImg} alt="" className={styles.img} fill={true} />
       </div>
       <div className={styles.text}>
-        <h2 className={styles.title}>Join our campaign!</h2>
-        <p className={styles.subtitle}>
-          Help us move Lexington forward together.
-        </p>
+        <h2 className={styles.title}>title!</h2>
+        <p className={styles.subtitle}>copy text.</p>
         <div className={styles.buttons}>
           <Link
-            href="https://secure.actblue.com/donate/emmacurtislex"
+            href="https://google.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Donate
+            Button One
           </Link>
           <Link
-            href="https://forms.gle/3RwUsGhbmbEXSwC3A"
+            href="https://google.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Volunteer
-          </Link>
-          <Link
-            href="https://forms.gle/suukLVa9ZrQLqWpi7"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Request a Yard Sign
+            Button One
           </Link>
         </div>
       </div>

@@ -10,8 +10,8 @@ const Socials = ({ isHeader = false }: { isHeader?: boolean }) => {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.facebook.com/EmmaForLexingtonCouncil"
-            aria-label="Emma for Lexington Council facebook page"
+            href="https://www.facebook.com/"
+            aria-label="facebook page"
           >
             <svg
               fill="#000000"
@@ -39,8 +39,8 @@ const Socials = ({ isHeader = false }: { isHeader?: boolean }) => {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.instagram.com/emmacurtislex/"
-            aria-label="Emma for Lexington Council instagram page"
+            href="https://www.instagram.com/"
+            aria-label=" instagram page"
           >
             <svg
               width="800px"
@@ -72,8 +72,8 @@ const Socials = ({ isHeader = false }: { isHeader?: boolean }) => {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            href="https://twitter.com/emmacurtislex"
-            aria-label="Emma for Lexington Council twitter (X) page"
+            href="https://twitter.com"
+            aria-label="twitter (X) page"
           >
             <svg
               width="800px"
@@ -113,8 +113,8 @@ const Socials = ({ isHeader = false }: { isHeader?: boolean }) => {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.tiktok.com/@emmacurtislex"
-            aria-label="Emma for Lexington Council TikTok page"
+            href="https://www.tiktok.com/"
+            aria-label="TikTok page"
           >
             <svg
               fill="currentColor"

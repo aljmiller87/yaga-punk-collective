@@ -52,7 +52,7 @@ const Endorsements = () => {
             <div>
               <Image
                 src={endorsement.image}
-                alt="Emma Curtis"
+                alt=""
                 className={styles.img}
                 priority
                 fill

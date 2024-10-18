@@ -22,7 +22,7 @@ const Hero = ({
         <div className={styles.imgGradient} />
         <Image
           src={bannerImage}
-          alt="Emma Curtis"
+          alt=""
           className={styles.img}
           fill={true}
           priority
@@ -30,11 +30,11 @@ const Hero = ({
       </div>
       <div className={styles.buttons}>
         <Link
-          href="https://secure.actblue.com/donate/emmacurtislex"
+          href="https://google.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Donate
+          Button
         </Link>
         <Link href="/join-us">Join Us</Link>
       </div>

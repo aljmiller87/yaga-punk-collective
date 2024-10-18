@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <Logo variant="light" />
       <Socials />
-      <p className={styles.copy}>Paid for by Campaign Fund of Emma Curtis</p>
+      <p className={styles.copy}>This is the footer copy</p>
       <small>
         Website built by:{" "}
         <a
