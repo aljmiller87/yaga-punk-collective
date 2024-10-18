@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "./Hero.module.scss";
 import Link from "next/link";
+import BannerImg from "../../../public/uploads/logos/nozen-logo.png";
 
 const Hero = ({
   title,
@@ -12,16 +13,9 @@ const Hero = ({
 }) => {
   return (
     <div className={styles.Hero} role="banner">
-      <div className="PageContainer">
-        <div className={styles.text}>
-          <p>Welcome!</p>
-          <h1 className={styles.title}>{title}</h1>
-        </div>
-      </div>
       <div className={styles.imgWrapper}>
-        <div className={styles.imgGradient} />
         <Image
-          src={bannerImage}
+          src={BannerImg}
           alt=""
           className={styles.img}
           fill={true}

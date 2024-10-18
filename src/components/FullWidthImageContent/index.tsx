@@ -5,7 +5,7 @@ import Input from "../Input";
 import Link from "next/link";
 
 const FullWidthImageContent = () => {
-  const BgImg = "https://placehold.jp/336x280.png";
+  const BgImg = "/images/logo3.jpg";
   return (
     <div className={styles.FullWidthImageContent}>
       <div className={styles.img}>

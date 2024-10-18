@@ -14,20 +14,20 @@ const Header = () => {
   const [isActive, setIsActive] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const handleScroll = useCallback(() => {
-    const scrollY = window.scrollY;
-    if (scrollY >= 20 && !isScrolled) {
-      setIsScrolled(true);
-    } else if (scrollY < 20 && isScrolled) {
-      setIsScrolled(false);
-    }
-  }, [isScrolled]);
+  // const handleScroll = useCallback(() => {
+  //   const scrollY = window.scrollY;
+  //   if (scrollY >= 20 && !isScrolled) {
+  //     setIsScrolled(true);
+  //   } else if (scrollY < 20 && isScrolled) {
+  //     setIsScrolled(false);
+  //   }
+  // }, [isScrolled]);
 
-  useEffect(() => {
-    document.addEventListener("scroll", handleScroll);
-    handleScroll();
-    return () => document.removeEventListener("scroll", handleScroll);
-  }, [handleScroll]);
+  // useEffect(() => {
+  //   document.addEventListener("scroll", handleScroll);
+  //   handleScroll();
+  //   return () => document.removeEventListener("scroll", handleScroll);
+  // }, [handleScroll]);
 
   useEffect(() => {
     setIsActive(false);

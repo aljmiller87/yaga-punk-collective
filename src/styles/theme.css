@@ -2,12 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playpen+Sans:wght@100..800&display=swap');
 
 :root {
-    --darkBlue: #232A34;
-    --darkTeal: #129499;
-    --darkTealBg: #0F8185;
-    --lightTeal: #7CCFE5;
-    --text: #7e8890;
-    --darkText: #333c4e;
+  --redPrimary: #811710;
+  --redHover: #9A4A45;
+  --redLight: #E7473C;
+  --redExtraLight: #CBB0AE;
+  --gray: #E3E3E3;
+  --background: #121212;
+  --surface: #1F1F1F
+  
 
 }
 
@@ -21,6 +23,7 @@
   html,
   body {
     max-width: 100vw;
+    background-color: var(--background);
   }
 
   body {

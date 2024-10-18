@@ -9,18 +9,18 @@ const DesktopMenu = () => {
         <li>
           <Link href="/about-us">About Us</Link>
         </li>
-        {/* <li>
-          <Link href="/endorsements">Endorsements</Link>
+        <li>
+          <Link href="/">Music</Link>
         </li>
         <li>
-          <Link href="/issues">On the Issues</Link>
+          <Link href="/">Gallery</Link>
         </li>
         <li>
-          <Link href="/newsroom">In the News</Link>
+          <Link href="/">Events</Link>
         </li>
         <li>
-          <Link href="/join-us">Join Us</Link>
-        </li> */}
+          <Link href="/">Donate</Link>
+        </li>
       </ul>
     </nav>
   );

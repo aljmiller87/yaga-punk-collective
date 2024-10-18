@@ -8,7 +8,7 @@ const MobileMenu = ({ isActive }: { isActive: boolean }) => {
     ? `${styles.MobileMenu} ${styles.isActive}`
     : styles.MobileMenu;
 
-  const BgImage = "https://placehold.jp/80x80.png";
+  const BgImage = "/images/logo3.jpg";
 
   return (
     <nav className={isActiveClass}>

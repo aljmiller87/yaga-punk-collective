@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 
 const PageBanner = ({
   title,
-  img = "https://placehold.jp/80x80.png",
+  img = "/images/logo3.jpg",
   imgPosition = "50% 50%",
 }: {
   title: string;
@@ -15,14 +15,14 @@ const PageBanner = ({
     <div className={styles.PageBanner}>
       <div className={styles.bg}></div>
       <div className={styles.img}>
-        <Image
+        {/* <Image
           src={img}
           alt=""
           className={styles.img}
           priority
           fill={true}
           style={{ objectPosition: imgPosition }}
-        />
+        /> */}
       </div>
       <h1 className={styles.title}>{title}</h1>
     </div>

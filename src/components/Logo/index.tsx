@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import Img from "../../../public/uploads/logos/nozen-logo.png";
 import styles from "./logo.module.scss";
 
 const Logo = ({ variant }: { variant: "light" | "dark" }) => {
-  // const path = `/uploads/logos/`;
+  const path = `/logos/`;
 
   return (
     <a href="/" className={styles.Logo}>
       <Image
-        src={`https://placehold.jp/80x80.png`}
+        src={Img}
         alt="Logo alt text"
         //   className={styles.vercelLogo}
         layout={"fill"}

@@ -4,7 +4,7 @@ import styles from "./Hero.module.scss";
 import Link from "next/link";
 
 const ImageWithGradient = () => {
-  const BannerImg = "https://placehold.jp/336x280.png";
+  const BannerImg = "/images/logo3.jpg";
   return (
     <div className={styles.Hero} role="banner">
       <div className="PageContainer"></div>

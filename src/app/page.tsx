@@ -39,22 +39,19 @@ export default async function Home() {
     data: {
       pages: { title, bannerImage, bodyText },
     },
-  } = await getPageData("Homepage.md");
+  } = await getPageData("NoZen.md");
 
   return (
     <>
       <Hero title={title} bannerImage={bannerImage} />
-      <Section>
-        {" "}
-        <TinaMarkdown content={bodyText} />
-      </Section>
-      <ImageWithGradient />
-      <EndorsementsCarousel />
+      <Section> {/* <TinaMarkdown content={bodyText} /> */}</Section>
+      {/* <ImageWithGradient /> */}
+      {/* <EndorsementsCarousel /> */}
       <Section>
         <h2 style={{ margin: "0 0 3rem", textAlign: "center" }}>
           On the Issues
         </h2>
-        <Issues />
+        {/* <Issues /> */}
       </Section>
     </>
   );

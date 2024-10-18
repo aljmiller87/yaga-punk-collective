@@ -8,11 +8,7 @@ import Top24 from "../../../public/uploads/images/top-24-ky.jpg";
 const NewsRoom = () => {
   return (
     <div>
-      <PageBanner
-        title="In the News"
-        img={"https://placehold.jp/300x250.png"}
-        imgPosition="50% 16%"
-      />
+      <PageBanner title="In the News" img={""} imgPosition="50% 16%" />
       <NewsList />
     </div>
   );
