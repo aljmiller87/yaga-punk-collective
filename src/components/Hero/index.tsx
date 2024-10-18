@@ -4,13 +4,7 @@ import styles from "./Hero.module.scss";
 import Link from "next/link";
 import BannerImg from "../../../public/uploads/logos/nozen-logo.png";
 
-const Hero = ({
-  title,
-  bannerImage,
-}: {
-  title: string;
-  bannerImage: string;
-}) => {
+const Hero = () => {
   return (
     <div className={styles.Hero} role="banner">
       <div className={styles.imgWrapper}>

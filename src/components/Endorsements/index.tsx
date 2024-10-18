@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import client from "../../../tina/__generated__/client";
+// import client from "../../../tina/__generated__/client";
 import Image, { StaticImageData } from "next/image";
 
 import CopyAndImage from "../CopyAndImage";
@@ -18,30 +18,30 @@ type IEndorsement = {
 
 const Endorsements = () => {
   const [endorsements, setEndorsements] = useState<IEndorsement[]>([]);
-  useEffect(() => {
-    const fetchEndorsements = async () => {
-      const allEndorsements = await client.queries.endorsementsConnection();
-      if (allEndorsements?.data?.endorsementsConnection?.edges) {
-        const fetchedEndorsements =
-          allEndorsements?.data?.endorsementsConnection?.edges.map(
-            (longIssue) => {
-              //   console.log(JSON.stringify(longIssue, null, 2));
-              return {
-                title: longIssue?.node?.title,
-                image: longIssue?.node?.image,
-                url: longIssue?.node?.url,
-                body: longIssue?.node?.bodyText,
-                order: longIssue?.node?.order,
-              };
-            }
-          );
-        // @ts-ignore
-        setEndorsements(fetchedEndorsements);
-        console.log(JSON.stringify(fetchedEndorsements, null, 2));
-      }
-    };
-    fetchEndorsements();
-  }, []);
+  // useEffect(() => {
+  //   const fetchEndorsements = async () => {
+  //     const allEndorsements = await client.queries.endorsementsConnection();
+  //     if (allEndorsements?.data?.endorsementsConnection?.edges) {
+  //       const fetchedEndorsements =
+  //         allEndorsements?.data?.endorsementsConnection?.edges.map(
+  //           (longIssue) => {
+  //             //   console.log(JSON.stringify(longIssue, null, 2));
+  //             return {
+  //               title: longIssue?.node?.title,
+  //               image: longIssue?.node?.image,
+  //               url: longIssue?.node?.url,
+  //               body: longIssue?.node?.bodyText,
+  //               order: longIssue?.node?.order,
+  //             };
+  //           }
+  //         );
+  //       // @ts-ignore
+  //       setEndorsements(fetchedEndorsements);
+  //       console.log(JSON.stringify(fetchedEndorsements, null, 2));
+  //     }
+  //   };
+  //   fetchEndorsements();
+  // }, []);
 
   return (
     <Section className={styles.Endorsements}>
