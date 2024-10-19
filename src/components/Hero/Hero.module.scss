@@ -20,7 +20,10 @@
     background: transparent;
     opacity: 0;
     transform: scale(0.1);
-    animation: fadeIn forwards 0.4s ease-in;
+
+    &.isMounted {
+      animation: fadeIn forwards 0.4s ease-in;
+    }
   }
 
   .img {
@@ -101,12 +104,17 @@
       border: 3px solid var(--redPrimary);
       flex: 1 1 0;
       letter-spacing: 1px;
-      animation: slidein 0.3s ease-in 0.3s forwards;
       transform: translateY(2rem);
       opacity: 0;
+    }
 
-      &:last-child {
-        animation-delay: 0.4s;
+    &.isMounted {
+      a {
+        animation: slidein 0.3s ease-in 0.3s forwards;
+
+        &:last-child {
+          animation-delay: 0.4s;
+        }
       }
     }
   }
@@ -216,16 +224,16 @@
 }
 @keyframes fadeIn {
   0% {
-    transform: scale(0.2);
+    transform: scale(0.6);
     opacity: 0;
   }
 
   50% {
-    transform: scale(0.6);
+    transform: scale(0.8);
     opacity: 0.2;
   }
   75% {
-    transform: scale(0.8);
+    transform: scale(0.9);
     opacity: 0.3;
   }
   100% {

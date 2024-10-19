@@ -28,6 +28,8 @@
   .CopyBlock {
     width: 100%;
     max-width: 36rem;
+    font-size: 0.79rem;
+    color: var(--gray);
   }
 
   @media screen and (min-width: 1024px) {
@@ -45,11 +47,12 @@
 
       p,
       li {
-        font-size: 1.25rem;
+        // font-size: 1.25rem;
       }
 
       h2 {
         margin-bottom: 1.5rem;
+        color: var(--redLight);
       }
 
       ul {

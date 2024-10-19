@@ -1,6 +1,6 @@
 .Section {
   padding: 3rem 1.5rem;
-  color: var(--darkText);
+  color: var(--gray);
 
   h2 {
     font-size: 2rem;
@@ -14,7 +14,7 @@
     text-transform: uppercase;
     margin-bottom: 1rem;
     // color: var(--darkTealBg);
-    border-left: 2px solid var(--lightTeal);
+    border-left: 2px solid var(--redLight);
     padding: 0.5rem 0rem 0.5rem 1rem;
     font-weight: 600;
   }
@@ -79,7 +79,7 @@
   }
 
   @media screen and (min-width: 1024px) {
-    padding: 5rem 0;
+    padding: 5rem 3rem;
 
     + .Section {
       padding-top: 0;

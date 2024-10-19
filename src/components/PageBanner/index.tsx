@@ -15,14 +15,14 @@ const PageBanner = ({
     <div className={styles.PageBanner}>
       <div className={styles.bg}></div>
       <div className={styles.img}>
-        {/* <Image
+        <Image
           src={img}
           alt=""
           className={styles.img}
           priority
           fill={true}
           style={{ objectPosition: imgPosition }}
-        /> */}
+        />
       </div>
       <h1 className={styles.title}>{title}</h1>
     </div>
