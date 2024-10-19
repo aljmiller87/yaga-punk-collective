@@ -13,15 +13,13 @@ import styles from "./styles.module.scss";
 // Utils
 import { getBandMembers, getPageData } from "../utils";
 
-export default async function () {
+export default async function AboutUs() {
   const {
     data: {
       pages: { bannerImage, title, bodyText },
     },
   } = await getPageData("About-No-Zen.md");
   const bandMembers = await getBandMembers();
-
-  console.log(JSON.stringify(bodyText, null, 2));
 
   return (
     <>

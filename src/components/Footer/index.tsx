@@ -2,13 +2,32 @@
 import React from "react";
 import styles from "./footer.module.scss";
 import Logo from "../Logo";
-import Socials from "../Socials";
+import Socials, { ISocial } from "../Socials";
 
 const Footer = () => {
+  const socials: ISocial[] = [
+    {
+      platform: "facebook",
+      url: "www.facebook.com",
+    },
+    {
+      platform: "instagram",
+      url: "www.instagram.com",
+    },
+    {
+      platform: "twitter",
+      url: "www.facebook.com",
+    },
+    {
+      platform: "tiktok",
+      url: "www.facebook.com",
+    },
+  ];
+
   return (
     <footer className={styles.footer}>
       <Logo variant="light" />
-      <Socials />
+      <Socials socials={socials} />
       <p className={styles.copy}>This is the footer copy</p>
       <small>
         Website built by:{" "}

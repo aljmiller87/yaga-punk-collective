@@ -38,7 +38,7 @@ const Socials = ({
       <ul>
         {socials?.map((social) => {
           return (
-            <li>
+            <li key={social.url}>
               {" "}
               <Link
                 target="_blank"
