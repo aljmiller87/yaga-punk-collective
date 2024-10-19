@@ -10,7 +10,7 @@ module.exports = {
         protocol: "https",
         hostname: "assets.tina.io",
         port: "",
-        pathname: "/6af017f5-ed39-4fad-bd9c-cb7d2ec1a3eb/**",
+        pathname: "/1306b934-75be-4c64-90be-97a6cd674d9d/**",
       },
     ],
   },
