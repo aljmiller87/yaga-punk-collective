@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import "../styles/theme.css";
+import VideoGallery from "@/components/VideoGallery";
 
 export const metadata: Metadata = {
   title: "starter template",
@@ -42,12 +43,7 @@ export default async function Home() {
       <Section> {/* <TinaMarkdown content={bodyText} /> */}</Section>
       {/* <ImageWithGradient /> */}
       {/* <EndorsementsCarousel /> */}
-      <Section>
-        <h2 style={{ margin: "0 0 3rem", textAlign: "center" }}>
-          On the Issues
-        </h2>
-        {/* <Issues /> */}
-      </Section>
+      <VideoGallery title="Videos" addCta />
     </>
   );
 }

@@ -182,6 +182,26 @@ export default defineConfig({
           },
         ],
       },
+      {
+        label: "Video",
+        name: "video",
+        path: "content/videos",
+        fields: [
+          {
+            label: "Title",
+            name: "title",
+            type: "string",
+            isTitle: true,
+            required: true,
+          },
+          {
+            label: "YouTube Video ID",
+            name: "title",
+            type: "string",
+            required: true,
+          },
+        ],
+      },
     ],
   },
 });
