@@ -147,6 +147,41 @@ export default defineConfig({
           },
         ],
       },
+      {
+        name: "events",
+        label: "Events",
+        path: "content/events",
+        fields: [
+          {
+            label: "Title",
+            name: "title",
+            type: "string",
+            isTitle: true,
+            required: true,
+          },
+          {
+            label: "Ticket URL",
+            name: "ticketUrl",
+            type: "string",
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "Date",
+            ui: {
+              dateFormat: "MMMM-DD-YYYY",
+              timeFormat: "HH:mm",
+              // parse: (value: any) => value && value.format("MMMM-DD-YYYY"),
+            },
+            required: true,
+          },
+          {
+            type: "image",
+            name: "image",
+            label: "Image",
+          },
+        ],
+      },
     ],
   },
 });

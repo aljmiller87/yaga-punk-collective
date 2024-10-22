@@ -16,7 +16,7 @@ const DesktopMenu = () => {
           <Link href="/">Gallery</Link>
         </li>
         <li>
-          <Link href="/">Events</Link>
+          <Link href="/events">Events</Link>
         </li>
         <li>
           <Link href="/">Donate</Link>

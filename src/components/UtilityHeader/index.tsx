@@ -12,11 +12,11 @@ const socials: ISocial[] = [
   },
   {
     platform: "twitter",
-    url: "www.facebook.com",
+    url: "www.twitter.com",
   },
   {
     platform: "tiktok",
-    url: "www.facebook.com",
+    url: "www.tiktok.com",
   },
 ];
 
