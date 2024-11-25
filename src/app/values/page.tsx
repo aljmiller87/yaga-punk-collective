@@ -5,6 +5,7 @@ import anarchy from "../../../public/uploads/icons/anarchy.svg";
 import squatter from "../../../public/uploads/icons/squatter.svg";
 import copyLeft from "../../../public/uploads/icons/copy-left.svg";
 import transLiberation from "../../../public/uploads/images/trans-liberation.jpg";
+import openBorders from "../../../public/uploads/images/open-borders.jpg";
 
 const ValuesPage = () => {
   return (
@@ -166,6 +167,32 @@ const ValuesPage = () => {
           a world where all people, regardless of gender identity, can live free
           from oppression and fully participate in society without fear of
           marginalization or harm.
+        </p>
+      </CopyAndImage>
+      <CopyAndImage
+        img={openBorders as unknown as string}
+        imgPosition="center center"
+        reverse
+      >
+        <h2>Immigrant Rights and Open Borders</h2>
+        <p>
+          Immigrant rights and open borders are rooted in the rejection of
+          hierarchical structures that enforce separation and privileges.
+          Borders are artificial divisions created to control movement, exploit
+          labor, and maintain unequal power relations. By advocating for open
+          borders, we aim to dismantle these structures of domination, allowing
+          for the free movement of people across the world. Immigrant rights, in
+          this context, are a vital part of ensuring that all
+          individuals—regardless of their nationality or place of birth—are
+          treated with dignity, equality, and autonomy. Rather than reinforcing
+          the idea of national identity or citizenship as a means of exclusion,
+          we promote solidarity across communities, recognizing that our
+          collective well-being is better served when people can live freely and
+          choose where they thrive without the fear of repression or
+          displacement. Open borders, therefore, are not just about mobility;
+          they are about rejecting arbitrary barriers to human freedom and
+          fostering global cooperation based on mutual aid and shared
+          responsibility.
         </p>
       </CopyAndImage>
     </>
