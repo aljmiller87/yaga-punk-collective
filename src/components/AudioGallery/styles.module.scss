@@ -1,0 +1,32 @@
+.AudioGallery {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 100%;
+  min-height: 0; /* NEW */
+  min-width: 0; /* NEW; needed for Firefox */
+
+  &-title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center !important;
+  }
+
+  &-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0 1rem;
+
+    a,
+    button {
+      max-width: 300px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

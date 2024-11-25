@@ -1,18 +1,40 @@
 .Section {
   padding: 3rem 1.5rem;
   color: var(--gray);
+  display: flex;
+  flex-direction: column;
+
+  + .Section {
+    margin-top: 3rem;
+  }
+
+  hr {
+    border-color: var(--redLight);
+    margin-bottom: 5rem;
+  }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     line-height: 1.2;
+    font-family: "crass";
+    letter-spacing: 2px;
     color: var(--darkTealBg);
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    padding: 0 3rem 1rem;
+    border-bottom: 1px solid var(--redLight);
+    display: flex;
+    align-items: center;
+    // width: 100%;
+    // max-width: 70vw;
   }
 
   h3 {
-    font-size: 1.25rem;
+    font-size: 1.79rem;
+    line-height: 1.2;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    font-family: "crass";
+    letter-spacing: 4px;
     // color: var(--darkTealBg);
     border-left: 2px solid var(--redLight);
     padding: 0.5rem 0rem 0.5rem 1rem;
@@ -22,6 +44,11 @@
   p {
     font-size: 1rem;
     line-height: 1.5;
+
+    &.large {
+      font-size: 1.21rem;
+      line-height: 1.815;
+    }
   }
 
   p + p {
@@ -83,12 +110,13 @@
 
     + .Section {
       padding-top: 0;
+      margin-top: 5rem;
     }
   }
   @media screen and (max-width: 767px) {
-    h2 {
-      font-size: 1.79rem;
-      line-height: 1.2;
-    }
+    // h2 {
+    //   font-size: 1.79rem;
+    //   line-height: 1.2;
+    // }
   }
 }

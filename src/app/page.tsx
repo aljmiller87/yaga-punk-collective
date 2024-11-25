@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import "../styles/theme.css";
 import VideoGallery from "@/components/VideoGallery";
+import AudioGallery from "@/components/AudioGallery";
 
 export const metadata: Metadata = {
   title: "starter template",
@@ -43,7 +44,7 @@ export default async function Home() {
       <Section> {/* <TinaMarkdown content={bodyText} /> */}</Section>
       {/* <ImageWithGradient /> */}
       {/* <EndorsementsCarousel /> */}
-      <VideoGallery title="Videos" addCta />
+      <AudioGallery title="Songs" addCta />
     </>
   );
 }

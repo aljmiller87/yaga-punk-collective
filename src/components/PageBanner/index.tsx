@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./styles.module.scss";
+import defaultImage from "../../../public/uploads/images/audience.jpg";
 
 const PageBanner = ({
   title,
-  img = "/images/logo3.jpg",
+  img = defaultImage as unknown as string,
   imgPosition = "50% 50%",
 }: {
   title: string;

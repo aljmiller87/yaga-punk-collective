@@ -1,28 +1,54 @@
+@font-face {
+  font-family: "crass";
+  src: url("../../styles/Crass.ttf");
+}
 .Hero {
   position: relative;
   width: 100%;
-  // padding-bottom: 50%;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  color: #129499;
-  text-shadow: #000;
-  padding-bottom: 5rem;
+  color: #fff;
+  padding-bottom: 6rem;
 
   .imgWrapper {
     position: relative;
-    bottom: 0;
+    top: 0;
     right: 0;
-    width: 100%;
-    height: 0px;
-    padding-bottom: 100%;
+    width: 100vw;
+    height: 100vw;
     z-index: 1;
+    margin: 0 auto;
     background: transparent;
     opacity: 0;
     transform: scale(0.1);
+    border-radius: 50%;
 
     &.isMounted {
       animation: fadeIn forwards 0.4s ease-in;
+    }
+
+    h1 {
+      span {
+        font-family: crass;
+        font-size: 72px;
+        height: 400px;
+        position: absolute;
+        width: 60px;
+        left: 47%;
+        top: -8%;
+        transform-origin: bottom center;
+        letter-spacing: 0px;
+
+        .bChar {
+          transform-origin: top center;
+        }
+      }
+      // @for $i from 1 through 100 {
+      //   .char#{$i} {
+      //     // transform: (rotate(($i * 6) + deg));
+      //     transform: rotate(6deg);
+      //   }
+      // }
     }
   }
 
@@ -35,6 +61,7 @@
     object-fit: cover;
     object-position: 50% 50%;
     z-index: 1;
+    // transform: rotate(50deg);
   }
 
   .text {
@@ -83,7 +110,7 @@
     // margin-top: 1rem;
     gap: 1rem;
     position: absolute;
-    bottom: 2rem;
+    bottom: -2rem;
     padding: 1rem;
     left: 0;
     z-index: 5;
@@ -137,9 +164,9 @@
     //   );
     // }
     .imgWrapper {
-      // height: 100%;
-      // width: 80%;
-      // transform: scaleX(-1);
+      width: 700px;
+      height: 700px;
+      margin: 0 auto;
 
       .imgGradient {
         display: none;
@@ -186,12 +213,6 @@
     max-width: 1800px;
     margin: 0 auto;
 
-    .imgWrapper {
-      max-width: 70vw;
-      padding-bottom: 60%;
-      margin: 0 auto;
-    }
-
     .text {
       bottom: 0;
       padding-left: 0;
@@ -224,20 +245,20 @@
 }
 @keyframes fadeIn {
   0% {
-    transform: scale(0.6);
+    transform: scale(0.6) rotate(0deg);
     opacity: 0;
   }
 
   50% {
-    transform: scale(0.8);
+    transform: scale(0.8) rotate(0deg);
     opacity: 0.2;
   }
   75% {
-    transform: scale(0.9);
+    transform: scale(0.9) rotate(0deg);
     opacity: 0.3;
   }
   100% {
-    transform: scale(1);
+    transform: scale(1) rotate(0deg);
     opacity: 1;
   }
 }

@@ -7,20 +7,23 @@ const DesktopMenu = () => {
     <nav className={styles.DesktopMenu}>
       <ul>
         <li>
-          <Link href="/about-us">About Us</Link>
+          <Link href="/members">Members</Link>
+        </li>
+        <li>
+          <Link href="/values">Values</Link>
         </li>
         <li>
           <Link href="/">Music</Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/">Gallery</Link>
         </li>
         <li>
           <Link href="/events">Events</Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link href="/">Donate</Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

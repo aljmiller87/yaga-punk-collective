@@ -11,12 +11,14 @@ const CopyAndImage = ({
   imgPosition = "50% 50%",
   reverse = false,
   mobileReverse = false,
+  imgStyle = "cover",
 }: {
   img?: StaticImageData | string;
   children: ReactNode | ReactNode[];
   imgPosition?: string;
   reverse?: boolean;
   mobileReverse?: boolean;
+  imgStyle?: "contain" | "cover";
 }) => {
   const componentClass = () => {
     let classStr = styles.CopyAndImage;
@@ -24,13 +26,14 @@ const CopyAndImage = ({
     classStr += mobileReverse ? ` ${styles.mobileReverse}` : ``;
     return classStr;
   };
+
   return (
     <Section>
       <div className={componentClass()}>
         <div className={styles.ImageBlock}>
           <div>
             <Image
-              style={{ objectPosition: imgPosition }}
+              style={{ objectPosition: imgPosition, objectFit: imgStyle }}
               src={img}
               alt=""
               className={styles.img}
