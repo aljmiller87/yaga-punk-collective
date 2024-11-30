@@ -18,14 +18,7 @@ const GetInvolvedForm = () => {
     location: "",
     details: "",
   });
-
-  const handleChange = (e: { target: any }) => {
-    const existingValues = { ...values };
-    let name = e.target.name as keyof IFormValues;
-    let value = e.target.value;
-    console.log({ ...existingValues, [name]: value });
-    setValues({ ...existingValues, [name]: value });
-  };
+  const [isSuccessfulSubmission, setIsSuccessfulSubmission] = useState(false);
 
   useEffect(() => {
     if (Object.values(values).some((val) => !val) && !isDisabled) {
@@ -36,10 +29,38 @@ const GetInvolvedForm = () => {
     }
   }, [values, isDisabled]);
 
+  const handleChange = (e: { target: any }) => {
+    const existingValues = { ...values };
+    let name = e.target.name as keyof IFormValues;
+    let value = e.target.value;
+    console.log({ ...existingValues, [name]: value });
+    setValues({ ...existingValues, [name]: value });
+  };
+
+  const handleFormSubmit = async (event: {
+    preventDefault: () => void;
+    target: HTMLFormElement | undefined;
+  }) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    await fetch("/__forms.html", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData as unknown as string).toString(),
+    })
+      .then(() => setIsSuccessfulSubmission(true))
+      .catch(() => alert("Form submission error"));
+  };
+
   return (
-    <div className={styles.GetInvolvedForm}>
+    <div
+      className={`${styles.GetInvolvedForm} ${
+        isSuccessfulSubmission && styles.isSuccessfulSubmission
+      }`}
+    >
       {/* @ts-ignore */}
-      <form name="getInvolved" method="POST" netlify="true">
+      <form name="getInvolved" onSubmit={handleFormSubmit}>
+        <input type="hidden" name="form-name" value="getInvolved" />
         <p>
           <label>
             Name:{" "}
@@ -91,6 +112,7 @@ const GetInvolvedForm = () => {
           </button>
         </p>
       </form>
+      <p className={styles.success}>Form submission successful!</p>
     </div>
   );
 };

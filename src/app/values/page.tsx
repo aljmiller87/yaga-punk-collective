@@ -172,7 +172,6 @@ const ValuesPage = () => {
       <CopyAndImage
         img={openBorders as unknown as string}
         imgPosition="center center"
-        reverse
       >
         <h2>Immigrant Rights and Open Borders</h2>
         <p>
