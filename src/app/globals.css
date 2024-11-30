@@ -10,6 +10,19 @@ body {
   max-width: 100vw !important;
 }
 
+label {
+  font-family: "crass";
+  font-size: 1.21rem;
+  letter-spacing: 1px;
+}
+
+textarea {
+  padding: 1rem;
+  font-size: 1.3rem;
+  border: 2px solid var(--redLight);
+
+}
+
 blockquote {
   position: relative;
   width: 100%;
@@ -93,6 +106,14 @@ button {
   letter-spacing: 1px;
 
 }
+
+.Btn-primary:disabled,
+.Btn-primary[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
 
 /* @media (prefers-color-scheme: dark) {
   html {

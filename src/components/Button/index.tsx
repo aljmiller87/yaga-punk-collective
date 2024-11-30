@@ -4,12 +4,18 @@ import styles from "./styles.module.scss";
 const Button = ({
   children,
   onClick = null,
+  type = "button",
 }: {
   children: string;
   onClick?: VoidFunction | null;
+  type?: "submit" | "reset" | "button" | undefined;
 }) => {
   return (
-    <button onClick={onClick ? onClick : () => null} className={styles.Button}>
+    <button
+      type={type}
+      onClick={onClick ? onClick : () => null}
+      className={styles.Button}
+    >
       {children}
     </button>
   );

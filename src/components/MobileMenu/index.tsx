@@ -1,27 +1,27 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import Image from "next/image";
-
 import Link from "next/link";
+
 const MobileMenu = ({ isActive }: { isActive: boolean }) => {
   const isActiveClass = isActive
     ? `${styles.MobileMenu} ${styles.isActive}`
     : styles.MobileMenu;
 
-  const BgImage = "/images/logo3.jpg";
+  // const BgImage = "/images/logo3.jpg";
 
   return (
     <nav className={isActiveClass}>
       <div className={styles.bg} />
       {/* image background component */}
       <div className={styles.ImageWrapper}>
-        <Image
+        {/* <Image
           src={BgImage}
           alt=""
           height={1169}
           width={1169}
           className={styles.Image}
-        />
+        /> */}
       </div>
       <ul>
         <li>
@@ -35,6 +35,9 @@ const MobileMenu = ({ isActive }: { isActive: boolean }) => {
         </li>
         <li>
           <Link href="/">Music</Link>
+        </li>
+        <li>
+          <Link href="/join-us">Get Involved</Link>
         </li>
       </ul>
     </nav>

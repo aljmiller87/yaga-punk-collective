@@ -15,10 +15,10 @@ const DesktopMenu = () => {
         <li>
           <Link href="/">Music</Link>
         </li>
-        {/* <li>
-          <Link href="/">Gallery</Link>
-        </li>
         <li>
+          <Link href="/join-us">Get Involved</Link>
+        </li>
+        {/* <li>
           <Link href="/events">Events</Link>
         </li> */}
         {/* <li>
