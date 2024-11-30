@@ -1,3 +1,4 @@
+"use client";
 import React, { ReactNode, useState } from "react";
 import Image from "next/image";
 import styles from "./accordion.module.scss";
@@ -35,7 +36,7 @@ const Accordion = ({
     <div className={styles.Accordion}>
       <button onClick={() => setIsOpen(!isOpen)}>
         <h3>
-          {renderIcon()}
+          {/* {renderIcon()} */}
           <span>{title}</span>
         </h3>
         <div className={isOpenIconClass}>

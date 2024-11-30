@@ -1,6 +1,6 @@
 .Accordion {
-  background: #fff;
-  border: 2px solid var(--darkTealBg);
+  background: transparent;
+  // border: 2px solid var(--redLight);
   border-radius: 1rem;
   padding: 1rem 1.5rem 1rem 1rem;
   box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.16);
@@ -13,13 +13,15 @@
     border: none;
     background: transparent;
     text-align: left;
-    fill: var(--darkTealBg);
+    fill: var(--redLight);
+    color: var(--redLight);
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     h3 {
-      color: var(--darkTealBg);
+      // color: var(--redLight);
+      color: #fff;
       font-size: 1rem;
       margin: 0;
       display: flex;
@@ -58,7 +60,7 @@
     }
 
     &.isOpen {
-      background: #fff;
+      // background: #fff;
       height: auto;
       opacity: 1;
       transform: scale(1, 1);
