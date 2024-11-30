@@ -193,7 +193,7 @@ const Music = () => {
           </p>
         </Accordion>
         <Accordion title="Commie Gun">
-          <h4>Track coming soon!</h4>
+          <AudioPlayer file="Commie-Gun.mp3" />
           <p></p>
           <p>
             Commie gun! <br />

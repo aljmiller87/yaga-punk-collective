@@ -20,6 +20,7 @@ const AudioGallery = ({
           file="It-was-never-for-us.mp3"
         />
         <AudioPlayer title="Rent Is Theft" file="Rent-Is-Theft.mp3" />
+        <AudioPlayer title="Commie Gun" file="Commie-Gun.mp3" />
       </div>
       {addCta && (
         <div className={styles["AudioGallery-buttons"]}>
