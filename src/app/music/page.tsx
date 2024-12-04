@@ -3,12 +3,17 @@ import PageBanner from "@/components/PageBanner";
 import Accordion from "@/components/Accordion";
 import Section from "@/components/Section";
 import AudioPlayer from "@/components/AudioPlayer";
+import Disclaimer from "@/components/Disclaimer";
 
 const Music = () => {
   return (
     <>
       <PageBanner title={" Transition Collective Music (and Lyrics)"} />
       <Section>
+        <Disclaimer />
+      </Section>
+      <Section>
+        <hr />
         <Accordion title="Rent Is Theft">
           <AudioPlayer file="Rent-Is-Theft.mp3" />
           <p>

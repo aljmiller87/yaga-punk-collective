@@ -1,8 +1,24 @@
 .GetInvolvedForm {
   form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
     p:last-child {
       display: flex;
       justify-content: center;
+    }
+
+    p {
+      margin: 0 !important;
+      label,
+      input {
+        width: 100%;
+      }
+
+      textarea {
+        height: 3.75rem;
+      }
     }
   }
 
@@ -19,6 +35,25 @@
     }
     .success {
       display: block;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    form {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    p {
+      width: calc(50% - 1rem);
+
+      &:last-child {
+        width: 100%;
+
+        button {
+          max-width: 300px;
+        }
+      }
     }
   }
 }

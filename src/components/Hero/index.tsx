@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./Hero.module.scss";
 import BannerImg from "../../../public/uploads/icons/LTC-logo-with-text.svg";
+import Section from "../Section";
 
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -28,16 +29,10 @@ const Hero = () => {
           priority
         />
       </div>
-      <div className={`${styles.buttons} ${isMounted && styles.isMounted}`}>
-        <Link
-          href="https://google.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Button
-        </Link>
+      <Section className={`${styles.buttons} ${isMounted && styles.isMounted}`}>
+        <h3>Now Recruiting!</h3>
         <Link href="/join-us">Join Us</Link>
-      </div>
+      </Section>
     </div>
   );
 };
