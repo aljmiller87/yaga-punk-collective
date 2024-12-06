@@ -5,9 +5,10 @@ import Facebook from "./Facebook";
 import Instagram from "./Instagram";
 import Twitter from "./Twitter";
 import Tiktok from "./Tiktok";
+import Youtube from "./Youtube";
 
 export type ISocial = {
-  platform: "instagram" | "facebook" | "tiktok" | "twitter";
+  platform: "instagram" | "facebook" | "tiktok" | "twitter" | "youtube";
   url: string;
 };
 const Socials = ({
@@ -25,6 +26,8 @@ const Socials = ({
         return <Instagram />;
       case "twitter":
         return <Twitter />;
+      case "youtube":
+        return <Youtube />;
       case "tiktok":
         return <Tiktok />;
 

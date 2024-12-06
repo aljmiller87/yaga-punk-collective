@@ -8,34 +8,34 @@ const Footer = () => {
   const socials: ISocial[] = [
     {
       platform: "facebook",
-      url: "www.facebook.com",
+      url: "https://www.facebook.com/people/Louder-Transition-Collective/61569673907364/",
     },
     {
       platform: "instagram",
-      url: "www.instagram.com",
+      url: "https://www.instagram.com/rebel_rabbit_alex_ltc/",
     },
     {
-      platform: "twitter",
-      url: "www.twitter.com",
+      platform: "youtube",
+      url: "https://www.youtube.com/@RebelRabbitAlex-LTC",
     },
-    {
-      platform: "tiktok",
-      url: "www.tiktok.com",
-    },
+    // {
+    //   platform: "tiktok",
+    //   url: "www.tiktok.com",
+    // },
   ];
 
   return (
     <footer className={styles.footer}>
       <Logo variant="light" />
       <Socials socials={socials} />
-      <p className={styles.copy}>This is the footer copy</p>
+      {/* <p className={styles.copy}>This is the footer copy</p> */}
       <small>
         Website built by:{" "}
         <a
           href="https://www.alexmillerwebdev.com"
-          aria-label="Website built by Alex Miller. See more at alexmillerwebdev.com"
+          aria-label="Website built by Rebel Rabbit Alex. See more at alexmillerwebdev.com"
         >
-          Alex Miller
+          Rebel Rabbit Alex
         </a>
       </small>
     </footer>

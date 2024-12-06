@@ -4,20 +4,20 @@ import Socials, { ISocial } from "../Socials";
 const socials: ISocial[] = [
   {
     platform: "facebook",
-    url: "www.facebook.com",
+    url: "https://www.facebook.com/people/Louder-Transition-Collective/61569673907364/",
   },
   {
     platform: "instagram",
-    url: "www.instagram.com",
+    url: "https://www.instagram.com/rebel_rabbit_alex_ltc/",
   },
   {
-    platform: "twitter",
-    url: "www.twitter.com",
+    platform: "youtube",
+    url: "https://www.youtube.com/@RebelRabbitAlex-LTC",
   },
-  {
-    platform: "tiktok",
-    url: "www.tiktok.com",
-  },
+  // {
+  //   platform: "tiktok",
+  //   url: "www.tiktok.com",
+  // },
 ];
 
 const UtilityHeader = () => {
