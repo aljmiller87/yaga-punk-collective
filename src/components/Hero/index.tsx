@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./Hero.module.scss";
 import BannerImg from "../../../public/uploads/icons/LTC-logo-with-text.svg";
+import bgImage from "../../../public/uploads/images/8m-women-strike-movement.jpg";
 import Section from "../Section";
 
 const Hero = () => {
@@ -17,6 +18,16 @@ const Hero = () => {
 
   return (
     <div className={styles.Hero} role="banner">
+      <div className={styles.bgImage}>
+        <div className={styles.bgImageBg} />
+        <Image
+          src={bgImage}
+          alt=""
+          // className={styles.img}
+          fill={true}
+          priority
+        />{" "}
+      </div>
       <div
         ref={imgRef}
         className={`${styles.imgWrapper} ${isMounted && styles.isMounted}`}

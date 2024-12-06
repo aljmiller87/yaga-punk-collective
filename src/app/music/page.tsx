@@ -4,6 +4,39 @@ import Accordion from "@/components/Accordion";
 import Section from "@/components/Section";
 import AudioPlayer from "@/components/AudioPlayer";
 import Disclaimer from "@/components/Disclaimer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Louder Transition Collective Discography",
+  description:
+    "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
+  authors: {
+    name: "Alex Miller",
+    url: "www.alexmillerwebdev.com",
+  },
+  creator: "Rebel Rabbit Alex",
+  publisher: "Rebel Rabbit Alex",
+
+  keywords: [
+    "Louder Transition Collective Discography",
+    "Louder Transition Collective music",
+  ],
+  themeColor: "#0F8185",
+  robots: { index: true, follow: true },
+  openGraph: {
+    type: "website",
+    url: "https://wwww.loudertransition.com",
+    title: "Louder Transition Collective",
+    description:
+      "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
+    siteName: "Louder Transition Collective",
+    // images: [
+    //   {
+    //     url: ".jpeg",
+    //   },
+    // ],
+  },
+};
 
 const Music = () => {
   return (
@@ -302,9 +335,8 @@ const Music = () => {
           </p>
           <p>
             You&apos;re not just a statistic, You&apos;re a person I adore{" "}
-            <br />
-            I won&apos;t let you fall through cracks in society&apos;s floor{" "}
-            <br />
+            <br />I won&apos;t let you fall through cracks in society&apos;s
+            floor <br />
             They try to tear us down, make us feel small <br />
             But when I&apos;m here with youk, I feel so fucking tall
           </p>

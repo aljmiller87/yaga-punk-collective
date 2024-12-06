@@ -1,8 +1,38 @@
 import GetInvolvedForm from "@/components/GetInvolvedForm";
 import PageBanner from "@/components/PageBanner";
 import Section from "@/components/Section";
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Louder Transition Collective - Join Us",
+  description:
+    "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
+  authors: {
+    name: "Alex Miller",
+    url: "www.alexmillerwebdev.com",
+  },
+  creator: "Rebel Rabbit Alex",
+  publisher: "Rebel Rabbit Alex",
+
+  keywords: [],
+  themeColor: "#0F8185",
+  robots: { index: true, follow: true },
+  openGraph: {
+    type: "website",
+    url: "https://wwww.loudertransition.com",
+    title: "Louder Transition Collective",
+    description:
+      "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
+    siteName: "Louder Transition Collective",
+    // images: [
+    //   {
+    //     url: ".jpeg",
+    //   },
+    // ],
+  },
+};
 
 const JoinUs = () => {
   return (

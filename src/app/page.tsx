@@ -3,12 +3,9 @@ import { Metadata } from "next";
 // Components
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
-import "../styles/theme.css";
-import VideoGallery from "@/components/VideoGallery";
 import AudioGallery from "@/components/AudioGallery";
-import Link from "next/link";
-import sectionStyles from "../components/Section/section.module.scss";
 import Disclaimer from "@/components/Disclaimer";
+import "../styles/theme.css";
 
 export const metadata: Metadata = {
   title: "Louder Transition Collective",
@@ -18,12 +15,20 @@ export const metadata: Metadata = {
     name: "Alex Miller",
     url: "www.alexmillerwebdev.com",
   },
-  keywords: [],
+  creator: "Rebel Rabbit Alex",
+  publisher: "Rebel Rabbit Alex",
+
+  keywords: [
+    "Louder Transition Collective",
+    "Anarchist punk band",
+    "anarcho punk band",
+    "hardcore punk band",
+  ],
   themeColor: "#0F8185",
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
-    // url: "https://",
+    url: "https://wwww.loudertransition.com",
     title: "Louder Transition Collective",
     description:
       "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
@@ -37,12 +42,6 @@ export const metadata: Metadata = {
 };
 
 export default async function Home() {
-  // const {
-  //   data: {
-  //     pages: { title, bannerImage, bodyText },
-  //   },
-  // } = await getPageData("NoZen.md");
-
   return (
     <>
       <Hero />

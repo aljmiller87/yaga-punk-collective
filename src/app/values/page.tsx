@@ -6,7 +6,36 @@ import squatter from "../../../public/uploads/icons/squatter.svg";
 import copyLeft from "../../../public/uploads/icons/copy-left.svg";
 import transLiberation from "../../../public/uploads/images/trans-liberation.jpg";
 import openBorders from "../../../public/uploads/images/open-borders.jpg";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Louder Transition Collective Values",
+  description:
+    "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
+  authors: {
+    name: "Alex Miller",
+    url: "www.alexmillerwebdev.com",
+  },
+  creator: "Rebel Rabbit Alex",
+  publisher: "Rebel Rabbit Alex",
+
+  keywords: ["Louder Transition Collective Values"],
+  themeColor: "#0F8185",
+  robots: { index: true, follow: true },
+  openGraph: {
+    type: "website",
+    url: "https://wwww.loudertransition.com",
+    title: "Louder Transition Collective",
+    description:
+      "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
+    siteName: "Louder Transition Collective",
+    // images: [
+    //   {
+    //     url: ".jpeg",
+    //   },
+    // ],
+  },
+};
 const ValuesPage = () => {
   return (
     <>
