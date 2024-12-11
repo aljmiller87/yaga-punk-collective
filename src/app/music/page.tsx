@@ -307,7 +307,8 @@ const Music = () => {
           </p>
         </Accordion>
         <Accordion title="Never Homeless Again">
-          <AudioPlayer file="Never-Homeless-Again.mp3" />
+          {/* <AudioPlayer file="Never-Homeless-Again.mp3" /> */}
+          <h4>Track coming soon!</h4>
           <p>
             None of my friends will ever be homeless <br />
             Not while I can still fucking breathe <br />

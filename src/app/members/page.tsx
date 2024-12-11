@@ -47,19 +47,28 @@ export default async function AboutUs() {
       <CopyAndImage img={AlexImg as unknown as string} imgPosition="center top">
         <h2>Rebel Rabbit Alex</h2>
         <p>
-          Legend has it that, long before the rise of electric guitars and the
-          roaring crowds of the underground, there was a punk rock goddess named
-          RebelRabbitAlex. Born from the stormy winds of rebellion and the
-          crackling energy of forgotten gods, Rebel was said to be a force of
-          pure chaos, embodying the spirit of defiance in all its raw, untamed
-          glory. She emerged from the shattered remnants of ancient temples, her
-          voice an unholy screech that rattled the heavens. With a guitar forged
-          from the bones of fallen angels and strings made of lightning, she
-          unleashed songs that could topple empires and set fire to cities.
-          Revered by the outcasts and feared by the ruling powers, Rebel became
-          the patron saint of all who lived on the fringe, her legend
-          immortalized in the rhythms of rebellion and the lyrics of freedom.
+          Rebel Rabbit is a 37 year old transgender woman who has loved punk
+          rock since she was 16. It all started when she was building WW2
+          airplane models in her parents unfinished basement - trust me she was
+          really cool in high school - and put on Pennywise&apos;s Full Circle
+          for the first time. Rebel Rabbit was blown away and never turned back.
         </p>
+        <p>
+          Rebel Rabbit was always political. In college, she worked with various
+          drug reform policy groups and helped organize &quot;Know Your
+          Rights&quot; training. She was also involved in political groups
+          ranging from &quot;Students for Liberty&quot; to &quot;Students for a
+          Democratic Society.&quot;
+        </p>
+        <p>
+          After college, life slowed down for Rebel Rabbit as she got married
+          and had kids. She was still social and even cofounded (a now defunct)
+          Alliance of the Libertarian Left chapter in Austin, TX. After Rebel
+          Rabbit came out, she got heavily involved in LGBT non profit
+          volunteering at community centers and donating web work (what she does
+          professionally).
+        </p>
+        <p></p>
         <div className={styles.socialContainer}>
           <Socials
             socials={

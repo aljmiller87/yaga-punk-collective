@@ -17,7 +17,9 @@ const Disclaimer = () => {
       <p className={sectionStyles.large}>
         You&apos;ll notice that they songs as the exist are not demo ready.
         Firstly, they&apos;re lacking drum tracks which are beyond Rebel&apos;s
-        ability. Their current state is only a reflection of the sound and
+        ability. Secondly, one track is missing bass. Thirdly, everything has
+        been recorded on relatively cheap equipment for the time being. The
+        current state of these songs are only a reflection of the sound and
         direction Rebel would like to take the band.
       </p>
     </>
