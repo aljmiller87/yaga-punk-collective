@@ -47,6 +47,53 @@ const Music = () => {
       </Section>
       <Section>
         <hr />
+        <Accordion title="Not A Collapse">
+          <AudioPlayer file="Not-a-collapse.mp3" />
+          <p>
+            I&apos;s not a collapse says the six o&apos;clock news <br />
+            But look at my savings man they&apos;re fucking through <br />
+            So you go to the next town because you they have the jobs <br />
+            But its still a corporate desert, a searing heat
+            <br />
+          </p>
+          <p>
+            And you&apos;re still on the streets
+            <br />
+            you&apos;re still on the streets
+            <br />
+            you&apos;re still on the streets
+            <br />
+          </p>
+          <p>
+            So you make your post and you grab your signs
+            <br />
+            What else came you do, In these exploitive times?
+            <br />
+            Now your time is up, Your Bills are due
+            <br />
+            they get the bailouts, but what about you
+            <br />
+            Nothing for you <br />
+            Nothing for you
+            <br />
+            Nothing for you
+            <br />
+          </p>
+          <p>
+            Well the resistance is here and the resistance is queer <br />
+            Used to being bashed by the fucking fash <br />
+            And though they risenfrom ashes of the past
+            <br />
+            And we&apos;ll burn it down
+            <br />
+            We&apos;ll burn it down
+            <br />
+            We&apos;ll burn it down
+            <br />
+            Bring justice to your town
+            <br />
+          </p>
+        </Accordion>
         <Accordion title="Rent Is Theft">
           <AudioPlayer file="Rent-Is-Theft.mp3" />
           <p>
@@ -116,53 +163,6 @@ const Music = () => {
             Rent is just theft <br />
             Rent is just theft <br />
             Pay up or die!
-          </p>
-        </Accordion>
-        <Accordion title="Not A Collapse">
-          <AudioPlayer file="Not-a-collapse.mp3" />
-          <p>
-            I&apos;s not a collapse says the six o&apos;clock news <br />
-            But look at my savings man they&apos;re fucking through <br />
-            So you go to the next town because you they have the jobs <br />
-            But its still a corporate desert, a searing heat
-            <br />
-          </p>
-          <p>
-            And you&apos;re still on the streets
-            <br />
-            you&apos;re still on the streets
-            <br />
-            you&apos;re still on the streets
-            <br />
-          </p>
-          <p>
-            So you make your post and you grab your signs
-            <br />
-            What else came you do, In these exploitive times?
-            <br />
-            Now your time is up, Your Bills are due
-            <br />
-            they get the bailouts, but what about you
-            <br />
-            Nothing for you <br />
-            Nothing for you
-            <br />
-            Nothing for you
-            <br />
-          </p>
-          <p>
-            Well the resistance is here and the resistance is queer <br />
-            Used to being bashed by the fucking fash <br />
-            And though they risenfrom ashes of the past
-            <br />
-            And we&apos;ll burn it down
-            <br />
-            We&apos;ll burn it down
-            <br />
-            We&apos;ll burn it down
-            <br />
-            Bring justice to your town
-            <br />
           </p>
         </Accordion>
         <Accordion title="Was Never For Us">

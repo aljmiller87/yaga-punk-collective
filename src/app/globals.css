@@ -104,6 +104,15 @@ button {
   border: 3px solid var(--redLight);
   flex: 1 1 0;
   letter-spacing: 1px;
+  transition: all 0.2s linear;
+}
+
+.Btn-primary:hover,
+.Btn-primary:active,
+.Btn-primary:focus {
+  color: var(--redPrimary);
+  background: rgba(255,255,255, 0.7);
+  border: 3px solid var(--redPrimary);
 
 }
 

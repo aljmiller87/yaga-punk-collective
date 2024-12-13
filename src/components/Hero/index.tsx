@@ -42,7 +42,9 @@ const Hero = () => {
       </div>
       <Section className={`${styles.buttons} ${isMounted && styles.isMounted}`}>
         <h3>Now Recruiting!</h3>
-        <Link href="/join-us">Join Us</Link>
+        <Link href="/join-us" className="Btn-primary">
+          Join Us
+        </Link>
       </Section>
     </div>
   );
