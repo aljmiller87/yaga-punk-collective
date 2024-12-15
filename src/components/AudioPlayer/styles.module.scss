@@ -1,4 +1,13 @@
 .AudioPlayer {
   display: grid;
   grid-template-rows: 1fr 1fr;
+
+  &.isCover {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      margin-bottom: 0;
+    }
+  }
 }

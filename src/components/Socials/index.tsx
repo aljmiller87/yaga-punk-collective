@@ -14,9 +14,11 @@ export type ISocial = {
 const Socials = ({
   isHeader = false,
   socials,
+  label = "Get in touch:",
 }: {
   isHeader?: boolean;
   socials: ISocial[];
+  label?: string;
 }) => {
   const renderIcon = (platform: ISocial["platform"]) => {
     switch (platform) {
@@ -37,7 +39,7 @@ const Socials = ({
   };
   return (
     <nav className={`${styles.Socials} ${isHeader && styles.isHeader}`}>
-      <p>Get in touch:</p>
+      <p>{label}</p>
       <ul>
         {socials?.map((social) => {
           return (

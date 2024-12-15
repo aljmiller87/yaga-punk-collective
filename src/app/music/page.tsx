@@ -5,6 +5,7 @@ import Section from "@/components/Section";
 import AudioPlayer from "@/components/AudioPlayer";
 import Disclaimer from "@/components/Disclaimer";
 import { Metadata } from "next";
+import Socials, { ISocial } from "@/components/Socials";
 
 export const metadata: Metadata = {
   title: "Louder Transition Collective Discography",
@@ -38,6 +39,13 @@ export const metadata: Metadata = {
   },
 };
 
+const nozenSocials: ISocial[] = [
+  {
+    platform: "instagram",
+    url: "https://www.instagram.com/nozen_punk/",
+  },
+];
+
 const Music = () => {
   return (
     <>
@@ -47,6 +55,61 @@ const Music = () => {
       </Section>
       <Section>
         <hr />
+        <Accordion title="Untitled - NoZen Contrafactum">
+          <AudioPlayer file="NoZen-song.mp3" />
+          <p>
+            <b>Guitar and Drums originally from NoZen</b>
+            <br />
+            NoZen is a newly forming hardcore punk band. They recently released
+            this track without lyrics or vocals. As an experiment, I wrote and
+            recorded my own vocals for their original song. I have their
+            permission to post my version. You should absolutely check them out!
+          </p>
+          <Socials label={"NoZen Socials"} socials={nozenSocials} />
+          <hr style={{ marginBottom: "2rem" }} />
+          <p>
+            I don&apos;t know the solution, all the answers, if they do, they
+            are lying, when they say
+            <br />
+            How it&apos;ll go days ahead, getting darker, progress stalling,
+            ever falling despair sets in
+            <br />
+            But I know can&apos;t rely, thoughts and prayers, dreams and hopes,
+            without action it&apos;s useless you
+            <br />
+            Gotta show (up) not alone, never were, a facade, just the fucking
+            system trying to
+          </p>
+
+          <p>
+            Bring us down
+            <br />
+            Bring us down
+            <br />
+            Bring us down
+            <br />
+            I didn&apos;t come this far in my struggles just to be turned around
+            <br />
+            Turned around!
+            <br />
+            Turned around!
+          </p>
+          <p>
+            Here we go they will tremble, see our numbers, disaffection, mass
+            movement, we will
+            <br />
+            Overthrow done before, done again, show these bastards who we are
+            and then we&apos;ll scream
+            <br />
+            Never again, Again, Again, AGAIN
+          </p>
+          <p>
+            Overthrow done before, done again, show these bastards who we are
+            and then we&apos;ll scream
+            <br />
+            Never again, Again, Again, AGAIN
+          </p>
+        </Accordion>
         <Accordion title="Not A Collapse">
           <AudioPlayer file="Not-a-collapse.mp3" />
           <p>
@@ -335,7 +398,7 @@ const Music = () => {
             Together we can build, build something new
           </p>
           <p>
-            You&apos;re not just a statistic, You&apos;re a person I adore{" "}
+            You&apos;re not just a statistic, You&apos;re a person I adore
             <br />I won&apos;t let you fall through cracks in society&apos;s
             floor <br />
             They try to tear us down, make us feel small <br />
