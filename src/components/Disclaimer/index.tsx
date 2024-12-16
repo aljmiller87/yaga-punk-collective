@@ -12,14 +12,14 @@ const Disclaimer = () => {
         <Link href={"/members"}>Rebel Rabbit Alex</Link> who is looking for a
         guitarist, bassist, and drummer to join. Currently, all bass, guitar,
         and vocals are produced by Rebel who has the hope others will join to
-        make new songs as well as improve existing songs.
+        make new songs as well as improve existing ones.
       </p>
       <p className={sectionStyles.large}>
-        You&apos;ll notice that they songs as the exist are not demo ready.
+        You&apos;ll notice that the songs as the exist are not demo ready.
         Firstly, they&apos;re lacking drum tracks which are beyond Rebel&apos;s
         ability. Secondly, one track is missing bass. Thirdly, everything has
-        been recorded on relatively cheap equipment for the time being. The
-        current state of these songs are only a reflection of the sound and
+        been thus far recorded on relatively cheap equipment in Rebel's house.
+        The current state of these songs is only a reflection of the sound and
         direction Rebel would like to take the band.
       </p>
     </>
