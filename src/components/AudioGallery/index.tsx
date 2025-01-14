@@ -21,6 +21,7 @@ const AudioGallery = ({
         />
         <AudioPlayer title="Not A Collapse" file="Not-a-collapse.mp3" />
         <AudioPlayer title="Rent Is Theft" file="Rent-Is-Theft.mp3" />
+        <AudioPlayer title="On Being Used" file="On-Being-Used.mp3" />
         <AudioPlayer
           title="It was never for us"
           file="It-was-never-for-us.mp3"
