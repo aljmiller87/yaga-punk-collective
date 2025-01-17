@@ -55,6 +55,99 @@ const Music = () => {
       </Section>
       <Section>
         <hr />
+        <Accordion title="On Being Used">
+          <AudioPlayer file="On-Being-Used.mp3" />
+          <p>
+            What&apos;s the matter, Tranny faggot?
+            <br />
+            Why are you so depressed?
+            <br />
+            Should be fucking grateful
+            <br />
+            That we even grant you sex.
+            <br />
+            Rich girls will fuck me,
+            <br />
+            In their lakeside mansion,
+            <br />
+            But it&apos;s never real,
+            <br />
+            Just their sport of expansion.
+            {/* <br />
+            Go back to your spouse, to your mom and dad.
+            <br />
+            Laugh about the tranny that you had. */}
+          </p>
+          <p>
+            A story on being used <br />
+            On being used <br />
+            On being used <br />
+            On being used
+          </p>
+          <p>
+            Said I was the best thing
+            <br />
+            To ever happen to you.
+            <br />
+            But in my dark times,
+            <br />
+            Was other lovers you ran to.
+            <br />
+            I&amp;m sorry I&amp;m an addict,
+            <br />
+            Still a struggle that I face.
+            <br />
+            Guess I was a fucking fool,
+            <br />
+            For thinking I could take up space.
+          </p>{" "}
+          <p>
+            A story on being used <br />
+            On being used <br />
+            On being used <br />
+            On being used
+          </p>
+          <p>
+            Passionate, generous, always to a fault.
+            <br />
+            Despite all the times getting kicked to the asphalt.
+            <br />
+            Through it all, I still can&apos;t bring myself to ever hate you.
+            <br />
+            One day I&apos;ll love myself as much as…
+          </p>
+          <p>
+            I loved you.
+            <br />
+            I loved you.
+            <br />
+            I loved you.
+            <br />A story on being used.
+          </p>
+          <p>
+            A sexual novelty,
+            <br />
+            You called me a friend.
+            <br />
+            But that never adds up,
+            <br />
+            Ever in the end.
+            {/* I&apos;m sorry I&apos;m an addict, still a struggle that I face.
+            <br />
+            Guess I&apos;m a fool for thinking I could take up space.
+            A fuckin&apos; relapse won&apos;t stop progress. */}
+            <br />
+            Fuck it all, no regrets. Heal the wounds of the past.
+            <br />
+            One day I&apos;ll find something... something that gives back!
+          </p>
+          <p>
+            A story on being used <br />
+            On being used <br />
+            On being used <br />
+            On being used
+          </p>
+        </Accordion>
         <Accordion title="Untitled - NoZen Contrafactum">
           <AudioPlayer file="NoZen-song.mp3" />
           <p>
@@ -226,99 +319,6 @@ const Music = () => {
             Rent is just theft <br />
             Rent is just theft <br />
             Pay up or die!
-          </p>
-        </Accordion>
-        <Accordion title="On Being Used">
-          <AudioPlayer file="On-Being-Used.mp3" />
-          <p>
-            What&apos;s the matter, Tranny faggot?
-            <br />
-            Why are you so depressed?
-            <br />
-            Should be fucking grateful
-            <br />
-            That we even grant you sex.
-            <br />
-            Rich girls will fuck me,
-            <br />
-            In their lakeside mansion,
-            <br />
-            But it&apos;s never real,
-            <br />
-            Just their sport of expansion.
-            {/* <br />
-            Go back to your spouse, to your mom and dad.
-            <br />
-            Laugh about the tranny that you had. */}
-          </p>
-          <p>
-            A story on being used <br />
-            On being used <br />
-            On being used <br />
-            On being used
-          </p>
-          <p>
-            Said I was the best thing
-            <br />
-            To ever happen to you.
-            <br />
-            But in my dark times,
-            <br />
-            Was other lovers you ran to.
-            <br />
-            Friends and family saw you
-            <br />
-            In that fucking parking lot,
-            <br />
-            While I&apos;m at home, with a kid.
-            <br />
-            Panicing, heart is shot.
-          </p>{" "}
-          <p>
-            A story on being used <br />
-            On being used <br />
-            On being used <br />
-            On being used
-          </p>
-          <p>
-            Passionate, generous, always to a fault.
-            <br />
-            Despite all the times getting kicked to the asphalt.
-            <br />
-            Through it all, I still can&apos;t bring myself to ever hate you.
-            <br />
-            One day I&apos;ll love myself as much as…
-          </p>
-          <p>
-            I loved you.
-            <br />
-            I loved you.
-            <br />
-            I loved you.
-            <br />A story on being used.
-          </p>
-          <p>
-            A sexual novelty,
-            <br />
-            You called me a friend.
-            <br />
-            But that never adds up,
-            <br />
-            Ever in the end.
-            {/* I&apos;m sorry I&apos;m an addict, still a struggle that I face.
-            <br />
-            Guess I&apos;m a fool for thinking I could take up space.
-            A fuckin&apos; relapse won&apos;t stop progress. */}
-            <br />
-            Fuck it all, no regrets. Heal the wounds of the past.
-            <br />
-            One day I&apos;ll find something... something that will last!
-          </p>
-          <p>
-            A story on being used <br />
-            On being used <br />
-            On being used <br />
-            On being used
           </p>
         </Accordion>
         <Accordion title="Was Never For Us">
