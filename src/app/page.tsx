@@ -8,7 +8,7 @@ import Disclaimer from "@/components/Disclaimer";
 import "../styles/theme.css";
 
 export const metadata: Metadata = {
-  title: "Louder Transition Collective",
+  title: "Louder Transition",
   description:
     "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
   authors: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   publisher: "Rebel Rabbit Alex",
 
   keywords: [
-    "Louder Transition Collective",
+    "Louder Transition",
     "Anarchist punk band",
     "anarcho punk band",
     "hardcore punk band",
@@ -29,10 +29,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://wwww.loudertransition.com",
-    title: "Louder Transition Collective",
+    title: "Louder Transition",
     description:
       "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
-    siteName: "Louder Transition Collective",
+    siteName: "Louder Transition",
     // images: [
     //   {
     //     url: ".jpeg",

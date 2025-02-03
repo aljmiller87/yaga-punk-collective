@@ -9,7 +9,7 @@ import openBorders from "../../../public/uploads/images/open-borders.jpg";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Louder Transition Collective Values",
+  title: "Louder Transition Values",
   description:
     "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
   authors: {
@@ -19,16 +19,16 @@ export const metadata: Metadata = {
   creator: "Rebel Rabbit Alex",
   publisher: "Rebel Rabbit Alex",
 
-  keywords: ["Louder Transition Collective Values"],
+  keywords: ["Louder Transition Values"],
   themeColor: "#0F8185",
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     url: "https://wwww.loudertransition.com",
-    title: "Louder Transition Collective",
+    title: "Louder Transition",
     description:
       "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
-    siteName: "Louder Transition Collective",
+    siteName: "Louder Transition",
     // images: [
     //   {
     //     url: ".jpeg",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 const ValuesPage = () => {
   return (
     <>
-      <PageBanner title={"Values of the Louder Transition Collective"} />
+      <PageBanner title={"Values of the Louder Transition"} />
       <CopyAndImage
         img={anarchy as unknown as string}
         imgPosition="center center"

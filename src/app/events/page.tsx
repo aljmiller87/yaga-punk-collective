@@ -15,7 +15,7 @@ const Events = async () => {
 
   return (
     <div>
-      <PageBanner title={"Louder Transition Collective"} />
+      <PageBanner title={"Louder Transition"} />
       <Section>
         <h2>Upcoming Events</h2>
         {/* {events.map((event, ind) => (

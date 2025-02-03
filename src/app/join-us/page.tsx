@@ -6,7 +6,7 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Louder Transition Collective - Join Us",
+  title: "Louder Transition - Join Us",
   description:
     "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
   authors: {
@@ -22,10 +22,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://wwww.loudertransition.com",
-    title: "Louder Transition Collective",
+    title: "Louder Transition",
     description:
       "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
-    siteName: "Louder Transition Collective",
+    siteName: "Louder Transition",
     // images: [
     //   {
     //     url: ".jpeg",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 const JoinUs = () => {
   return (
     <>
-      <PageBanner title={"Join the Louder Transition Collective"} />
+      <PageBanner title={"Join the Louder Transition"} />
       <Section>
         <h2>Currently Seeking musicians and other help</h2>
         <p>

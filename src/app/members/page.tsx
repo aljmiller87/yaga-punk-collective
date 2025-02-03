@@ -11,7 +11,7 @@ import AlexImg from "../../../public/uploads/images/rebelrabbitalex-profile.jpg"
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Louder Transition Collective Members",
+  title: "Louder Transition Members",
   description:
     "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
   authors: {
@@ -21,16 +21,16 @@ export const metadata: Metadata = {
   creator: "Rebel Rabbit Alex",
   publisher: "Rebel Rabbit Alex",
 
-  keywords: ["Louder Transition Collective Members"],
+  keywords: ["Louder Transition Members"],
   themeColor: "#0F8185",
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     url: "https://wwww.loudertransition.com",
-    title: "Louder Transition Collective",
+    title: "Louder Transition",
     description:
       "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
-    siteName: "Louder Transition Collective",
+    siteName: "Louder Transition",
     // images: [
     //   {
     //     url: ".jpeg",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 export default async function AboutUs() {
   return (
     <>
-      <PageBanner title={"Members of Louder Transition Collective"} />
+      <PageBanner title={"Members of Louder Transition"} />
 
       <CopyAndImage img={AlexImg as unknown as string} imgPosition="center top">
         <h2>Rebel Rabbit Alex</h2>

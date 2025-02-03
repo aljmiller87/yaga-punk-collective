@@ -8,7 +8,7 @@ import { Metadata } from "next";
 import Socials, { ISocial } from "@/components/Socials";
 
 export const metadata: Metadata = {
-  title: "Louder Transition Collective Discography",
+  title: "Louder Transition Discography",
   description:
     "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
   authors: {
@@ -18,19 +18,16 @@ export const metadata: Metadata = {
   creator: "Rebel Rabbit Alex",
   publisher: "Rebel Rabbit Alex",
 
-  keywords: [
-    "Louder Transition Collective Discography",
-    "Louder Transition Collective music",
-  ],
+  keywords: ["Louder Transition Discography", "Louder Transition music"],
   themeColor: "#0F8185",
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     url: "https://wwww.loudertransition.com",
-    title: "Louder Transition Collective",
+    title: "Louder Transition",
     description:
       "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
-    siteName: "Louder Transition Collective",
+    siteName: "Louder Transition",
     // images: [
     //   {
     //     url: ".jpeg",

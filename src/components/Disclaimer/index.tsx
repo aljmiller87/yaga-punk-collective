@@ -7,8 +7,8 @@ const Disclaimer = () => {
     <>
       <h3>Disclaimer:</h3>
       <p className={sectionStyles.large}>
-        Louder Transition Collective is a hardcore anarcho-punk band from
-        Charlotte, NC. The project was recently started by{" "}
+        Louder Transition is a hardcore anarcho-punk band from Charlotte, NC.
+        The project was recently started by{" "}
         <Link href={"/members"}>Rebel Rabbit Alex</Link> who is looking for a
         guitarist, bassist, and drummer to join. Currently, all bass, guitar,
         and vocals are produced by Rebel who has the hope others will join to
