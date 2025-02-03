@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Hero.module.scss";
-import BannerImg from "../../../public/uploads/icons/LTC-logo-with-text.svg";
+import BannerImg from "../../../public/uploads/icons/LT-logo-with-text-anarcho-queer.svg";
 import bgImage from "../../../public/uploads/images/8m-women-strike-movement.jpg";
 import Section from "../Section";
 
@@ -18,7 +18,7 @@ const Hero = () => {
 
   return (
     <div className={styles.Hero} role="banner">
-      <div className={styles.bgImage}>
+      {/* <div className={styles.bgImage}>
         <div className={styles.bgImageBg} />
         <Image
           src={bgImage}
@@ -27,7 +27,7 @@ const Hero = () => {
           fill={true}
           priority
         />{" "}
-      </div>
+      </div> */}
       <div
         ref={imgRef}
         className={`${styles.imgWrapper} ${isMounted && styles.isMounted}`}
@@ -40,12 +40,12 @@ const Hero = () => {
           priority
         />
       </div>
-      <Section className={`${styles.buttons} ${isMounted && styles.isMounted}`}>
+      {/* <Section className={`${styles.buttons} ${isMounted && styles.isMounted}`}>
         <h3>Now Recruiting!</h3>
         <Link href="/join-us" className="Btn-primary">
           Join Us
         </Link>
-      </Section>
+      </Section> */}
     </div>
   );
 };

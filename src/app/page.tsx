@@ -45,10 +45,10 @@ export default async function Home() {
   return (
     <>
       <Hero />
-      <Section>
+      {/* <Section>
         <Disclaimer />
-      </Section>
-      <AudioGallery title="Songs" addCta />
+      </Section> */}
+      <AudioGallery title="Demos - In Progress" addCta />
     </>
   );
 }

@@ -36,9 +36,9 @@ const MobileMenu = ({ isActive }: { isActive: boolean }) => {
         <li>
           <Link href="/music">Music</Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/join-us">Get Involved</Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

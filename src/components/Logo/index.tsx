@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Img from "../../../public/uploads/icons/LTC-logo.svg";
+import Img from "../../../public/uploads/icons/LT-logo-with-text-anarcho-queer.svg";
 import styles from "./logo.module.scss";
 
 const Logo = ({ variant }: { variant: "light" | "dark" }) => {

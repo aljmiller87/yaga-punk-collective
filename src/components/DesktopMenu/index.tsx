@@ -15,9 +15,9 @@ const DesktopMenu = () => {
         <li>
           <Link href="/music">Music</Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/join-us">Get Involved</Link>
-        </li>
+        </li> */}
         {/* <li>
           <Link href="/events">Events</Link>
         </li> */}

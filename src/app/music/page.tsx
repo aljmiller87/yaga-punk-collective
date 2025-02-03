@@ -49,12 +49,8 @@ const nozenSocials: ISocial[] = [
 const Music = () => {
   return (
     <>
-      <PageBanner title={" Transition Collective Music (and Lyrics)"} />
+      <PageBanner title={"Louder Transition Demos (and Lyrics)"} />
       <Section>
-        <Disclaimer />
-      </Section>
-      <Section>
-        <hr />
         <Accordion title="On Being Used">
           <AudioPlayer file="On-Being-Used.mp3" />
           <p>
