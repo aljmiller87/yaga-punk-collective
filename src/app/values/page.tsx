@@ -10,8 +10,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Louder Transition Values",
-  description:
-    "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
+  description: "Charlotte Queer Anarcho Punk",
   authors: {
     name: "Alex Miller",
     url: "www.alexmillerwebdev.com",
@@ -26,8 +25,7 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://wwww.loudertransition.com",
     title: "Louder Transition",
-    description:
-      "A hardcore anarcho-punk band from Charlotte, NC currently looking for like minded punks to join",
+    description: "Charlotte Queer Anarcho Punk",
     siteName: "Louder Transition",
     // images: [
     //   {
