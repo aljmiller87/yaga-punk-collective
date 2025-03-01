@@ -3,7 +3,6 @@ import PageBanner from "@/components/PageBanner";
 import Accordion from "@/components/Accordion";
 import Section from "@/components/Section";
 import AudioPlayer from "@/components/AudioPlayer";
-import Disclaimer from "@/components/Disclaimer";
 import { Metadata } from "next";
 import Socials, { ISocial } from "@/components/Socials";
 
@@ -139,6 +138,64 @@ const Music = () => {
             On being used
           </p>
         </Accordion>
+        <Accordion title="Rent Is Theft">
+          <AudioPlayer file="Rent-Is-Theft.mp3" />
+          <p>
+            You enclose the commons, you put up the fence. <br />
+            To survive- have to use it, gotta pay rent
+            <br />
+            But you mix no labor, you don&apos;t occupy,
+            <br />
+            If I wanna live, gotta sell my time
+            <br />
+          </p>
+          <p>
+            Absentee ownership, what a fucking farce
+            <br />
+            Just making life artificially scarce
+            <br />
+            Burn the leasing office, tear it apart
+            <br />
+            No more landlords, that&apos;d be a start
+            <br />
+          </p>
+          <p></p>
+          <p>
+            Rent is just theft <br />
+            Rent is just theft <br />
+            Rent is just theft <br />
+            C&apos;mon just sell your life
+          </p>
+          <p>
+            Rent is just theft <br />
+            Rent is just theft <br />
+            Rent is just theft <br />
+            Pay up or die!
+          </p>
+          <p></p>
+          <p>
+            It&apos;s the sickest goddamn joke I&apos;ve ever fucking known,
+            <br />
+            A magic deed and title that says you own,
+            <br />
+            Basically feudalism, has a nasty ring
+            <br />
+            Long live the levelers and death to the king!
+            <br />
+          </p>
+          <p>
+            Rent is just theft <br />
+            Rent is just theft <br />
+            Rent is just theft <br />
+            C&apos;mon just sell your life
+          </p>
+          <p>
+            Rent is just theft <br />
+            Rent is just theft <br />
+            Rent is just theft <br />
+            Pay up or die!
+          </p>
+        </Accordion>
         <Accordion title="Untitled - NoZen Contrafactum">
           <AudioPlayer file="NoZen-song.mp3" />
           <p>
@@ -228,8 +285,9 @@ const Music = () => {
           </p>
           <p>
             Well the resistance is here and the resistance is queer <br />
+            Fuck it man, we&apos;ve always been here. <br />
             Used to being bashed by the fucking fash <br />
-            And though they risenfrom ashes of the past
+            And though they risen up from ashes of the past
             <br />
             And we&apos;ll burn it down
             <br />
@@ -239,77 +297,6 @@ const Music = () => {
             <br />
             Bring justice to your town
             <br />
-          </p>
-        </Accordion>
-        <Accordion title="Rent Is Theft">
-          <AudioPlayer file="Rent-Is-Theft.mp3" />
-          <p>
-            You enclose the commons, you put up the fence. <br />
-            To survive- have to use it, gotta pay rent
-            <br />
-            But you mix no labor, you don&apos;t occupy,
-            <br />
-            If I wanna live, gotta sell my time
-            <br />
-          </p>
-          <p>
-            Absentee ownership, what a fucking farce
-            <br />
-            Just making life artificially scarce
-            <br />
-            Burn the leasing office, tear it apart
-            <br />
-            No more landlords, that&apos;d be a start
-            <br />
-          </p>
-          <p></p>
-          <p>
-            Rent is just theft <br />
-            Rent is just theft <br />
-            Rent is just theft <br />
-            C&apos;mon just sell your life
-          </p>
-          <p>
-            Rent is just theft <br />
-            Rent is just theft <br />
-            Rent is just theft <br />
-            Pay up or die!
-          </p>
-          <p></p>
-          <p>
-            It&apos;s the sickest goddamn joke I&apos;ve ever fucking known,
-            <br />
-            A magic deed and title that says you own,
-            <br />
-            Basically feudalism, has a nasty ring
-            <br />
-            Long live the levelers and death to the king!
-            <br />
-          </p>
-          <p>
-            Rent is just theft <br />
-            Rent is just theft <br />
-            Rent is just theft <br />
-            C&apos;mon just sell your life
-          </p>
-          <p>
-            Rent is just theft <br />
-            Rent is just theft <br />
-            Rent is just theft <br />
-            Pay up or die!
-          </p>
-          <p></p>
-          <p>
-            Rent is just theft <br />
-            Rent is just theft <br />
-            Rent is just theft <br />
-            C&apos;mon just sell your life
-          </p>
-          <p>
-            Rent is just theft <br />
-            Rent is just theft <br />
-            Rent is just theft <br />
-            Pay up or die!
           </p>
         </Accordion>
         <Accordion title="Was Never For Us">
