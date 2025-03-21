@@ -6,9 +6,16 @@ import Instagram from "./Instagram";
 import Twitter from "./Twitter";
 import Tiktok from "./Tiktok";
 import Youtube from "./Youtube";
+import Linktree from "./Linktree";
 
 export type ISocial = {
-  platform: "instagram" | "facebook" | "tiktok" | "twitter" | "youtube";
+  platform:
+    | "instagram"
+    | "facebook"
+    | "tiktok"
+    | "twitter"
+    | "youtube"
+    | "linktree";
   url: string;
 };
 const Socials = ({
@@ -32,6 +39,8 @@ const Socials = ({
         return <Youtube />;
       case "tiktok":
         return <Tiktok />;
+      case "linktree":
+        return <Linktree />;
 
       default:
         return null;
