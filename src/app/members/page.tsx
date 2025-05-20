@@ -8,7 +8,7 @@ import Socials, { ISocial } from "@/components/Socials";
 // Styles
 import styles from "./styles.module.scss";
 import AlexImg from "../../../public/uploads/images/members/rebelrabbitalex-profile.jpg";
-import ImmiImg from "../../../public/uploads/images/immi-profile.jpg";
+// import ImmiImg from "../../../public/uploads/images/immi-profile.jpg";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -92,53 +92,7 @@ export default async function AboutUs() {
           />
         </div>
       </CopyAndImage>
-      <CopyAndImage img={ImmiImg as unknown as string} imgPosition="center top">
-        <h2>Immi Embers</h2>{" "}
-        <p>
-          <b>LTC Role</b>: producer, guitarist, songwriter, vocalist
-        </p>
-        <p>
-          Immi Embers is a 27-year-old transgender woman, musician, and
-          emotional activist dedicated to creating art that heals and inspires.
-          As a producer, guitarist, songwriter, vocalist, and director, Immi
-          brings a unique blend of creativity, passion, and activism to the
-          music scene.
-        </p>
-        <p>
-          A lifelong musician, Immi began exploring instruments at just 4 years
-          old.. With an insatiable curiosity, she devoted herself to studying
-          the intricacies of her favorite music, seeking to understand what
-          makes it resonate with people. This dedication has paid off in spades,
-          as Immi&apos;s unique voice and perspective have earned her a
-          respected place in her field.
-        </p>
-        <p>
-          With a rich musical history that includes stints with When I Say Jump,
-          Angels Among Ashes, and Cicero, Immi has honed her craft and developed
-          a distinctive sound that blends emotional intensity with infectious
-          energy. Her music is a testament to the power of art to transform,
-          uplift, and connect people.
-        </p>
-        <p>
-          Through her work with Louder Transition Collective, Immi aims to
-          create a sense of community and belonging among marginalized voices,
-          promoting empathy, understanding, and acceptance. With her music, she
-          hopes to inspire healing, resilience, and hope - and to empower others
-          to do the same.
-        </p>
-        <div className={styles.socialContainer}>
-          <Socials
-            socials={
-              [
-                {
-                  platform: "linktree",
-                  url: "linktr.ee/immiembers",
-                },
-              ] as ISocial[]
-            }
-          />
-        </div>
-      </CopyAndImage>
+
       {/* ))}  */}
     </>
   );

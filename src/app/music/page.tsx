@@ -440,52 +440,6 @@ const Music = () => {
             That&apos;ll be the day this athiest prays
           </p>
         </Accordion>
-        <Accordion title="Never Homeless Again">
-          {/* <AudioPlayer file="Never-Homeless-Again.mp3" /> */}
-          <h4>Track coming soon!</h4>
-          <p>
-            None of my friends will ever be homeless <br />
-            Not while I can still fucking breathe <br />
-            We&apos;ll build each other up, we&apos;ll survive and thrive <br />
-            Together, a family, we&apos;ll fight this fight
-          </p>
-          <p>
-            It must be hard living in a world <br />
-            Where you have such little control over it all <br />
-            I&apos;m here to tell you something I think is true <br />
-            Together we can build, build something new
-          </p>
-          <p>
-            They say we&apos;re ungrateful, they say we&apos;re a waste <br />
-            But they don&apos;t know the struggle, they don&apos;t know the
-            taste <br />
-            Of living on the edge with nowhere to go <br />
-            But we&apos;ll write our own story, we&apos;ll take control
-          </p>
-          <p>
-            It must be hard living in a world <br />
-            Where you have such little control over it all <br />
-            I&apos;m here to tell you something I think is true <br />
-            Together we can build, build something new
-          </p>
-          <p>
-            You&apos;re not just a statistic, You&apos;re a person I adore
-            <br />I won&apos;t let you fall through cracks in society&apos;s
-            floor <br />
-            They try to tear us down, make us feel small <br />
-            But when I&apos;m here with youk, I feel so fucking tall
-          </p>
-          <p>
-            It must be hard living in a world <br />
-            Where you have such little control over it all <br />
-            I&apos;m here to tell you something I think is true <br />
-            Together we can build, build something new
-          </p>
-          <p>
-            None of my friends will ever be homeless <br />
-            Not while I can live, not while I can give!
-          </p>
-        </Accordion>
       </Section>
     </>
   );
