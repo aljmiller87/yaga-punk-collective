@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import Image, { StaticImageData } from "next/image";
 
 import Section from "../Section";
-import VolunteerImage from "../../../public/uploads/logos/nozen-logo.png";
+import VolunteerImage from "../../../public/uploads/icons/LTC-logo.svg";
 import styles from "./styles.module.scss";
 
 const CopyAndImage = ({

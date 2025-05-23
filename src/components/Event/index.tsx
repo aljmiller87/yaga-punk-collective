@@ -41,7 +41,7 @@ const Event = ({
           {date && <p>{formatttedDate}</p>}
           {/* {time && <p>{time}</p>} */}
         </div>
-        {!!otherBands && (
+        {!!otherBands.length && (
           <p>
             Other bands:{" "}
             {otherBands.map((otherBand, index) => (

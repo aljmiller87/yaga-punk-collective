@@ -46,7 +46,7 @@ export default async function AboutUs() {
       <CopyAndImage img={AlexImg as unknown as string} imgPosition="center top">
         <h2>Rebel Rabbit Alex</h2>
         <p>
-          <b>LTC Role</b>: Vocalist, songwriter, front woman
+          <b>LTC Role</b>: Vocalist, guitarist, songwriter, front woman
         </p>
         <p>
           Rebel Rabbit is a 37 year old transgender woman who has loved punk
@@ -92,7 +92,20 @@ export default async function AboutUs() {
           />
         </div>
       </CopyAndImage>
-
+      <CopyAndImage>
+        <h2>James</h2>
+        <p>
+          <b>LTC Role</b>: drummer
+        </p>
+        <p>Details coming soon!</p>
+      </CopyAndImage>
+      <CopyAndImage>
+        <h2>Phillip</h2>
+        <p>
+          <b>LTC Role</b>: Bassist
+        </p>
+        <p>Details coming soon!</p>
+      </CopyAndImage>
       {/* ))}  */}
     </>
   );
