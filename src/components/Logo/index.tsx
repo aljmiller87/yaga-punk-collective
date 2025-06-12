@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Img from "../../../public/uploads/icons/LT-logo-with-text-anarcho-queer.svg";
+import Img from "../../../public/uploads/icons/LTC-logo-with-text.svg";
 import styles from "./logo.module.scss";
 
 const Logo = ({ variant }: { variant: "light" | "dark" }) => {
@@ -11,7 +11,6 @@ const Logo = ({ variant }: { variant: "light" | "dark" }) => {
       <Image
         src={Img}
         alt="Logo alt text"
-        //   className={styles.vercelLogo}
         layout={"fill"}
         objectFit={"contain"}
         priority
