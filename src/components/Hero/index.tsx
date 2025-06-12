@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import styles from "./Hero.module.scss";
-import BannerImg from "../../../public/uploads/icons/LTC-logo-with-text.svg";
+import BannerImg from "../../../public/uploads/icons/LTC-logo-with-text-transparent.svg";
 
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
