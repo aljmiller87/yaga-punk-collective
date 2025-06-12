@@ -8,7 +8,7 @@ import Disclaimer from "@/components/Disclaimer";
 import "../styles/theme.css";
 
 export const metadata: Metadata = {
-  title: "Louder Transition",
+  title: "Louder Transition Collective",
   description: "Charlotte Queer Anarcho Punk",
   authors: {
     name: "Alex Miller",
@@ -19,23 +19,24 @@ export const metadata: Metadata = {
 
   keywords: [
     "Louder Transition",
+    "Louder Transition Collective",
     "Anarchist punk band",
     "anarcho punk band",
     "hardcore punk band",
   ],
-  themeColor: "#0F8185",
+  themeColor: "#292929",
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     url: "https://wwww.loudertransition.com",
-    title: "Louder Transition",
+    title: "Louder Transition Collective",
     description: "Charlotte Queer Anarcho Punk",
     siteName: "Louder Transition",
-    // images: [
-    //   {
-    //     url: ".jpeg",
-    //   },
-    // ],
+    images: [
+      {
+        url: "https://wwww.loudertransition.com/public/uploads/images/LTC-logo-w-text.png",
+      },
+    ],
   },
 };
 
