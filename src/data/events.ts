@@ -6,14 +6,6 @@ import karens from "../../public/uploads/images/events/karens.jpeg";
 
 export const events: IEvent[] = [
   {
-    title: "Greensboro Pride",
-    image: gbPride,
-    date: "June 28, 2025",
-    // ticketUrl: "fake link",
-    venueUrl: "https://greensboropride.org/",
-    description: "More details to come",
-  },
-  {
     title: "Punk Rock Flea Market 2025",
     image: prfm,
     date: "July 24, 2025",
