@@ -10,6 +10,7 @@ import styles from "./styles.module.scss";
 import AlexImg from "../../../public/uploads/images/members/rebelrabbitalex-profile.jpg";
 // import ImmiImg from "../../../public/uploads/images/immi-profile.jpg";
 import { Metadata } from "next";
+import FullWidthImageContent from "@/components/FullWidthImageContent";
 
 export const metadata: Metadata = {
   title: "Louder Transition Members",
@@ -106,6 +107,7 @@ export default async function AboutUs() {
         </p>
         <p>Details coming soon!</p>
       </CopyAndImage>
+      <FullWidthImageContent />
       {/* ))}  */}
     </>
   );

@@ -1,7 +1,7 @@
 import { IEvent } from "@/components/Event";
 import club27 from "../../public/uploads/images/events/27club.jpg";
 import gbPride from "../../public/uploads/images/events/gbpride.jpg";
-import prfm from "../../public/uploads/images/events/prfm.jpeg";
+import prfm from "../../public/uploads/images/events/prfm2.png";
 import karens from "../../public/uploads/images/events/karens.jpeg";
 
 export const events: IEvent[] = [

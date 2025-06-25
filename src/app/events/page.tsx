@@ -3,6 +3,7 @@ import React from "react";
 import Section from "@/components/Section";
 import Event from "@/components/Event";
 import { events } from "@/data/events";
+import FullWidthImageContent from "@/components/FullWidthImageContent";
 const Events = async () => {
   return (
     <div>
@@ -13,6 +14,7 @@ const Events = async () => {
           <Event key={ind} {...event} />
         ))}
       </Section>
+      <FullWidthImageContent />
     </div>
   );
 };

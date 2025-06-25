@@ -7,6 +7,7 @@ import copyLeft from "../../../public/uploads/icons/copy-left.svg";
 import transLiberation from "../../../public/uploads/images/trans-liberation.jpg";
 import openBorders from "../../../public/uploads/images/open-borders.jpg";
 import { Metadata } from "next";
+import FullWidthImageContent from "@/components/FullWidthImageContent";
 
 export const metadata: Metadata = {
   title: "Louder Transition Values",
@@ -221,6 +222,7 @@ const ValuesPage = () => {
           responsibility.
         </p>
       </CopyAndImage>
+      <FullWidthImageContent />
     </>
   );
 };
