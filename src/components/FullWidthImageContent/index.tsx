@@ -22,7 +22,7 @@ const FullWidthImageContent = () => {
         </p>
         <p>
           If there are other ways you would like to get involved with the band,
-          please contact us. We're looking for help on a few fronts
+          please contact us. We&apos;re looking for help on a few fronts
         </p>
         <ul>
           <li>production</li>
