@@ -14,7 +14,7 @@ export type IEvent = {
   image: StaticImageData;
   date: string;
   description?: string;
-  //   time: string;
+  time?: string;
   ticketUrl?: string;
   venueUrl?: string;
   otherBands?: IBand[];
@@ -23,6 +23,7 @@ const Event = ({
   title,
   image,
   date,
+  time,
   ticketUrl,
   description,
   venueUrl,
@@ -39,7 +40,7 @@ const Event = ({
         {!!description && <p>{description}</p>}
         <div className={styles["Event-date"]}>
           {date && <p>{formatttedDate}</p>}
-          {/* {time && <p>{time}</p>} */}
+          {time && <p>{time}</p>}
         </div>
         {!!otherBands.length && (
           <p>

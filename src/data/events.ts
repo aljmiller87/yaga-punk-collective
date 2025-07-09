@@ -10,9 +10,10 @@ export const events: IEvent[] = [
     title: "Punk Rock Flea Market 2025",
     image: prfm,
     date: "July 24, 2025",
+    time: "7:00PM - 11:00PM",
     // ticketUrl: "fake link",
     venueUrl: "https://www.theeaglesdare.com/",
-    description: "Jul 26 at 7:00PM - 11:00PM",
+    description: "Jul 26",
     // otherBands: [{ name: "BOOF", url: "https://booftheworld.bandcamp.com/" }],
   },
   {
@@ -21,7 +22,8 @@ export const events: IEvent[] = [
     date: "Aug 9, 2025",
     // ticketUrl: "fake link",
     venueUrl: "https://www.bandsintown.com/v/10177481-panther-lake",
-    description: "Aug 9 at 5:00PM",
+    description: "Aug 9",
+    time: "5:00PM",
     otherBands: [
       { name: "Machine Gun Earl", url: "https://machinegunearl.bandcamp.com/" },
       {
