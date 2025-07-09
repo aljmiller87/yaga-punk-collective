@@ -61,12 +61,22 @@ const Event = ({
       </div>
       <div className={styles["Event-buttons"]}>
         {!!venueUrl && (
-          <a className="Btn-primary" href={venueUrl}>
+          <a
+            className="Btn-primary"
+            href={venueUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Venue
           </a>
         )}
         {!!ticketUrl && (
-          <a className="Btn-primary" href={ticketUrl}>
+          <a
+            className="Btn-primary"
+            href={ticketUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Tickets
           </a>
         )}

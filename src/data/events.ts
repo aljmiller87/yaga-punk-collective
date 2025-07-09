@@ -3,6 +3,7 @@ import club27 from "../../public/uploads/images/events/27club.jpg";
 import gbPride from "../../public/uploads/images/events/gbpride.jpg";
 import prfm from "../../public/uploads/images/events/prfm2.png";
 import karens from "../../public/uploads/images/events/karens.jpeg";
+import pantherLake from "../../public/uploads/images/events/panther-lake.jpeg";
 
 export const events: IEvent[] = [
   {
@@ -13,6 +14,22 @@ export const events: IEvent[] = [
     venueUrl: "https://www.theeaglesdare.com/",
     description: "Jul 26 at 7:00PM - 11:00PM",
     // otherBands: [{ name: "BOOF", url: "https://booftheworld.bandcamp.com/" }],
+  },
+  {
+    title: "LTC at Panther Lake",
+    image: pantherLake,
+    date: "Aug 9, 2025",
+    // ticketUrl: "fake link",
+    venueUrl: "https://www.bandsintown.com/v/10177481-panther-lake",
+    description: "Aug 9 at 5:00PM",
+    otherBands: [
+      { name: "Machine Gun Earl", url: "https://machinegunearl.bandcamp.com/" },
+      {
+        name: "Stoker",
+        url: "https://thetruthaboutstoker.bandcamp.com/album/stoker-2",
+      },
+      { name: "Sea Hagg", url: "https://www.instagram.com/seahaggnc/" },
+    ],
   },
   {
     title: "LTC at 27 Club",
