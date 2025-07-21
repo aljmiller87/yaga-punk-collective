@@ -43,12 +43,23 @@ export const events: IEvent[] = [
     otherBands: [{ name: "BOOF", url: "https://booftheworld.bandcamp.com/" }],
   },
   {
-    title: "LTC opens for The Karens",
+    title: "LTC at the Tin Roof",
     image: karens,
     date: "Oct 11, 2025",
     // ticketUrl: "fake link",
-    venueUrl: "https://www.instagram.com/thekarens.band/",
-    description: "Opening for Karens. Charlotte. Venue details coming soon.",
+    venueUrl: "https://www.charlestontinroof.com/",
+    description: "Opening for Karens. Charleston.",
+    otherBands: [
+      { name: "Karens", url: "https://www.instagram.com/thekarens.band/" },
+    ],
+  },
+  {
+    title: "LTC at the Milestone",
+    image: karens,
+    date: "Oct 11, 2025",
+    // ticketUrl: "fake link",
+    venueUrl: "https://themilestone.club/",
+    description: "Opening for Karens. Charlotte.",
     otherBands: [
       { name: "Karens", url: "https://www.instagram.com/thekarens.band/" },
     ],
