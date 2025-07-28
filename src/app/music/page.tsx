@@ -5,6 +5,7 @@ import Section from "@/components/Section";
 import AudioPlayer from "@/components/AudioPlayer";
 import { Metadata } from "next";
 import Socials, { ISocial } from "@/components/Socials";
+import VideoPlayer from "@/components/VideoPlayer";
 
 export const metadata: Metadata = {
   title: "Louder Transition Discography",
@@ -196,63 +197,16 @@ const Music = () => {
             Pay up or die!
           </p>
         </Accordion>
-        <Accordion title="Untitled - NoZen Contrafactum">
-          <AudioPlayer file="NoZen-song.mp3" />
-          <p>
-            <b>Guitar and Drums originally from NoZen</b>
-            <br />
-            NoZen is a newly forming hardcore punk band. They recently released
-            this track without lyrics or vocals. As an experiment, I wrote and
-            recorded my own vocals for their original song. I have their
-            permission to post my version. You should absolutely check them out!
-          </p>
-          <Socials label={"NoZen Socials"} socials={nozenSocials} />
-          <hr style={{ marginBottom: "2rem" }} />
-          <p>
-            I don&apos;t know the solution, all the answers, if they do, they
-            are lying, when they say
-            <br />
-            How it&apos;ll go days ahead, getting darker, progress stalling,
-            ever falling despair sets in
-            <br />
-            But I know can&apos;t rely, thoughts and prayers, dreams and hopes,
-            without action it&apos;s useless you
-            <br />
-            Gotta show (up) not alone, never were, a facade, just the fucking
-            system trying to
-          </p>
 
-          <p>
-            Bring us down
-            <br />
-            Bring us down
-            <br />
-            Bring us down
-            <br />
-            I didn&apos;t come this far in my struggles just to be turned around
-            <br />
-            Turned around
-            <br />
-            Turned around
-          </p>
-          <p>
-            Here we go they will tremble, see our numbers, disaffection, mass
-            movement, we will
-            <br />
-            Overthrow done before, done again, show these bastards who we are
-            and then we&apos;ll scream
-            <br />
-            Never again, Again, Again, AGAIN
-          </p>
-          <p>
-            Overthrow done before, done again, show these bastards who we are
-            and then we&apos;ll scream
-            <br />
-            Never again, Again, Again, AGAIN
-          </p>
-        </Accordion>
         <Accordion title="Not A Collapse">
-          <AudioPlayer file="Not-a-collapse.mp3" />
+          <div id="tpYtContainer">
+            <iframe
+              width="540"
+              height="920"
+              src="https://www.youtube.com/embed/txSrsqBqU3Y"
+              frameBorder="0"
+            ></iframe>
+          </div>
           <p>
             I&apos;s not a collapse says the six o&apos;clock news <br />
             But look at my savings man they&apos;re fucking through <br />
@@ -299,74 +253,10 @@ const Music = () => {
             <br />
           </p>
         </Accordion>
-        <Accordion title="Was Never For Us">
-          <AudioPlayer file="It-was-never-for-us.mp3" />
-          <p>
-            They steal the land <br />
-            They call it progress <br />
-            But it&apos;s clear it was never fucking for us
-            <br />
-            They say they serve
-            <br />
-            And they protect <br />
-            Yea the master race, they&apos;re the architects
-            <br />
-            Say it&apos;s a contract <br />
-            They call it wages
-            <br />
-            Exploitation as old as the ages
-            <br />
-          </p>
-          <p>
-            It was never for us <br />
-            It was never for us <br />
-            It was never for us <br />
-          </p>
-          <p>
-            They call it rent <br />
-            Say you can live here <br />
-            Predicated on a condition of fear <br />
-            Absolution <br />
-            They say they offer <br />
-            Obedience is all they ask or suffer <br />
-            Revolution <br />
-            Or evolution <br />
-            There&apos;s room for both and we need a solution
-          </p>
-          <p>
-            It was never for us <br />
-            It was never for us <br />
-            It was never for us <br />
-          </p>
-          <p>
-            I got your back
-            <br />
-            If you got mine
-            <br />
-            Solidarity until the end of time
-            <br />
-            I got your back
-            <br />
-            If you got mine
-            <br />
-            Solidarity until the end of time
-            <br />
-            I got your back
-            <br />
-            If you got mine
-            <br />
-            Solidarity until the end of time
-            <br />
-          </p>
-          <p>
-            It was never for us <br />
-            It was never for us <br />
-            It was never for us <br />
-          </p>
-        </Accordion>
+
         <Accordion title="Commie Gun">
-          <AudioPlayer file="Commie-Gun.mp3" />
-          <p></p>
+          <VideoPlayer id="ZHgfPKJgsLc" />
+          <p style={{ marginBottom: "2rem" }}></p>
           <p>
             Commie gun! <br />
             Bought you before the Obama import ban <br />
@@ -376,13 +266,6 @@ const Music = () => {
             I used to romanticize insurrection <br />
             Commie gun! <br />
             now I find myself in a different situation
-          </p>
-          <p>
-            Found my tribe and found my start
-            <br />
-            Found a community I&apos;m a part <br />
-            Found my scene in the dark <br />
-            Found my family, found my heart
           </p>
           <p>
             Commie gun!
@@ -402,11 +285,17 @@ const Music = () => {
           </p>
 
           <p>
-            Found my tribe and found my start
+            In that courtroom, my early 20s <br />
+            Second bust endangerment with my drunk driving <br />
+            I was white, I had a lawyer <br />
+            Two days jail and a PBJ <br />
+            It went away! <br />
+            In that courtroom, a young black man <br />
+            Second bust selling coke and you'll take note <br />
+            Just never made any claim of pain <br />
+            But three years must be served and now a family is torn apart
             <br />
-            Found a community I&apos;m a part <br />
-            Found my scene in the dark <br />
-            Found my family, found my heart
+            Makes me wanna reach for my
           </p>
           <p>
             Commie gun!

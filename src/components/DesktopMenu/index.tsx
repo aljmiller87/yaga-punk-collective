@@ -12,9 +12,9 @@ const DesktopMenu = () => {
         <li>
           <Link href="/values">Values</Link>
         </li>
-        {/* <li>
+        <li>
           <Link href="/music">Music</Link>
-        </li> */}
+        </li>
         <li>
           <Link href="/gallery">Gallery</Link>
         </li>
