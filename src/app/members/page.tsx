@@ -129,6 +129,13 @@ export default async function AboutUs() {
         </p>
         <p>Details coming soon!</p>
       </CopyAndImage>
+      <CopyAndImage>
+        <h2>Jaiden</h2>
+        <p>
+          <b>LTC Role</b>: Vocals
+        </p>
+        <p>Details coming soon!</p>
+      </CopyAndImage>
       <FullWidthImageContent />
       {/* ))}  */}
     </>
