@@ -6,29 +6,39 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Louder Transition - Join Us",
-  description: "Charlotte Queer Anarcho Punk",
+  title: "Join Us - Louder Transition Collective",
+  description:
+    "Join Louder Transition Collective! We're seeking musicians, graphic designers, promoters, and mutual aid liaisons to help grow Charlotte's queer anarcho punk community.",
   authors: {
     name: "Alex Miller",
     url: "www.alexmillerwebdev.com",
   },
   creator: "Rebel Rabbit Alex",
   publisher: "Rebel Rabbit Alex",
-
-  keywords: [],
+  keywords: [
+    "Join Louder Transition",
+    "LTC Band Members",
+    "Charlotte Punk Musicians",
+    "Anarcho Punk Community",
+    "Queer Punk Band",
+    "DIY Punk Music",
+    "Punk Rock Volunteers",
+    "Mutual Aid Groups",
+  ],
   themeColor: "#0F8185",
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
-    url: "https://wwww.loudertransition.com",
-    title: "Louder Transition",
-    description: "Charlotte Queer Anarcho Punk",
+    url: "https://wwww.loudertransition.com/join-us",
+    title: "Join Us - Louder Transition Collective",
+    description:
+      "Join Louder Transition Collective! We're seeking musicians, graphic designers, promoters, and mutual aid liaisons to help grow Charlotte's queer anarcho punk community.",
     siteName: "Louder Transition",
-    // images: [
-    //   {
-    //     url: ".jpeg",
-    //   },
-    // ],
+    images: [
+      {
+        url: "https://wwww.loudertransition.com/public/uploads/images/LTC-logo-w-text.png",
+      },
+    ],
   },
 };
 

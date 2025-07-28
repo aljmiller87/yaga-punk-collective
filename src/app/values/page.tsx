@@ -10,29 +10,42 @@ import { Metadata } from "next";
 import FullWidthImageContent from "@/components/FullWidthImageContent";
 
 export const metadata: Metadata = {
-  title: "Louder Transition Values",
-  description: "Charlotte Queer Anarcho Punk",
+  title: "Values - Louder Transition Collective",
+  description:
+    "Explore the core values of Louder Transition Collective: anarchism, rejection of absentee ownership, copyleft, transgender liberation, and immigrant rights. Learn about our political philosophy and social justice mission.",
   authors: {
     name: "Alex Miller",
     url: "www.alexmillerwebdev.com",
   },
   creator: "Rebel Rabbit Alex",
   publisher: "Rebel Rabbit Alex",
-
-  keywords: ["Louder Transition Values"],
+  keywords: [
+    "Louder Transition Values",
+    "Anarchism",
+    "Transgender Liberation",
+    "Immigrant Rights",
+    "Open Borders",
+    "Copyleft",
+    "Anti-Capitalism",
+    "Social Justice",
+    "Queer Anarchism",
+    "Mutual Aid",
+    "Community Organizing",
+  ],
   themeColor: "#0F8185",
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
-    url: "https://wwww.loudertransition.com",
-    title: "Louder Transition",
-    description: "Charlotte Queer Anarcho Punk",
+    url: "https://wwww.loudertransition.com/values",
+    title: "Values - Louder Transition Collective",
+    description:
+      "Explore the core values of Louder Transition Collective: anarchism, rejection of absentee ownership, copyleft, transgender liberation, and immigrant rights. Learn about our political philosophy and social justice mission.",
     siteName: "Louder Transition",
-    // images: [
-    //   {
-    //     url: ".jpeg",
-    //   },
-    // ],
+    images: [
+      {
+        url: "https://wwww.loudertransition.com/public/uploads/images/LTC-logo-w-text.png",
+      },
+    ],
   },
 };
 const ValuesPage = () => {

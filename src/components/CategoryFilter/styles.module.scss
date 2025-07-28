@@ -1,0 +1,80 @@
+.filterContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.filterLabel {
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.filterSelect {
+  padding: 0.75rem 1rem;
+  border: 2px solid #dee2e6;
+  border-radius: 6px;
+  background: white;
+  color: #495057;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 200px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.75rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+
+  &:hover {
+    border-color: #0f8185;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #0f8185;
+    box-shadow: 0 0 0 3px rgba(15, 129, 133, 0.1);
+  }
+
+  option {
+    padding: 0.5rem;
+    background: white;
+    color: #495057;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .filterContainer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .filterLabel {
+    text-align: center;
+  }
+
+  .filterSelect {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .filterContainer {
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .filterSelect {
+    padding: 0.625rem 0.875rem;
+    font-size: 0.9rem;
+  }
+}

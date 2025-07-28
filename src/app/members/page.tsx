@@ -13,29 +13,39 @@ import { Metadata } from "next";
 import FullWidthImageContent from "@/components/FullWidthImageContent";
 
 export const metadata: Metadata = {
-  title: "Louder Transition Members",
-  description: "Charlotte Queer Anarcho Punk",
+  title: "Members - Louder Transition Collective",
+  description:
+    "Meet the members of Louder Transition Collective: Rebel Rabbit Alex (vocals/guitar), James (drums), and Phillip (bass). Learn about Charlotte's queer anarcho punk band members and their stories.",
   authors: {
     name: "Alex Miller",
     url: "www.alexmillerwebdev.com",
   },
   creator: "Rebel Rabbit Alex",
   publisher: "Rebel Rabbit Alex",
-
-  keywords: ["Louder Transition Members"],
+  keywords: [
+    "Louder Transition Members",
+    "Rebel Rabbit Alex",
+    "LTC Band Members",
+    "Charlotte Punk Musicians",
+    "Queer Punk Band",
+    "Anarcho Punk Musicians",
+    "Transgender Musicians",
+    "Punk Rock Band Members",
+  ],
   themeColor: "#0F8185",
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
-    url: "https://wwww.loudertransition.com",
-    title: "Louder Transition",
-    description: "Charlotte Queer Anarcho Punk",
+    url: "https://wwww.loudertransition.com/members",
+    title: "Members - Louder Transition Collective",
+    description:
+      "Meet the members of Louder Transition Collective: Rebel Rabbit Alex (vocals/guitar), James (drums), and Phillip (bass). Learn about Charlotte's queer anarcho punk band members and their stories.",
     siteName: "Louder Transition",
-    // images: [
-    //   {
-    //     url: ".jpeg",
-    //   },
-    // ],
+    images: [
+      {
+        url: "https://wwww.loudertransition.com/public/uploads/images/LTC-logo-w-text.png",
+      },
+    ],
   },
 };
 

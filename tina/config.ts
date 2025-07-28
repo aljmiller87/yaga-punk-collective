@@ -53,6 +53,162 @@ export default defineConfig({
           router: ({ document }) => `/demo/blog/${document._sys.filename}`,
         },
       },
+      {
+        name: "event",
+        label: "Events",
+        path: "content/events",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "image",
+            name: "image",
+            label: "Event Image",
+            required: true,
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "Event Date",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "time",
+            label: "Event Time",
+            description: "Optional time information (e.g., 'Doors at 8pm')",
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            description: "Optional event description",
+            ui: {
+              component: "textarea",
+            },
+          },
+          {
+            type: "string",
+            name: "ticketUrl",
+            label: "Ticket URL",
+            description: "URL to purchase tickets",
+          },
+          {
+            type: "string",
+            name: "venueUrl",
+            label: "Venue URL",
+            description: "URL to venue information",
+          },
+          {
+            type: "object",
+            name: "otherBands",
+            label: "Other Bands",
+            description: "List of other bands performing",
+            list: true,
+            fields: [
+              {
+                type: "string",
+                name: "name",
+                label: "Band Name",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "url",
+                label: "Band URL",
+                description: "Link to band's website or social media",
+              },
+            ],
+          },
+        ],
+        ui: {
+          router: ({ document }) => `/events/${document._sys.filename}`,
+        },
+      },
+      {
+        name: "gallery",
+        label: "Gallery",
+        path: "content/gallery",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            description: "Optional description of the gallery item",
+            ui: {
+              component: "textarea",
+            },
+          },
+          {
+            type: "string",
+            name: "category",
+            label: "Category",
+            description:
+              "Category for organizing gallery items (e.g., events, activism, general)",
+            options: [
+              "events",
+              "activism",
+              "general",
+              "performances",
+              "behind-the-scenes",
+            ],
+            required: true,
+          },
+          {
+            type: "image",
+            name: "image",
+            label: "Gallery Image",
+            required: true,
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "Date",
+            description: "Date when the image was taken or event occurred",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "location",
+            label: "Location",
+            description: "Where the image was taken (venue, city, etc.)",
+          },
+          {
+            type: "string",
+            name: "photographer",
+            label: "Photographer",
+            description: "Credit for the photographer",
+          },
+          {
+            type: "string",
+            name: "altText",
+            label: "Alt Text",
+            description: "Accessibility description for the image",
+            required: true,
+          },
+          {
+            type: "boolean",
+            name: "featured",
+            label: "Featured",
+            description: "Mark this as a featured gallery item",
+          },
+        ],
+        ui: {
+          router: ({ document }) => `/gallery/${document._sys.filename}`,
+        },
+      },
     ],
   },
 });

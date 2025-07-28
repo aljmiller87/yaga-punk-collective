@@ -11,7 +11,7 @@ export type IBand = {
 
 export type IEvent = {
   title: string;
-  image: StaticImageData;
+  image: string | StaticImageData;
   date: string;
   description?: string;
   time?: string;
