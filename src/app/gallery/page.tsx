@@ -30,6 +30,23 @@ export const metadata: Metadata = {
     description:
       "Photo gallery from Louder Transition Collective events and performances",
     siteName: "Louder Transition",
+    images: [
+      {
+        url: "https://wwww.loudertransition.com/uploads/images/LTC-logo-w-text.png",
+        width: 1200,
+        height: 1200,
+        alt: "Louder Transition Collective Logo - Anarcho Punk Band",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gallery - Louder Transition Collective",
+    description:
+      "Photo gallery from Louder Transition Collective events and performances",
+    images: [
+      "https://wwww.loudertransition.com/uploads/images/LTC-logo-w-text.png",
+    ],
   },
 };
 

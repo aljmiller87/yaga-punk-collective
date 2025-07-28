@@ -36,8 +36,20 @@ export const metadata: Metadata = {
     siteName: "Louder Transition",
     images: [
       {
-        url: "https://wwww.loudertransition.com/public/uploads/images/LTC-logo-w-text.png",
+        url: "https://wwww.loudertransition.com/uploads/images/LTC-logo-w-text.png",
+        width: 1200,
+        height: 1200,
+        alt: "Louder Transition Collective Logo - Anarcho Punk Band",
       },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Join Us - Louder Transition Collective",
+    description:
+      "Join Louder Transition Collective! We're seeking musicians, graphic designers, promoters, and mutual aid liaisons to help grow Charlotte's queer anarcho punk community.",
+    images: [
+      "https://wwww.loudertransition.com/uploads/images/LTC-logo-w-text.png",
     ],
   },
 };

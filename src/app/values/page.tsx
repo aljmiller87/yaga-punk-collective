@@ -43,8 +43,20 @@ export const metadata: Metadata = {
     siteName: "Louder Transition",
     images: [
       {
-        url: "https://wwww.loudertransition.com/public/uploads/images/LTC-logo-w-text.png",
+        url: "https://wwww.loudertransition.com/uploads/images/LTC-logo-w-text.png",
+        width: 1200,
+        height: 1200,
+        alt: "Louder Transition Collective Logo - Anarcho Punk Band",
       },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Values - Louder Transition Collective",
+    description:
+      "Explore the core values of Louder Transition Collective: anarchism, rejection of absentee ownership, copyleft, transgender liberation, and immigrant rights. Learn about our political philosophy and social justice mission.",
+    images: [
+      "https://wwww.loudertransition.com/uploads/images/LTC-logo-w-text.png",
     ],
   },
 };

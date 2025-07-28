@@ -35,8 +35,20 @@ export const metadata: Metadata = {
     siteName: "Louder Transition",
     images: [
       {
-        url: "https://wwww.loudertransition.com/public/uploads/images/LTC-logo-w-text.png",
+        url: "https://wwww.loudertransition.com/uploads/images/LTC-logo-w-text.png",
+        width: 1200,
+        height: 1200,
+        alt: "Louder Transition Collective Logo - Anarcho Punk Band",
       },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Events - Louder Transition Collective",
+    description:
+      "Upcoming shows and events featuring Louder Transition Collective. Charlotte's premier queer anarcho punk band performing live music and supporting local communities.",
+    images: [
+      "https://wwww.loudertransition.com/uploads/images/LTC-logo-w-text.png",
     ],
   },
 };

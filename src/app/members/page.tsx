@@ -43,8 +43,20 @@ export const metadata: Metadata = {
     siteName: "Louder Transition",
     images: [
       {
-        url: "https://wwww.loudertransition.com/public/uploads/images/LTC-logo-w-text.png",
+        url: "https://wwww.loudertransition.com/uploads/images/LTC-logo-w-text.png",
+        width: 1200,
+        height: 1200,
+        alt: "Louder Transition Collective Logo - Anarcho Punk Band",
       },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Members - Louder Transition Collective",
+    description:
+      "Meet the members of Louder Transition Collective: Rebel Rabbit Alex (vocals/guitar), James (drums), and Phillip (bass). Learn about Charlotte's queer anarcho punk band members and their stories.",
+    images: [
+      "https://wwww.loudertransition.com/uploads/images/LTC-logo-w-text.png",
     ],
   },
 };
