@@ -1,4 +1,5 @@
 import React from "react";
+import { Metadata } from "next";
 
 // Components
 import CopyAndImage from "@/components/CopyAndImage";
@@ -8,8 +9,8 @@ import Socials, { ISocial } from "@/components/Socials";
 // Styles
 import styles from "./styles.module.scss";
 import AlexImg from "../../../public/uploads/images/members/rebelrabbitalex-profile.jpg";
-// import ImmiImg from "../../../public/uploads/images/immi-profile.jpg";
-import { Metadata } from "next";
+import JaidenImg from "../../../public/uploads/images/members/jaidenjax.jpg";
+import PhilImg from "../../../public/uploads/images/members/phil.jpg";
 import FullWidthImageContent from "@/components/FullWidthImageContent";
 
 export const metadata: Metadata = {
@@ -122,19 +123,58 @@ export default async function AboutUs() {
         </p>
         <p>Details coming soon!</p>
       </CopyAndImage>
-      <CopyAndImage>
+      <CopyAndImage
+        img={PhilImg as unknown as string}
+        imgPosition="center center"
+      >
         <h2>Phillip</h2>
         <p>
           <b>LTC Role</b>: Bassist
         </p>
         <p>Details coming soon!</p>
       </CopyAndImage>
-      <CopyAndImage>
-        <h2>Jaiden</h2>
+      <CopyAndImage
+        img={JaidenImg as unknown as string}
+        imgPosition="center center"
+      >
+        <h2>Jaiden/Jax</h2>
         <p>
           <b>LTC Role</b>: Vocals
         </p>
-        <p>Details coming soon!</p>
+        <p>
+          (They/She/He — Genderfluid Lesbian, except for Pedro Pascal. He gets a
+          pass.)
+        </p>
+
+        <p>
+          I&apos;ve been in the music world since I was 12 — choir kid turned
+          chaotic punk vocalist. Singing started as a survival tactic, a way to
+          drown out the noise when I got thrown into the foster care system. It
+          wasn&apos;t about chasing a dream. It was about staying grounded when
+          everything else was falling apart.
+        </p>
+
+        <p>
+          I grew up in Ohio and made the move to North Carolina at 18, looking
+          for something—anything—that felt like mine. Music became that place. A
+          kind of rebellion. A kind of home.
+        </p>
+
+        <p>
+          {" "}
+          I never planned on making it my whole life. But like everything I do,
+          I threw myself in with no map and no plan — joined a band, barely
+          knowing what the hell I was doing. Now, I wouldn&apos;t trade it for
+          anything. The late-night sessions, the messy breakdowns, the
+          breakthroughs, the noise, the sweat, the laughter… all of it.
+        </p>
+
+        <p>
+          I&apos;ve found family in this band. We&apos;re not perfect, but
+          we&apos;re loud. We&apos;re honest. We&apos;re trying. And I
+          can&apos;t wait to keep growing with these weirdos and see where we
+          end up next.
+        </p>
       </CopyAndImage>
       <FullWidthImageContent />
       {/* ))}  */}
