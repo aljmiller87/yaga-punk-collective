@@ -291,7 +291,7 @@ const Music = () => {
             Two days jail and a PBJ <br />
             It went away! <br />
             In that courtroom, a young black man <br />
-            Second bust selling coke and you'll take note <br />
+            Second bust selling coke and you&apos;ll take note <br />
             Just never made any claim of pain <br />
             But three years must be served and now a family is torn apart
             <br />
