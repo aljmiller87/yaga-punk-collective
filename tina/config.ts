@@ -209,6 +209,86 @@ export default defineConfig({
           router: ({ document }) => `/gallery/${document._sys.filename}`,
         },
       },
+      {
+        name: "bandMember",
+        label: "Band Members",
+        path: "content/bandMembers",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Name",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "role",
+            label: "LTC Role",
+            description:
+              "Member's role in the band (e.g., Vocalist, Guitarist, Drummer, Bassist)",
+            required: true,
+          },
+          {
+            type: "image",
+            name: "image",
+            label: "Profile Image",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "pronouns",
+            label: "Pronouns",
+            description: "Member's pronouns (e.g., She/Her, He/Him, They/Them)",
+          },
+          {
+            type: "rich-text",
+            name: "bio",
+            label: "Biography",
+            description: "Member's biography and story",
+            isBody: true,
+          },
+          {
+            type: "object",
+            name: "socialMediaUrls",
+            label: "Social Media",
+            list: true,
+            fields: [
+              {
+                type: "string",
+                name: "platform",
+                label: "Platform",
+                options: [
+                  "facebook",
+                  "instagram",
+                  "twitter",
+                  "tiktok",
+                  "youtube",
+                  "linktree",
+                ],
+                required: true,
+              },
+              {
+                type: "string",
+                name: "url",
+                label: "URL",
+                required: true,
+              },
+            ],
+          },
+          {
+            type: "number",
+            name: "order",
+            label: "Display Order",
+            description:
+              "Order in which to display this member on the page (lower numbers appear first)",
+            required: true,
+          },
+        ],
+        ui: {
+          router: ({ document }) => `/members/${document._sys.filename}`,
+        },
+      },
     ],
   },
 });
