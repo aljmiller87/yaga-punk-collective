@@ -11,6 +11,7 @@ import styles from "./styles.module.scss";
 import AlexImg from "../../../public/uploads/images/members/rebelrabbitalex-profile.jpg";
 import JaidenImg from "../../../public/uploads/images/members/jaidenjax.jpg";
 import PhilImg from "../../../public/uploads/images/members/phil.jpg";
+import JamesImg from "../../../public/uploads/images/members/james.jpg";
 import FullWidthImageContent from "@/components/FullWidthImageContent";
 
 export const metadata: Metadata = {
@@ -116,7 +117,10 @@ export default async function AboutUs() {
           />
         </div>
       </CopyAndImage>
-      <CopyAndImage>
+      <CopyAndImage
+        img={JamesImg as unknown as string}
+        imgPosition="center top"
+      >
         <h2>James</h2>
         <p>
           <b>LTC Role</b>: drummer
