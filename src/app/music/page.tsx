@@ -197,7 +197,44 @@ const Music = () => {
             Pay up or die!
           </p>
         </Accordion>
-
+        <Accordion title="Concerning MAGA">
+          <VideoPlayer id="uX6XbVyYRuQ" />
+          <p></p>
+          <p>
+            Worshipping a throne of lies <br />
+            Laughing while the working class dies <br />
+          </p>
+          <p>
+            Hey MAGA, you&apos;re tripping <br />
+            But fuck it, we aren&apos;t slipping <br />
+            Do you even know? <br />
+            This history you&apos;re spitting?
+          </p>
+          <p>
+            Here&apos;s a dose of sensibility <br />
+            You want control? It&apos;s called anarchy <br />
+            But you gotta stop judging by identity <br />
+            What&apos;s your fucking choice?
+          </p>
+          <p>
+            You think this is the first time? <br />
+            A scapegoat, you&apos;ve drawn a line <br />
+            Do you even know? <br />
+            What an economic paradigm is?
+          </p>
+          <p>
+            What&apos;s it fucking for? <br />
+            You say you&apos;re putting up a score <br />
+            Do you even know? <br />
+            You&apos;re dragging us to war
+          </p>
+          <p>
+            Here&apos;s a dose of sensibility <br />
+            You want control? It&apos;s called anarchy <br />
+            But you gotta stop judging by identity <br />
+            What&apos;s your fucking choice?
+          </p>
+        </Accordion>
         <Accordion title="Not A Collapse">
           <div id="tpYtContainer">
             <iframe
