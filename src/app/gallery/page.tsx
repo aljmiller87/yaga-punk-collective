@@ -3,8 +3,10 @@ import { Metadata } from "next";
 import PageBanner from "@/components/PageBanner";
 import styles from "./styles.module.scss";
 import { getAllGalleryItems } from "@/utils/gallery";
+import { getAllVideos } from "@/utils/videos";
 import Section from "@/components/Section";
 import GalleryContent from "./GalleryContent";
+import GalleryClient from "./GalleryClient";
 
 export const metadata: Metadata = {
   title: "Gallery - Louder Transition Collective",
@@ -52,6 +54,7 @@ export const metadata: Metadata = {
 
 export default async function Gallery() {
   const galleryItems = getAllGalleryItems();
+  const videoItems = getAllVideos();
 
   return (
     <>
@@ -59,7 +62,11 @@ export default async function Gallery() {
       <Section>
         <div className={styles.galleryContainer}>
           <div className="PageContainer">
-            <GalleryContent items={galleryItems} />
+            {/* <GalleryContent items={galleryItems} /> */}
+            <GalleryClient
+              galleryItems={galleryItems}
+              videoItems={videoItems}
+            />
           </div>
         </div>
       </Section>

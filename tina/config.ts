@@ -289,6 +289,62 @@ export default defineConfig({
           router: ({ document }) => `/members/${document._sys.filename}`,
         },
       },
+      {
+        name: "video",
+        label: "Videos",
+        path: "content/videos",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "youtubeId",
+            label: "YouTube Video ID",
+            description:
+              "The YouTube video ID (e.g., 'uX6XbVyYRuQ' from https://www.youtube.com/watch?v=uX6XbVyYRuQ)",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            description: "Optional description of the video",
+            ui: {
+              component: "textarea",
+            },
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "Date",
+            description: "Date when the video was published or recorded",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "category",
+            label: "Category",
+            description: "Category for organizing videos",
+            options: [
+              "music-videos",
+              "live-performances",
+              "interviews",
+              "behind-the-scenes",
+              "activism",
+              "general",
+            ],
+            required: true,
+          },
+        ],
+        ui: {
+          router: ({ document }) => `/videos/${document._sys.filename}`,
+        },
+      },
     ],
   },
 });

@@ -1,0 +1,47 @@
+.toggle {
+  display: flex;
+  gap: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 3px solid var(--redLight);
+  max-width: 300px;
+  margin: 0 auto 4rem auto;
+}
+
+.toggleButton {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--redLight);
+  background: var(--surface);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  border: none;
+  cursor: pointer;
+  min-width: fit-content;
+  white-space: nowrap;
+
+  &:hover {
+    color: var(--redPrimary);
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  &.active {
+    color: var(--redPrimary);
+    background: rgba(255, 255, 255, 0.9);
+    border: 3px solid var(--redPrimary);
+  }
+
+  &:not(.active) {
+    border-right: 1px solid var(--redLight);
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}

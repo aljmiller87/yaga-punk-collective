@@ -4,13 +4,14 @@ import React, { useState, useMemo } from "react";
 import Section from "@/components/Section";
 import Event from "@/components/Event";
 import { IEvent } from "@/components/Event";
+import Toggle from "@/components/Toggle";
 
 interface EventsClientProps {
   allEvents: IEvent[];
 }
 
 const EventsClient: React.FC<EventsClientProps> = ({ allEvents }) => {
-  const [showPastEvents, setShowPastEvents] = useState(false);
+  const [activeView, setActiveView] = useState("upcoming");
 
   const { upcomingEvents, pastEvents } = useMemo(() => {
     const currentDate = new Date();
@@ -33,24 +34,28 @@ const EventsClient: React.FC<EventsClientProps> = ({ allEvents }) => {
     return { upcomingEvents: upcoming, pastEvents: past };
   }, [allEvents]);
 
-  const displayedEvents = showPastEvents ? pastEvents : upcomingEvents;
-  const sectionTitle = showPastEvents ? "Past Events" : "Upcoming Events";
+  const displayedEvents = activeView === "past" ? pastEvents : upcomingEvents;
+  const sectionTitle =
+    activeView === "past" ? "Past Events" : "Upcoming Events";
+
+  const toggleOptions = [
+    { label: "Upcoming Events", value: "upcoming" },
+    { label: "Past Events", value: "past" },
+  ];
 
   return (
     <Section>
       <h2>{sectionTitle}</h2>
-      <button
-        onClick={() => setShowPastEvents(!showPastEvents)}
-        className="Btn-primary"
-        style={{ minWidth: "120px", marginBottom: "2rem", maxWidth: "300px" }}
-      >
-        {showPastEvents ? "Upcoming Events" : "Past Events"}
-      </button>
+      <Toggle
+        options={toggleOptions}
+        value={activeView}
+        onChange={setActiveView}
+      />
       {displayedEvents.length > 0 ? (
         displayedEvents.map((event, ind) => <Event key={ind} {...event} />)
       ) : (
         <p style={{ textAlign: "center", fontStyle: "italic", color: "#666" }}>
-          {showPastEvents
+          {activeView === "past"
             ? "No past events found."
             : "No upcoming events found."}
         </p>
