@@ -46,8 +46,187 @@ const Music = () => {
     <>
       <PageBanner title={"Louder Transition Demos (and Lyrics)"} />
       <Section>
+        <Accordion title="Rent Is Theft">
+          <AudioPlayer file="Rent-Is-Theft.mp3" />
+          <p>
+            You enclose the commons, you put up the fence. <br />
+            To survive- have to use it, gotta pay rent
+            <br />
+            But you mix no labor, you don&apos;t occupy,
+            <br />
+            If I wanna live, gotta sell my time
+            <br />
+          </p>
+          <p>
+            Absentee ownership, what a fucking farce
+            <br />
+            Just making life artificially scarce
+            <br />
+            Burn the leasing office, tear it apart
+            <br />
+            No more landlords, that&apos;d be a start
+            <br />
+          </p>
+          <p></p>
+          <p>
+            Rent is just theft <br />
+            Rent is just theft <br />
+            Rent is just theft <br />
+            C&apos;mon just sell your life
+          </p>
+          <p>
+            Rent is just theft <br />
+            Rent is just theft <br />
+            Rent is just theft <br />
+            Pay up or die!
+          </p>
+          <p></p>
+          <p>
+            It&apos;s the sickest goddamn joke I&apos;ve ever fucking known,
+            <br />
+            A magic deed and title that says you own,
+            <br />
+            Basically feudalism, has a nasty ring
+            <br />
+            Long live the levelers and death to the king!
+            <br />
+          </p>
+          <p>
+            Rent is just theft <br />
+            Rent is just theft <br />
+            Rent is just theft <br />
+            C&apos;mon just sell your life
+          </p>
+          <p>
+            Rent is just theft <br />
+            Rent is just theft <br />
+            Rent is just theft <br />
+            Pay up or die!
+          </p>
+        </Accordion>
+        <Accordion title="Concerning MAGA">
+          <VideoPlayer id="2RCiD-9utVE" />
+          <p></p>
+          <p>
+            Worshipping a throne of lies <br />
+            Laughing while the working class dies <br />
+          </p>
+          <p>
+            Hey MAGA, you&apos;re tripping <br />
+            But fuck it, we aren&apos;t slipping <br />
+            Do you even know? <br />
+            This history you&apos;re spitting?
+          </p>
+          <p>
+            Here&apos;s a dose of sensibility <br />
+            You want control? It&apos;s called anarchy <br />
+            But you gotta stop judging by identity <br />
+            What&apos;s your fucking choice?
+          </p>
+          <p>
+            You think this is the first time? <br />
+            A scapegoat, you&apos;ve drawn a line <br />
+            Do you even know? <br />
+            What an economic paradigm is?
+          </p>
+          <p>
+            What&apos;s it fucking for? <br />
+            You say you&apos;re putting up a score <br />
+            Do you even know? <br />
+            You&apos;re dragging us to war
+          </p>
+          <p>
+            Here&apos;s a dose of sensibility <br />
+            You want control? It&apos;s called anarchy <br />
+            But you gotta stop judging by identity <br />
+            What&apos;s your fucking choice?
+          </p>
+        </Accordion>
+        <Accordion title="Never Homeless Again">
+          <VideoPlayer id="kMIVMTxOnRk" />
+          <p>
+            Have you ever seen the spikes? <br />
+            Or what fines await? <br />
+            When you&apos;re just trying to fucking live
+          </p>
+          <p>
+            I... will... burn... this fucking city to the ground <br />
+            When... I... see... the crime of you living on the streets <br />
+          </p>
+          <p>
+            Never homeless again <br />
+            Promise you, my friend <br />
+            Never homeless again <br />
+            Got you till the end <br />I swear to god, until the fucking end!
+          </p>
+          <p>
+            So death to the system <br />
+            Fuck what the landlord says <br />
+            You are moving in <br />
+            It&apos;ll be ok, we&apos;ll find a way <br />
+          </p>
+          <p>
+            I... will... burn... this fucking city to the ground <br />
+            When... I... see... the crime of you living on the streets <br />
+          </p>
+          <p>
+            Never homeless again <br />
+            Promise you, my friend <br />
+            Never homeless again <br />
+            Got you till the end <br />I swear to god, until the fucking end!
+          </p>
+        </Accordion>
+        <Accordion title="Not A Collapse">
+          <VideoPlayer id="ePTq3bStmKY" />
+
+          <p>
+            I&apos;s not a collapse says the six o&apos;clock news <br />
+            But look at my savings man they&apos;re fucking through <br />
+            So you go to the next town because you they have the jobs <br />
+            But its still a corporate desert, a searing heat
+            <br />
+          </p>
+          <p>
+            And you&apos;re still on the streets
+            <br />
+            you&apos;re still on the streets
+            <br />
+            you&apos;re still on the streets
+            <br />
+          </p>
+          <p>
+            So you make your post and you grab your signs
+            <br />
+            What else came you do, In these exploitive times?
+            <br />
+            Now your time is up, Your Bills are due
+            <br />
+            they get the bailouts, but what about you
+            <br />
+            Nothing for you <br />
+            Nothing for you
+            <br />
+            Nothing for you
+            <br />
+          </p>
+          <p>
+            Well the resistance is here and the resistance is queer <br />
+            Fuck it man, we&apos;ve always been here. <br />
+            Used to being bashed by the fucking fash <br />
+            And though they risen up from ashes of the past
+            <br />
+            And we&apos;ll burn it down
+            <br />
+            We&apos;ll burn it down
+            <br />
+            We&apos;ll burn it down
+            <br />
+            Bring justice to your town
+            <br />
+          </p>
+        </Accordion>
         <Accordion title="On Being Used">
-          <AudioPlayer file="On-Being-Used.mp3" />
+          <VideoPlayer id="olcJT11b8G8" />
           <p>
             What&apos;s the matter, Tranny faggot?
             <br />
@@ -139,160 +318,8 @@ const Music = () => {
             On being used
           </p>
         </Accordion>
-        <Accordion title="Rent Is Theft">
-          <AudioPlayer file="Rent-Is-Theft.mp3" />
-          <p>
-            You enclose the commons, you put up the fence. <br />
-            To survive- have to use it, gotta pay rent
-            <br />
-            But you mix no labor, you don&apos;t occupy,
-            <br />
-            If I wanna live, gotta sell my time
-            <br />
-          </p>
-          <p>
-            Absentee ownership, what a fucking farce
-            <br />
-            Just making life artificially scarce
-            <br />
-            Burn the leasing office, tear it apart
-            <br />
-            No more landlords, that&apos;d be a start
-            <br />
-          </p>
-          <p></p>
-          <p>
-            Rent is just theft <br />
-            Rent is just theft <br />
-            Rent is just theft <br />
-            C&apos;mon just sell your life
-          </p>
-          <p>
-            Rent is just theft <br />
-            Rent is just theft <br />
-            Rent is just theft <br />
-            Pay up or die!
-          </p>
-          <p></p>
-          <p>
-            It&apos;s the sickest goddamn joke I&apos;ve ever fucking known,
-            <br />
-            A magic deed and title that says you own,
-            <br />
-            Basically feudalism, has a nasty ring
-            <br />
-            Long live the levelers and death to the king!
-            <br />
-          </p>
-          <p>
-            Rent is just theft <br />
-            Rent is just theft <br />
-            Rent is just theft <br />
-            C&apos;mon just sell your life
-          </p>
-          <p>
-            Rent is just theft <br />
-            Rent is just theft <br />
-            Rent is just theft <br />
-            Pay up or die!
-          </p>
-        </Accordion>
-        <Accordion title="Concerning MAGA">
-          <VideoPlayer id="uX6XbVyYRuQ" />
-          <p></p>
-          <p>
-            Worshipping a throne of lies <br />
-            Laughing while the working class dies <br />
-          </p>
-          <p>
-            Hey MAGA, you&apos;re tripping <br />
-            But fuck it, we aren&apos;t slipping <br />
-            Do you even know? <br />
-            This history you&apos;re spitting?
-          </p>
-          <p>
-            Here&apos;s a dose of sensibility <br />
-            You want control? It&apos;s called anarchy <br />
-            But you gotta stop judging by identity <br />
-            What&apos;s your fucking choice?
-          </p>
-          <p>
-            You think this is the first time? <br />
-            A scapegoat, you&apos;ve drawn a line <br />
-            Do you even know? <br />
-            What an economic paradigm is?
-          </p>
-          <p>
-            What&apos;s it fucking for? <br />
-            You say you&apos;re putting up a score <br />
-            Do you even know? <br />
-            You&apos;re dragging us to war
-          </p>
-          <p>
-            Here&apos;s a dose of sensibility <br />
-            You want control? It&apos;s called anarchy <br />
-            But you gotta stop judging by identity <br />
-            What&apos;s your fucking choice?
-          </p>
-        </Accordion>
-        <Accordion title="Not A Collapse">
-          <div id="tpYtContainer">
-            <iframe
-              width="540"
-              height="920"
-              src="https://www.youtube.com/embed/txSrsqBqU3Y"
-              frameBorder="0"
-            ></iframe>
-          </div>
-          <p>
-            I&apos;s not a collapse says the six o&apos;clock news <br />
-            But look at my savings man they&apos;re fucking through <br />
-            So you go to the next town because you they have the jobs <br />
-            But its still a corporate desert, a searing heat
-            <br />
-          </p>
-          <p>
-            And you&apos;re still on the streets
-            <br />
-            you&apos;re still on the streets
-            <br />
-            you&apos;re still on the streets
-            <br />
-          </p>
-          <p>
-            So you make your post and you grab your signs
-            <br />
-            What else came you do, In these exploitive times?
-            <br />
-            Now your time is up, Your Bills are due
-            <br />
-            they get the bailouts, but what about you
-            <br />
-            Nothing for you <br />
-            Nothing for you
-            <br />
-            Nothing for you
-            <br />
-          </p>
-          <p>
-            Well the resistance is here and the resistance is queer <br />
-            Fuck it man, we&apos;ve always been here. <br />
-            Used to being bashed by the fucking fash <br />
-            And though they risen up from ashes of the past
-            <br />
-            And we&apos;ll burn it down
-            <br />
-            We&apos;ll burn it down
-            <br />
-            We&apos;ll burn it down
-            <br />
-            Bring justice to your town
-            <br />
-          </p>
-        </Accordion>
-
         <Accordion title="Commie Gun">
-          <VideoPlayer id="ZHgfPKJgsLc" />
+          <VideoPlayer id="5QVzZHY098s" />
           <p style={{ marginBottom: "2rem" }}></p>
           <p>
             Commie gun! <br />
