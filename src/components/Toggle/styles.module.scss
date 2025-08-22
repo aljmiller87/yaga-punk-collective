@@ -23,8 +23,8 @@
   transition: all 0.2s linear;
   border: none;
   cursor: pointer;
-  min-width: fit-content;
-  white-space: nowrap;
+  hyphens: auto;
+  text-align: center;
 
   &:hover {
     color: var(--redPrimary);
