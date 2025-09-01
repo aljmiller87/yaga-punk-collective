@@ -70,11 +70,13 @@ export default async function AboutUs() {
     <>
       <PageBanner title={"Members of Louder Transition"} />
 
-      {bandMembers.map((member: IBandMember) => (
+      {bandMembers.map((member: IBandMember, index: number) => (
         <CopyAndImage
           key={member.id}
           img={member.image}
           imgPosition="center top"
+          reverse={index % 2 !== 0}
+          mobileReverse={false}
         >
           <h2>{member.title}</h2>
           <p>
