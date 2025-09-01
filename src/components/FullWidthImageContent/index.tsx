@@ -11,18 +11,11 @@ const FullWidthImageContent = () => {
         <Image src={bgImage} alt="" className={styles.img} fill={true} />
       </div>
       <div className={styles.text}>
-        <h2>Currently Seeking guitarist and other help</h2>
+        <h2>Currently seeking help</h2>
+
         <p>
-          Looking for a raw, aggressive guitarist to join our anarcho punk
-          band—no egos, just noise and message. Must be into DIY ethics,
-          anti-authoritarian politics, and playing fast, loud, and
-          unapologetically. We rehearse weekly and gig monthly—gear, passion,
-          and commitment a must. If you&apos;re ready to shred and scream for
-          change, hit us up.
-        </p>
-        <p>
-          If there are other ways you would like to get involved with the band,
-          please contact us. We&apos;re looking for help on a few fronts
+          If there are ways you would like to get involved with the band, please
+          contact us. We&apos;re looking for help on a few fronts
         </p>
         <ul>
           <li>production</li>
