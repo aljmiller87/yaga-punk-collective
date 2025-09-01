@@ -3,6 +3,9 @@ title: Annabelle
 role: Vocals
 image: /uploads/images/members/annabelleprofile.jpg
 pronouns: She/Her
+socialMediaUrls:
+  - platform: instagram
+    url: 'https://www.instagram.com/annathegaybanana/'
 order: 5
 ---
 
