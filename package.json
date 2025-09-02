@@ -1,21 +1,25 @@
 {
-  "name": "nextjs-tina-cms-starter",
+  "name": "yaga-punk-collective",
   "version": "1.0.0",
-  "description": "A modern Next.js starter template with Tina CMS for content management",
+  "description": "Yaga Punk Collective - Building community through radical politics, DIY culture, and punk resistance",
   "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/aljmiller87/yaga-punk-collective.git"
   },
   "keywords": [
+    "yaga-punk-collective",
+    "anarchist-punk",
+    "diy-culture",
+    "radical-politics",
+    "punk-resistance",
+    "community-building",
     "nextjs",
     "tina-cms",
-    "content-management",
-    "starter-template",
     "typescript",
     "react"
   ],
-  "author": "Your Name",
+  "author": "Yaga Punk Collective",
   "license": "MIT",
   "scripts": {
     "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",

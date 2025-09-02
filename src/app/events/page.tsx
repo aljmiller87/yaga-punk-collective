@@ -6,18 +6,18 @@ import EventsClient from "./EventsClient";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Events - Louder Transition Collective",
+  title: "Events - Yaga Punk Collective",
   description:
-    "Upcoming shows and events featuring Louder Transition Collective. Charlotte's premier queer anarcho punk band performing live music and supporting local communities.",
+    "Upcoming shows and events featuring Yaga Punk Collective. Charlotte's premier anarchist punk collective performing live music and supporting local communities.",
   authors: {
     name: "Alex Miller",
     url: "www.alexmillerwebdev.com",
   },
-  creator: "Rebel Rabbit Alex",
-  publisher: "Rebel Rabbit Alex",
+  creator: "Yaga Punk Collective",
+  publisher: "Yaga Punk Collective",
   keywords: [
-    "Louder Transition Events",
-    "LTC Shows",
+    "Yaga Punk Collective Events",
+    "YPC Shows",
     "Charlotte Punk Shows",
     "Anarcho Punk Events",
     "Queer Punk Shows",
@@ -28,27 +28,27 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
-    url: "https://wwww.loudertransition.com/events",
-    title: "Events - Louder Transition Collective",
+    url: "https://yagapunkcollective.com/events",
+    title: "Events - Yaga Punk Collective",
     description:
-      "Upcoming shows and events featuring Louder Transition Collective. Charlotte's premier queer anarcho punk band performing live music and supporting local communities.",
-    siteName: "Louder Transition",
+      "Upcoming shows and events featuring Yaga Punk Collective. Charlotte's premier anarchist punk collective performing live music and supporting local communities.",
+    siteName: "Yaga Punk Collective",
     images: [
       {
-        url: "https://wwww.loudertransition.com/uploads/images/LTC-logo-w-text.png",
+        url: "https://yagapunkcollective.com/uploads/images/yaga-punk-collective-hero.jpg",
         width: 1200,
         height: 1200,
-        alt: "Louder Transition Collective Logo - Anarcho Punk Band",
+        alt: "Yaga Punk Collective Logo - Anarchist Punk Collective",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Events - Louder Transition Collective",
+    title: "Events - Yaga Punk Collective",
     description:
-      "Upcoming shows and events featuring Louder Transition Collective. Charlotte's premier queer anarcho punk band performing live music and supporting local communities.",
+      "Upcoming shows and events featuring Yaga Punk Collective. Charlotte's premier anarchist punk collective performing live music and supporting local communities.",
     images: [
-      "https://wwww.loudertransition.com/uploads/images/LTC-logo-w-text.png",
+      "https://yagapunkcollective.com/uploads/images/yaga-punk-collective-hero.jpg",
     ],
   },
 };
@@ -58,7 +58,7 @@ const Events = async () => {
 
   return (
     <div>
-      <PageBanner title={"Louder Transition Events"} />
+      <PageBanner title={"Yaga Punk Collective Events"} />
       <EventsClient allEvents={allEvents} />
       <FullWidthImageContent />
     </div>

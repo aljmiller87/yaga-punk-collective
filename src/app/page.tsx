@@ -94,7 +94,7 @@ export default async function Home() {
   const heroProps = {
     image:
       homepageData?.heroComponent?.image ||
-      "/uploads/images/LTC-logo-w-text.png",
+      "/uploads/images/yaga-punk-collective-hero.jpg",
     title: homepageData?.heroComponent?.title || "Yaga Punk Collective",
     subtitle:
       homepageData?.heroComponent?.subtitle ||
@@ -110,8 +110,7 @@ export default async function Home() {
         <CopyAndImage
           imgStyle="contain"
           img={
-            homepageData?.bookPromoSection?.image ||
-            "/uploads/images/LTC-logo-w-text.png"
+            homepageData?.bookPromoSection?.image || "/uploads/images/book.jpg"
           }
           reverse={true}
         >

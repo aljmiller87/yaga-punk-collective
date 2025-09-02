@@ -12,7 +12,7 @@ metadata:
     Yaga Punk Collective, anarchist punk, DIY culture, radical politics, punk
     resistance, community building, anarcho punk, hardcore punk, queer punk,
     anti-fascist
-  ogImage: /uploads/images/LTC-logo-w-text.png
+  ogImage: /uploads/images/yaga-punk-collective-hero.jpg
   ogTitle: >-
     Yaga Punk Collective - Building Community Through Radical Politics, DIY
     Culture, and Punk Resistance

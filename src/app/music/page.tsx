@@ -8,29 +8,44 @@ import Socials, { ISocial } from "@/components/Socials";
 import VideoPlayer from "@/components/VideoPlayer";
 
 export const metadata: Metadata = {
-  title: "Louder Transition Discography",
-  description: "Charlotte Queer Anarcho Punk",
+  title: "Yaga Punk Collective Discography",
+  description: "Charlotte Anarchist Punk Collective Music",
   authors: {
     name: "Alex Miller",
     url: "www.alexmillerwebdev.com",
   },
-  creator: "Rebel Rabbit Alex",
-  publisher: "Rebel Rabbit Alex",
-
-  keywords: ["Louder Transition Discography", "Louder Transition music"],
+  creator: "Yaga Punk Collective",
+  publisher: "Yaga Punk Collective",
+  keywords: [
+    "Yaga Punk Collective Discography",
+    "Yaga Punk Collective music",
+    "Anarchist Punk",
+    "Charlotte Punk",
+  ],
   themeColor: "#0F8185",
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
-    url: "https://wwww.loudertransition.com",
-    title: "Louder Transition",
-    description: "Charlotte Queer Anarcho Punk",
-    siteName: "Louder Transition",
-    // images: [
-    //   {
-    //     url: ".jpeg",
-    //   },
-    // ],
+    url: "https://yagapunkcollective.com/music",
+    title: "Yaga Punk Collective Music",
+    description: "Charlotte Anarchist Punk Collective Music",
+    siteName: "Yaga Punk Collective",
+    images: [
+      {
+        url: "https://yagapunkcollective.com/uploads/images/yaga-punk-collective-hero.jpg",
+        width: 1200,
+        height: 1200,
+        alt: "Yaga Punk Collective Logo - Anarchist Punk Collective",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Yaga Punk Collective Music",
+    description: "Charlotte Anarchist Punk Collective Music",
+    images: [
+      "https://yagapunkcollective.com/uploads/images/yaga-punk-collective-hero.jpg",
+    ],
   },
 };
 
@@ -44,7 +59,7 @@ const nozenSocials: ISocial[] = [
 const Music = () => {
   return (
     <>
-      <PageBanner title={"Louder Transition Demos (and Lyrics)"} />
+      <PageBanner title={"Yaga Punk Collective Demos (and Lyrics)"} />
       <Section>
         <Accordion title="Rent Is Theft">
           <AudioPlayer file="Rent-Is-Theft.mp3" />

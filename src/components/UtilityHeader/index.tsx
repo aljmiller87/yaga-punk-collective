@@ -4,15 +4,15 @@ import Socials, { ISocial } from "../Socials";
 const socials: ISocial[] = [
   {
     platform: "facebook",
-    url: "https://www.facebook.com/people/Louder-Transition-Collective/61569673907364/",
+    url: "https://www.facebook.com/yagapunkcollective/",
   },
   {
     platform: "instagram",
-    url: "https://www.instagram.com/rebel_rabbit_alex_ltc/",
+    url: "https://www.instagram.com/yagapunkcollective/",
   },
   {
     platform: "youtube",
-    url: "https://www.youtube.com/@RebelRabbitAlex-LTC",
+    url: "https://www.youtube.com/@YagaPunkCollective",
   },
   // {
   //   platform: "tiktok",

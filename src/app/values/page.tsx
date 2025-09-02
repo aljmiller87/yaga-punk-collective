@@ -10,60 +10,57 @@ import { Metadata } from "next";
 import FullWidthImageContent from "@/components/FullWidthImageContent";
 
 export const metadata: Metadata = {
-  title: "Values - Louder Transition Collective",
+  title: "Values - Yaga Punk Collective",
   description:
-    "Explore the core values of Louder Transition Collective: anarchism, rejection of absentee ownership, copyleft, transgender liberation, and immigrant rights. Learn about our political philosophy and social justice mission.",
+    "Explore the core values of Yaga Punk Collective: anarchism, rejection of absentee ownership, copyleft, transgender liberation, and immigrant rights. Learn about our political philosophy and social justice mission.",
   authors: {
     name: "Alex Miller",
     url: "www.alexmillerwebdev.com",
   },
-  creator: "Rebel Rabbit Alex",
-  publisher: "Rebel Rabbit Alex",
+  creator: "Yaga Punk Collective",
+  publisher: "Yaga Punk Collective",
   keywords: [
-    "Louder Transition Values",
-    "Anarchism",
+    "Yaga Punk Collective Values",
+    "Anarchist Values",
+    "Punk Philosophy",
+    "Social Justice",
     "Transgender Liberation",
     "Immigrant Rights",
-    "Open Borders",
     "Copyleft",
     "Anti-Capitalism",
-    "Social Justice",
-    "Queer Anarchism",
-    "Mutual Aid",
-    "Community Organizing",
   ],
   themeColor: "#0F8185",
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
-    url: "https://wwww.loudertransition.com/values",
-    title: "Values - Louder Transition Collective",
+    url: "https://yagapunkcollective.com/values",
+    title: "Values - Yaga Punk Collective",
     description:
-      "Explore the core values of Louder Transition Collective: anarchism, rejection of absentee ownership, copyleft, transgender liberation, and immigrant rights. Learn about our political philosophy and social justice mission.",
-    siteName: "Louder Transition",
+      "Explore the core values of Yaga Punk Collective: anarchism, rejection of absentee ownership, copyleft, transgender liberation, and immigrant rights. Learn about our political philosophy and social justice mission.",
+    siteName: "Yaga Punk Collective",
     images: [
       {
-        url: "https://wwww.loudertransition.com/uploads/images/LTC-logo-w-text.png",
+        url: "https://yagapunkcollective.com/uploads/images/yaga-punk-collective-hero.jpg",
         width: 1200,
         height: 1200,
-        alt: "Louder Transition Collective Logo - Anarcho Punk Band",
+        alt: "Yaga Punk Collective Logo - Anarchist Punk Collective",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Values - Louder Transition Collective",
+    title: "Values - Yaga Punk Collective",
     description:
-      "Explore the core values of Louder Transition Collective: anarchism, rejection of absentee ownership, copyleft, transgender liberation, and immigrant rights. Learn about our political philosophy and social justice mission.",
+      "Explore the core values of Yaga Punk Collective: anarchism, rejection of absentee ownership, copyleft, transgender liberation, and immigrant rights. Learn about our political philosophy and social justice mission.",
     images: [
-      "https://wwww.loudertransition.com/uploads/images/LTC-logo-w-text.png",
+      "https://yagapunkcollective.com/uploads/images/yaga-punk-collective-hero.jpg",
     ],
   },
 };
 const ValuesPage = () => {
   return (
     <>
-      <PageBanner title={"Values of the Louder Transition"} />
+      <PageBanner title={"Values of the Yaga Punk Collective"} />
       <CopyAndImage
         img={anarchy as unknown as string}
         imgPosition="center center"

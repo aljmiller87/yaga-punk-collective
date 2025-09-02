@@ -9,45 +9,48 @@ import GalleryContent from "./GalleryContent";
 import GalleryClient from "./GalleryClient";
 
 export const metadata: Metadata = {
-  title: "Gallery - Louder Transition Collective",
+  title: "Gallery - Yaga Punk Collective",
   description:
-    "Photo gallery from Louder Transition Collective events and performances",
+    "Photo gallery from Yaga Punk Collective events and performances",
   authors: {
     name: "Alex Miller",
     url: "www.alexmillerwebdev.com",
   },
-  creator: "Rebel Rabbit Alex",
-  publisher: "Rebel Rabbit Alex",
+  creator: "Yaga Punk Collective",
+  publisher: "Yaga Punk Collective",
   keywords: [
-    "Louder Transition Gallery",
-    "LTC Photos",
-    "Charlotte Punk Photos",
+    "Yaga Punk Collective Gallery",
+    "YPC Photos",
+    "Punk Photos",
+    "Charlotte Punk",
+    "Concert Photos",
+    "Live Music Photos",
   ],
   themeColor: "#0F8185",
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
-    url: "https://wwww.loudertransition.com/gallery",
-    title: "Gallery - Louder Transition Collective",
+    url: "https://yagapunkcollective.com/gallery",
+    title: "Gallery - Yaga Punk Collective",
     description:
-      "Photo gallery from Louder Transition Collective events and performances",
-    siteName: "Louder Transition",
+      "Photo gallery from Yaga Punk Collective events and performances",
+    siteName: "Yaga Punk Collective",
     images: [
       {
-        url: "https://wwww.loudertransition.com/uploads/images/LTC-logo-w-text.png",
+        url: "https://yagapunkcollective.com/uploads/images/yaga-punk-collective-hero.jpg",
         width: 1200,
         height: 1200,
-        alt: "Louder Transition Collective Logo - Anarcho Punk Band",
+        alt: "Yaga Punk Collective Logo - Anarchist Punk Collective",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gallery - Louder Transition Collective",
+    title: "Gallery - Yaga Punk Collective",
     description:
-      "Photo gallery from Louder Transition Collective events and performances",
+      "Photo gallery from Yaga Punk Collective events and performances",
     images: [
-      "https://wwww.loudertransition.com/uploads/images/LTC-logo-w-text.png",
+      "https://yagapunkcollective.com/uploads/images/yaga-punk-collective-hero.jpg",
     ],
   },
 };

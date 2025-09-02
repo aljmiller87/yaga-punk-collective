@@ -6,50 +6,49 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Join Us - Louder Transition Collective",
+  title: "Join Us - Yaga Punk Collective",
   description:
-    "Join Louder Transition Collective! We're seeking musicians, graphic designers, promoters, and mutual aid liaisons to help grow Charlotte's queer anarcho punk community.",
+    "Join Yaga Punk Collective! We're seeking musicians, graphic designers, promoters, and mutual aid liaisons to help grow Charlotte's anarchist punk community.",
   authors: {
     name: "Alex Miller",
     url: "www.alexmillerwebdev.com",
   },
-  creator: "Rebel Rabbit Alex",
-  publisher: "Rebel Rabbit Alex",
+  creator: "Yaga Punk Collective",
+  publisher: "Yaga Punk Collective",
   keywords: [
-    "Join Louder Transition",
-    "LTC Band Members",
-    "Charlotte Punk Musicians",
-    "Anarcho Punk Community",
-    "Queer Punk Band",
-    "DIY Punk Music",
-    "Punk Rock Volunteers",
-    "Mutual Aid Groups",
+    "Join Yaga Punk Collective",
+    "YPC Membership",
+    "Charlotte Punk Community",
+    "Anarchist Musicians",
+    "Punk Band Members",
+    "DIY Community",
+    "Mutual Aid",
   ],
   themeColor: "#0F8185",
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
-    url: "https://wwww.loudertransition.com/join-us",
-    title: "Join Us - Louder Transition Collective",
+    url: "https://yagapunkcollective.com/join-us",
+    title: "Join Us - Yaga Punk Collective",
     description:
-      "Join Louder Transition Collective! We're seeking musicians, graphic designers, promoters, and mutual aid liaisons to help grow Charlotte's queer anarcho punk community.",
-    siteName: "Louder Transition",
+      "Join Yaga Punk Collective! We're seeking musicians, graphic designers, promoters, and mutual aid liaisons to help grow Charlotte's anarchist punk community.",
+    siteName: "Yaga Punk Collective",
     images: [
       {
-        url: "https://wwww.loudertransition.com/uploads/images/LTC-logo-w-text.png",
+        url: "https://yagapunkcollective.com/uploads/images/yaga-punk-collective-hero.jpg",
         width: 1200,
         height: 1200,
-        alt: "Louder Transition Collective Logo - Anarcho Punk Band",
+        alt: "Yaga Punk Collective Logo - Anarchist Punk Collective",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Join Us - Louder Transition Collective",
+    title: "Join Us - Yaga Punk Collective",
     description:
-      "Join Louder Transition Collective! We're seeking musicians, graphic designers, promoters, and mutual aid liaisons to help grow Charlotte's queer anarcho punk community.",
+      "Join Yaga Punk Collective! We're seeking musicians, graphic designers, promoters, and mutual aid liaisons to help grow Charlotte's anarchist punk community.",
     images: [
-      "https://wwww.loudertransition.com/uploads/images/LTC-logo-w-text.png",
+      "https://yagapunkcollective.com/uploads/images/yaga-punk-collective-hero.jpg",
     ],
   },
 };
@@ -57,7 +56,7 @@ export const metadata: Metadata = {
 const JoinUs = () => {
   return (
     <>
-      <PageBanner title={"Join the Louder Transition"} />
+      <PageBanner title={"Join the Yaga Punk Collective"} />
       <Section>
         <h2>Currently Seeking guitarist and other help</h2>
         <p>

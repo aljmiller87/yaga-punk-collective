@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Img from "../../../public/uploads/icons/LTC-logo-w-text-transparent.svg";
+import Img from "../../../public/uploads/icons/anarchy.svg";
 import styles from "./logo.module.scss";
 
 const Logo = ({ variant }: { variant: "light" | "dark" }) => {
@@ -10,7 +10,7 @@ const Logo = ({ variant }: { variant: "light" | "dark" }) => {
     <a href="/" className={styles.Logo}>
       <Image
         src={Img}
-        alt="Logo alt text"
+        alt="Yaga Punk Collective Logo - Anarchy Symbol"
         layout={"fill"}
         objectFit={"contain"}
         priority
