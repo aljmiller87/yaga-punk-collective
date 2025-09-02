@@ -1,13 +1,29 @@
 {
-  "name": "ltc-website",
-  "version": "0.1.0",
-  "private": true,
+  "name": "nextjs-tina-cms-starter",
+  "version": "1.0.0",
+  "description": "A modern Next.js starter template with Tina CMS for content management",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aljmiller87/yaga-punk-collective.git"
+  },
+  "keywords": [
+    "nextjs",
+    "tina-cms",
+    "content-management",
+    "starter-template",
+    "typescript",
+    "react"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "scripts": {
     "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",
     "build": "tinacms build && next build",
     "build:no-tina": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "setup": "npm install && cp .env.example .env.local"
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "^5.11.6",
