@@ -58,33 +58,7 @@ const JoinUs = () => {
     <>
       <PageBanner title={"Join the Yaga Punk Collective"} />
       <Section>
-        <h2>Currently Seeking guitarist and other help</h2>
-        <p>
-          Looking for a raw, aggressive guitarist to join our anarcho punk
-          band—no egos, just noise and message. Must be into DIY ethics,
-          anti-authoritarian politics, and playing fast, loud, and
-          unapologetically. We rehearse weekly and gig monthly—gear, passion,
-          and commitment a must. If you&apos;re ready to shred and scream for
-          change, hit us up.
-        </p>
-        <p>
-          If there are other ways you would like to get involved with the band,
-          please contact us. We&apos;re looking for help on a few fronts
-        </p>
-        <ul>
-          <li>production</li>
-          <li>graphic design</li>
-          <li>promotion</li>
-          <li>mutual aid group liasons</li>
-        </ul>
-      </Section>
-      <Section>
-        <h3>
-          Fill out the form below if you&apos;d like to get involved in ANY
-          capacity
-        </h3>
-
-        <GetInvolvedForm />
+        <h2>WHAT DO YOU WANT HERE?</h2>
       </Section>
     </>
   );
