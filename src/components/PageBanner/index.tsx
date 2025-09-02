@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./styles.module.scss";
-import defaultImage from "../../../public/uploads/images/audience.jpg";
+import defaultImage from "../../../public/uploads/images/yaga-punk-collective-hero.jpg";
 
 const PageBanner = ({
   title,

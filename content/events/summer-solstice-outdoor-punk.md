@@ -1,0 +1,20 @@
+---
+title: "Summer Solstice Outdoor Punk Festival"
+image: "/uploads/images/events/panther-lake.jpeg"
+date: "2024-06-21T17:00:00.000Z"
+time: "5pm - 11pm"
+description: "Celebrate the longest day of the year with outdoor punk rock under the stars. Food trucks, local vendors, and six hours of non-stop music."
+ticketUrl: "https://summersolsticepunk.com/tickets"
+venueUrl: "https://summersolsticepunk.com/location"
+otherBands:
+  - name: "Solar Punks"
+    url: "https://solarpunks.eco"
+  - name: "Sunshine Rebellion"
+    url: "https://sunshinerebellion.band"
+  - name: "Day Drinkers Anonymous"
+    url: "https://daydrinkers.punk"
+  - name: "Vitamin D Deficiency"
+    url: "https://vitaminddeficiency.com"
+  - name: "Longest Day Riot"
+    url: "https://longestdayriot.org"
+---

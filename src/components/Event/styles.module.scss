@@ -18,6 +18,10 @@
     padding-bottom: 60%;
   }
 
+  .img {
+    object-fit: cover;
+  }
+
   &-content {
     display: flex;
     flex-direction: column;

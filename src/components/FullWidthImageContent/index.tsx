@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./fullwidthimagecontent.module.scss";
-import bgImage from "../../../public/uploads/images/audience.jpg";
+import bgImage from "../../../public/uploads/images/yaga-punk-collective-hero.jpg";
 import Link from "next/link";
 
 const FullWidthImageContent = () => {

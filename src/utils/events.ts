@@ -24,18 +24,15 @@ export function getAllEvents(): IEvent[] {
       // Convert the data to the correct format
       const eventData = matterResult.data as any;
 
-      // Format the date for display
+      // Keep the original date for sorting and comparison
       const eventDate = new Date(eventData.date);
-      const formattedDate = `${
-        eventDate.getMonth() + 1
-      }/${eventDate.getDate()}/${eventDate.getFullYear()}`;
 
       // Combine the data with the id
       return {
         id,
         title: eventData.title,
         image: eventData.image,
-        date: formattedDate,
+        date: eventData.date, // Keep original ISO date string
         time: eventData.time,
         description: eventData.description,
         venueUrl: eventData.venueUrl,

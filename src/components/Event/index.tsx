@@ -30,6 +30,10 @@ const Event = ({
   otherBands = [],
 }: IEvent) => {
   const formatttedDate = formatDate(new Date(date));
+  const eventDate = new Date(date);
+  const currentDate = new Date();
+  const isEventInPast = eventDate < currentDate;
+
   return (
     <div className={styles.Event}>
       <a href="" className={styles["Event-image"]}>
@@ -71,7 +75,7 @@ const Event = ({
             Venue
           </a>
         )}
-        {!!ticketUrl && (
+        {!!ticketUrl && !isEventInPast && (
           <a
             className="Btn-primary"
             href={ticketUrl}

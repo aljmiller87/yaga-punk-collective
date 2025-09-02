@@ -25,26 +25,19 @@ const MobileMenu = ({ isActive }: { isActive: boolean }) => {
       </div>
       <ul>
         <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/members">Members</Link>
-        </li>
-        <li>
-          <Link href="/values">Values</Link>
-        </li>
-        <li>
-          <Link href="/music">Music</Link>
-        </li>
-        <li>
-          <Link href="/gallery">Gallery</Link>
-        </li>
-        <li>
           <Link href="/events">Events</Link>
         </li>
-
         <li>
-          <Link href="/join-us">Join Us</Link>
+          <Link href="/label">Labels</Link>
+        </li>
+        <li>
+          <Link href="/zine">Zines</Link>
+        </li>
+        <li>
+          <Link href="/book">Book</Link>
+        </li>
+        <li>
+          <Link href="/about-jared">About Jared</Link>
         </li>
       </ul>
     </nav>

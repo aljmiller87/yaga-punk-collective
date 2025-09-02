@@ -30,9 +30,9 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        name: "post",
-        label: "Posts",
-        path: "content/posts",
+        name: "zineThemeCategory",
+        label: "Zine Theme Categories",
+        path: "content/zine-theme-categories",
         fields: [
           {
             type: "string",
@@ -41,17 +41,7 @@ export default defineConfig({
             isTitle: true,
             required: true,
           },
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
-          },
         ],
-        ui: {
-          // This is an DEMO router. You can remove this to fit your site
-          router: ({ document }) => `/demo/blog/${document._sys.filename}`,
-        },
       },
       {
         name: "event",
@@ -131,9 +121,9 @@ export default defineConfig({
         },
       },
       {
-        name: "gallery",
-        label: "Gallery",
-        path: "content/gallery",
+        name: "zineRelease",
+        label: "Zine Releases",
+        path: "content/zines",
         fields: [
           {
             type: "string",
@@ -144,90 +134,302 @@ export default defineConfig({
           },
           {
             type: "string",
+            name: "issue",
+            label: "Issue Number",
+            description: "Issue number or identifier",
+          },
+          {
+            type: "image",
+            name: "coverImage",
+            label: "Cover Image",
+            required: true,
+          },
+          {
+            type: "datetime",
+            name: "releaseDate",
+            label: "Release Date",
+            required: true,
+          },
+          {
+            type: "string",
             name: "description",
             label: "Description",
-            description: "Optional description of the gallery item",
+            description: "Brief description of the zine content",
+            ui: {
+              component: "textarea",
+            },
+          },
+          {
+            type: "object",
+            name: "zineTheme",
+            label: "Zine Themes",
+            description: "Select one or more theme categories for your zine",
+            list: true,
+            required: true,
+            fields: [
+              {
+                type: "reference",
+                name: "theme",
+                label: "Theme",
+                description: "Select a theme category",
+                collections: ["zineThemeCategory"],
+                required: true,
+              },
+            ],
+          },
+          {
+            type: "string",
+            name: "contributors",
+            label: "Contributors",
+            description: "List of contributors or authors",
+          },
+          {
+            type: "object",
+            name: "featuredBands",
+            label: "Featured Bands",
+            description: "Bands featured or mentioned in this zine",
+            list: true,
+            fields: [
+              {
+                type: "string",
+                name: "name",
+                label: "Band Name",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "url",
+                label: "Band URL",
+                description:
+                  "Link to band's website or social media (optional)",
+              },
+            ],
+          },
+          {
+            type: "string",
+            name: "purchaseUrl",
+            label: "Purchase URL",
+            description: "URL where people can buy the zine",
+          },
+          {
+            type: "string",
+            name: "downloadUrl",
+            label: "Download URL",
+            description: "URL for digital download if available",
+          },
+          {
+            type: "number",
+            name: "pages",
+            label: "Number of Pages",
+            description: "Total number of pages in the zine",
+          },
+          {
+            type: "boolean",
+            name: "isDigital",
+            label: "Digital Only",
+            description: "Whether this is a digital-only release",
+          },
+          {
+            type: "string",
+            name: "format",
+            label: "Format",
+            description: "Format of the zine (e.g., 'A5', 'Letter', 'Digital')",
+          },
+        ],
+        ui: {
+          router: ({ document }) => `/zines/${document._sys.filename}`,
+        },
+      },
+      {
+        name: "label",
+        label: "Music Labels",
+        path: "content/labels",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Label Name",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "image",
+            name: "logo",
+            label: "Label Logo",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            description: "Brief description of the label",
             ui: {
               component: "textarea",
             },
           },
           {
             type: "string",
-            name: "category",
-            label: "Category",
-            description:
-              "Category for organizing gallery items (e.g., events, activism, general)",
-            options: [
-              "events",
-              "activism",
-              "general",
-              "performances",
-              "behind-the-scenes",
-            ],
-            required: true,
-          },
-          {
-            type: "image",
-            name: "image",
-            label: "Gallery Image",
-            required: true,
-          },
-          {
-            type: "datetime",
-            name: "date",
-            label: "Date",
-            description: "Date when the image was taken or event occurred",
-            required: true,
+            name: "website",
+            label: "Website",
+            description: "Official website URL",
           },
           {
             type: "string",
             name: "location",
             label: "Location",
-            description: "Where the image was taken (venue, city, etc.)",
+            description: "City, state, or country where the label is based",
+          },
+          {
+            type: "datetime",
+            name: "founded",
+            label: "Founded Date",
+            description: "When the label was established",
           },
           {
             type: "string",
-            name: "photographer",
-            label: "Photographer",
-            description: "Credit for the photographer",
+            name: "genre",
+            label: "Primary Genre",
+            description: "Main genre focus of the label",
           },
           {
             type: "string",
-            name: "altText",
-            label: "Alt Text",
-            description: "Accessibility description for the image",
-            required: true,
+            name: "genres",
+            label: "Genres",
+            description: "All genres the label works with (comma-separated)",
+          },
+          {
+            type: "string",
+            name: "contactEmail",
+            label: "Contact Email",
+            description: "Contact email for the label",
+          },
+          {
+            type: "object",
+            name: "socialMedia",
+            label: "Social Media",
+            list: true,
+            fields: [
+              {
+                type: "string",
+                name: "platform",
+                label: "Platform",
+                options: [
+                  "facebook",
+                  "instagram",
+                  "twitter",
+                  "tiktok",
+                  "youtube",
+                  "bandcamp",
+                  "soundcloud",
+                ],
+                required: true,
+              },
+              {
+                type: "string",
+                name: "url",
+                label: "URL",
+                required: true,
+              },
+            ],
+          },
+          {
+            type: "string",
+            name: "submissionPolicy",
+            label: "Submission Policy",
+            description: "Information about demo submissions",
+            ui: {
+              component: "textarea",
+            },
           },
           {
             type: "boolean",
-            name: "featured",
-            label: "Featured",
-            description: "Mark this as a featured gallery item",
+            name: "acceptingSubmissions",
+            label: "Accepting Submissions",
+            description: "Whether the label is currently accepting demos",
+          },
+          {
+            type: "string",
+            name: "notableArtists",
+            label: "Notable Artists",
+            description: "Famous or notable artists on the label",
+            ui: {
+              component: "textarea",
+            },
           },
         ],
         ui: {
-          router: ({ document }) => `/gallery/${document._sys.filename}`,
+          router: ({ document }) => `/labels/${document._sys.filename}`,
         },
       },
       {
-        name: "bandMember",
-        label: "Band Members",
-        path: "content/bandMembers",
+        name: "aboutJared",
+        label: "About Jared",
+        path: "content/about-jared",
         fields: [
           {
             type: "string",
             name: "title",
-            label: "Name",
+            label: "Title",
             isTitle: true,
             required: true,
           },
           {
-            type: "string",
-            name: "role",
-            label: "LTC Role",
-            description:
-              "Member's role in the band (e.g., Vocalist, Guitarist, Drummer, Bassist)",
-            required: true,
+            type: "object",
+            name: "metadata",
+            label: "Metadata",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Meta Title",
+                description: "Title for search engines and social sharing",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "description",
+                label: "Meta Description",
+                description:
+                  "Description for search engines and social sharing",
+                ui: {
+                  component: "textarea",
+                },
+                required: true,
+              },
+              {
+                type: "string",
+                name: "keywords",
+                label: "Meta Keywords",
+                description: "Comma-separated keywords for SEO",
+              },
+              {
+                type: "image",
+                name: "ogImage",
+                label: "Open Graph Image",
+                description: "Image for social media sharing",
+              },
+              {
+                type: "string",
+                name: "ogTitle",
+                label: "Open Graph Title",
+                description:
+                  "Title for social media sharing (optional, defaults to meta title)",
+              },
+              {
+                type: "string",
+                name: "ogDescription",
+                label: "Open Graph Description",
+                description:
+                  "Description for social media sharing (optional, defaults to meta description)",
+              },
+              {
+                type: "string",
+                name: "twitterCard",
+                label: "Twitter Card Type",
+                description: "Type of Twitter card to display",
+                options: ["summary", "summary_large_image", "app", "player"],
+              },
+            ],
           },
           {
             type: "image",
@@ -235,23 +437,18 @@ export default defineConfig({
             label: "Profile Image",
             required: true,
           },
-          {
-            type: "string",
-            name: "pronouns",
-            label: "Pronouns",
-            description: "Member's pronouns (e.g., She/Her, He/Him, They/Them)",
-          },
+
           {
             type: "rich-text",
             name: "bio",
             label: "Biography",
-            description: "Member's biography and story",
-            isBody: true,
+            description: "Personal biography and story",
+            required: true,
           },
           {
             type: "object",
             name: "socialMediaUrls",
-            label: "Social Media",
+            label: "Social Media URLs",
             list: true,
             fields: [
               {
@@ -276,73 +473,162 @@ export default defineConfig({
               },
             ],
           },
-          {
-            type: "number",
-            name: "order",
-            label: "Display Order",
-            description:
-              "Order in which to display this member on the page (lower numbers appear first)",
-            required: true,
-          },
         ],
         ui: {
-          router: ({ document }) => `/members/${document._sys.filename}`,
+          router: ({ document }) => `/about-jared`,
         },
       },
       {
-        name: "video",
-        label: "Videos",
-        path: "content/videos",
+        name: "homepage",
+        label: "Homepage",
+        path: "content/homepage",
         fields: [
           {
             type: "string",
             name: "title",
-            label: "Title",
+            label: "Page Title",
             isTitle: true,
             required: true,
           },
           {
-            type: "string",
-            name: "youtubeId",
-            label: "YouTube Video ID",
-            description:
-              "The YouTube video ID (e.g., 'uX6XbVyYRuQ' from https://www.youtube.com/watch?v=uX6XbVyYRuQ)",
-            required: true,
-          },
-          {
-            type: "string",
-            name: "description",
-            label: "Description",
-            description: "Optional description of the video",
-            ui: {
-              component: "textarea",
-            },
-          },
-          {
-            type: "datetime",
-            name: "date",
-            label: "Date",
-            description: "Date when the video was published or recorded",
-            required: true,
-          },
-          {
-            type: "string",
-            name: "category",
-            label: "Category",
-            description: "Category for organizing videos",
-            options: [
-              "music-videos",
-              "live-performances",
-              "interviews",
-              "behind-the-scenes",
-              "activism",
-              "general",
+            type: "object",
+            name: "metadata",
+            label: "Metadata",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Meta Title",
+                description: "Title for search engines and social sharing",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "description",
+                label: "Meta Description",
+                description:
+                  "Description for search engines and social sharing",
+                ui: {
+                  component: "textarea",
+                },
+                required: true,
+              },
+              {
+                type: "string",
+                name: "keywords",
+                label: "Meta Keywords",
+                description: "Comma-separated keywords for SEO",
+              },
+              {
+                type: "image",
+                name: "ogImage",
+                label: "Open Graph Image",
+                description: "Image for social media sharing",
+              },
+              {
+                type: "string",
+                name: "ogTitle",
+                label: "Open Graph Title",
+                description:
+                  "Title for social media sharing (optional, defaults to meta title)",
+              },
+              {
+                type: "string",
+                name: "ogDescription",
+                label: "Open Graph Description",
+                description:
+                  "Description for social media sharing (optional, defaults to meta description)",
+              },
+              {
+                type: "string",
+                name: "twitterCard",
+                label: "Twitter Card Type",
+                description: "Type of Twitter card to display",
+                options: ["summary", "summary_large_image", "app", "player"],
+              },
             ],
-            required: true,
+          },
+          {
+            type: "object",
+            name: "heroComponent",
+            label: "Hero Component",
+            fields: [
+              {
+                type: "image",
+                name: "image",
+                label: "Hero Image",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "title",
+                label: "Hero Title",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "subtitle",
+                label: "Hero Subtitle",
+                ui: {
+                  component: "textarea",
+                },
+                required: true,
+              },
+              {
+                type: "string",
+                name: "ctaUrl",
+                label: "Call to Action URL",
+                description: "URL for the call to action button (optional)",
+              },
+              {
+                type: "string",
+                name: "ctaLabel",
+                label: "Call to Action Label",
+                description: "Text for the call to action button (optional)",
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "bookPromoSection",
+            label: "Book Promotion Section",
+            fields: [
+              {
+                type: "image",
+                name: "image",
+                label: "Book Image",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "title",
+                label: "Section Title",
+                required: true,
+              },
+              {
+                type: "rich-text",
+                name: "description",
+                label: "Description",
+                description: "Description of the book or promotion",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "ctaUrl",
+                label: "Call to Action URL",
+                description: "URL for the call to action button (optional)",
+              },
+              {
+                type: "string",
+                name: "ctaText",
+                label: "Call to Action Text",
+                description: "Text for the call to action button (optional)",
+              },
+            ],
           },
         ],
         ui: {
-          router: ({ document }) => `/videos/${document._sys.filename}`,
+          router: ({ document }) => `/`,
         },
       },
     ],
