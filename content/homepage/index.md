@@ -59,4 +59,9 @@ bookPromoSection:
     completists dream.
   ctaUrl: "https://www.amazon.com/Down-Punk-Highway-Jared-Forman/dp/1916864368"
   ctaText: Read Now
+zineSection:
+  title: "Yaga Punk Collective Zine"
+  subtitle: "Explore our radical publications that challenge the status quo and amplify underground voices"
+  zines:
+    - zine: content/zines/issue1.md
 ---

@@ -11,6 +11,7 @@ import Section from "@/components/Section";
 import Disclaimer from "@/components/Disclaimer";
 import "../styles/theme.css";
 import CopyAndImage from "@/components/CopyAndImage";
+import ThreeColContent from "@/components/ThreeColContent";
 
 // Temporary function to read homepage data directly until Tina types are regenerated
 async function getHomepageData() {
@@ -23,6 +24,42 @@ async function getHomepageData() {
     console.error("Error reading homepage data:", error);
     return null;
   }
+}
+
+// Function to read zine data
+async function getZineData(filename: string) {
+  try {
+    const filePath = path.join(
+      process.cwd(),
+      "content/zines",
+      `${filename}.md`
+    );
+    const fileContents = fs.readFileSync(filePath, "utf8");
+    const { data } = matter(fileContents);
+    return data;
+  } catch (error) {
+    console.error(`Error reading zine data for ${filename}:`, error);
+    return null;
+  }
+}
+
+// Function to fetch zines referenced in homepage
+async function getZinesFromHomepage(zineSection: any) {
+  if (!zineSection?.zines) return [];
+
+  const zinePromises = zineSection.zines.map(async (zineRef: any) => {
+    if (zineRef.zine) {
+      // Extract filename from path like "content/zines/BURN-THE-BROOM-RAISE-THE-FREAK-FLAG.md"
+      const filename = zineRef.zine
+        .replace("content/zines/", "")
+        .replace(".md", "");
+      return await getZineData(filename);
+    }
+    return null;
+  });
+
+  const zines = await Promise.all(zinePromises);
+  return zines.filter((zine) => zine !== null);
 }
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -91,6 +128,11 @@ export default async function Home() {
 
   console.log("homepageData", homepageData);
 
+  // Fetch zine data if zineSection exists
+  const zines = homepageData?.zineSection
+    ? await getZinesFromHomepage(homepageData.zineSection)
+    : [];
+
   const heroProps = {
     image:
       homepageData?.heroComponent?.image ||
@@ -143,8 +185,22 @@ export default async function Home() {
             )}
         </CopyAndImage>
       </Section>
-      {/* <AudioGallery title="Demos - In Progress" addCta /> */}
-      {/* <AudioGallery title="Demos - In Progress" addCta /> */}
+
+      {/* Zine Section */}
+      {homepageData?.zineSection && (
+        <Section>
+          <ThreeColContent
+            title={homepageData.zineSection.title || "Our Zines"}
+            subtitle={
+              homepageData.zineSection.subtitle ||
+              "Explore our radical publications"
+            }
+            zines={zines}
+            mainButtonText="View All Zines"
+            mainButtonUrl="/zine"
+          />
+        </Section>
+      )}
     </>
   );
 }

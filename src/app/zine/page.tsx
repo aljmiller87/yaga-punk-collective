@@ -38,7 +38,7 @@ export default function ZinePage() {
                   <h3>Featured Bands</h3>
                   <ul>
                     {zine.featuredBands.map((band, bandIndex) => (
-                      <li key={bandIndex}>
+                      <li style={{ fontSize: "1rem" }} key={bandIndex}>
                         {band.url ? (
                           <a
                             href={band.url}

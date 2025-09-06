@@ -362,6 +362,43 @@ export default defineConfig({
         },
       },
       {
+        name: "bands",
+        label: "Bands",
+        path: "content/bands",
+        fields: [
+          {
+            type: "image",
+            name: "picture",
+            label: "Band Picture",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "title",
+            label: "Band Name",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "rich-text",
+            name: "description",
+            label: "Description",
+            description: "Band description and information",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "link",
+            label: "Band Link",
+            description: "Website, social media, or streaming platform link",
+            required: false,
+          },
+        ],
+        ui: {
+          router: ({ document }) => `/bands/${document._sys.filename}`,
+        },
+      },
+      {
         name: "aboutJared",
         label: "About Jared",
         path: "content/about-jared",
@@ -623,6 +660,47 @@ export default defineConfig({
                 name: "ctaText",
                 label: "Call to Action Text",
                 description: "Text for the call to action button (optional)",
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "zineSection",
+            label: "Zine Section",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Section Title",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "subtitle",
+                label: "Section Subtitle",
+                description:
+                  "Brief description or subtitle for the zine section",
+                ui: {
+                  component: "textarea",
+                },
+                required: true,
+              },
+              {
+                type: "object",
+                name: "zines",
+                label: "Featured Zines",
+                description: "Select zines to feature in this section",
+                list: true,
+                fields: [
+                  {
+                    type: "reference",
+                    name: "zine",
+                    label: "Zine",
+                    description: "Select a zine to feature",
+                    collections: ["zineRelease"],
+                    required: true,
+                  },
+                ],
               },
             ],
           },

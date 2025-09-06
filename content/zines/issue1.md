@@ -1,6 +1,6 @@
 ---
 title: Issue 1
-issue: '1'
+issue: "1"
 coverImage: /uploads/images/zines/issue1.jpg
 releaseDate: 2025-07-01T04:00:00.000Z
 description: Issue 1 description
@@ -24,4 +24,3 @@ purchaseUrl: >-
 downloadUrl: >-
   https://store.greennoiserecords.com/products/forman-jared-journey-down-the-punk-rock-highway-authors-numbered-edition-new-book-copy
 ---
-
