@@ -728,6 +728,21 @@ export default defineConfig({
               },
             ],
           },
+          {
+            type: "object",
+            name: "pictureCollage",
+            label: "Picture Collage",
+            fields: [
+              {
+                type: "image",
+                name: "images",
+                label: "Images",
+                description: "Array of images for the picture collage",
+                list: true,
+                required: true,
+              },
+            ],
+          },
         ],
         ui: {
           router: ({ document }) => `/`,

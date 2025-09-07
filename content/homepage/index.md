@@ -58,7 +58,7 @@ bookPromoSection:
     the stories of ABC No Rio and Gilman Street and personal accounts and
     memories, from scene veterans and activists, Jared Forman's book is a punk
     completists dream.
-  ctaUrl: "https://www.amazon.com/Down-Punk-Highway-Jared-Forman/dp/1916864368"
+  ctaUrl: 'https://www.amazon.com/Down-Punk-Highway-Jared-Forman/dp/1916864368'
   ctaText: Read Now
   review:
     quote: >-
@@ -70,7 +70,8 @@ bookPromoSection:
       power to provoke thought and inspire individuals to question the status
       quo.
     author: Thoughts Words Action
-    source: https://thoughtswordsaction.com/2024/08/01/down-the-punk-rock-highway-by-jared-forman-earth-island-books/
+    source: >-
+      https://thoughtswordsaction.com/2024/08/01/down-the-punk-rock-highway-by-jared-forman-earth-island-books/
 zineSection:
   title: Yage Punk Collective Zine
   subtitle: >-
@@ -83,4 +84,19 @@ zineSection:
     was photocopied five times too many, and words that hit like a sucker punch.
     If it feels messy, chaotic, and a little unhinged, good—that’s exactly the
     point.
+pictureCollage:
+  images:
+    - >-
+      /uploads/images/Messenger_creation_6C866E86-3A26-42CC-AA17-D1CB8078A797.jpeg
+    - >-
+      /uploads/images/Messenger_creation_0C7C0812-07A2-4CE3-809B-B595EA5A0302.jpeg
+    - /uploads/images/FB_IMG_1748807597461.jpg
+    - /uploads/images/FB_IMG_1742269300998.jpg
+    - '/uploads/images/41EM5ApJUyL._UF1000,1000_QL80_.jpg'
+    - >-
+      /uploads/images/36-years-ago-today-possibly-the-best-show-at-cbgbs-v0-64cpv5pr1mae1.jpeg
+    - /uploads/images/20250601_113715.jpg
+    - /uploads/images/20250529_161807.jpg
+    - /uploads/images/20250302_234035.jpg
 ---
+

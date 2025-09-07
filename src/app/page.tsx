@@ -10,6 +10,7 @@ import Section from "@/components/Section";
 import CopyAndImage from "@/components/CopyAndImage";
 import ThreeColContent from "@/components/ThreeColContent";
 import ZineSection from "@/components/ZineSection";
+import PictureCollage from "@/components/PictureCollage";
 import { getAllZineReleases } from "@/utils/zines";
 import "../styles/theme.css";
 import CopyAndTwoImage from "@/components/CopyAndTwoImage";
@@ -262,6 +263,16 @@ export default async function Home() {
             latestZine={latestZine}
             ctaUrl="/zine"
             ctaText="Explore All Zines"
+          />
+        </Section>
+      )}
+
+      {/* Picture Collage Section */}
+      {homepageData?.pictureCollage?.images && (
+        <Section>
+          <PictureCollage
+            images={homepageData.pictureCollage.images}
+            title="Community Snapshots"
           />
         </Section>
       )}

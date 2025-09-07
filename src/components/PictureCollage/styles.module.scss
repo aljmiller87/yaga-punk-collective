@@ -1,0 +1,130 @@
+.pictureCollage {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  font-family: "crass";
+  letter-spacing: 2px;
+  color: var(--darkTealBg);
+  margin-bottom: 3rem;
+  padding: 0 3rem 1rem;
+  border-bottom: 2px solid var(--redLight);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.collageContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: -1rem; /* Negative gap for overlap */
+  min-height: 300px;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    min-height: 250px;
+    padding: 1rem 0.5rem;
+    gap: -0.5rem;
+    max-width: 100%;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  max-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+  padding: 8px;
+  border: 1px solid #ddd;
+
+  // Polaroid-style effect
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
+    );
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  &:hover {
+    transform: scale(1.05) !important; // Override the random transform on hover
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    z-index: 100 !important; // Bring to front on hover
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 250px;
+    padding: 6px;
+  }
+}
+
+// Add some visual flair with punk aesthetic
+.imageWrapper::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: 2px solid var(--redLight);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+  border-radius: 4px;
+}
+
+.imageWrapper:hover::after {
+  opacity: 0.8;
+}
+
+// Add tape effects for authentic collage feel
+.imageWrapper:nth-child(odd)::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 20%;
+  width: 60px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  transform: rotate(-15deg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imageWrapper:nth-child(even)::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 20%;
+  width: 60px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  transform: rotate(15deg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
