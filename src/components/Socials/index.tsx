@@ -7,6 +7,7 @@ import Twitter from "./Twitter";
 import Tiktok from "./Tiktok";
 import Youtube from "./Youtube";
 import Linktree from "./Linktree";
+import Email from "./Email";
 
 export type ISocial = {
   platform:
@@ -15,7 +16,8 @@ export type ISocial = {
     | "tiktok"
     | "twitter"
     | "youtube"
-    | "linktree";
+    | "linktree"
+    | "email";
   url: string;
 };
 const Socials = ({
@@ -41,7 +43,8 @@ const Socials = ({
         return <Tiktok />;
       case "linktree":
         return <Linktree />;
-
+      case "email":
+        return <Email />;
       default:
         return null;
     }

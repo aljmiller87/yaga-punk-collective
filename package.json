@@ -1,14 +1,14 @@
 {
-  "name": "yaga-punk-collective",
+  "name": "Yage-punk-collective",
   "version": "1.0.0",
-  "description": "Yaga Punk Collective - Building community through radical politics, DIY culture, and punk resistance",
+  "description": "Yage Punk Collective - Building community through radical politics, DIY culture, and punk resistance",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/aljmiller87/yaga-punk-collective.git"
+    "url": "https://github.com/aljmiller87/Yage-punk-collective.git"
   },
   "keywords": [
-    "yaga-punk-collective",
+    "Yage-punk-collective",
     "anarchist-punk",
     "diy-culture",
     "radical-politics",
@@ -19,7 +19,7 @@
     "typescript",
     "react"
   ],
-  "author": "Yaga Punk Collective",
+  "author": "Yage Punk Collective",
   "license": "MIT",
   "scripts": {
     "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",

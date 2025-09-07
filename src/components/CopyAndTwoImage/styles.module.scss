@@ -1,0 +1,195 @@
+.CopyAndTwoImage {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+
+  .TitleBlock {
+    width: 100%;
+    max-width: 36rem;
+    order: 1;
+
+    h1,
+    h2,
+    h4,
+    h5,
+    h6 {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .ImagesBlock {
+    width: 100%;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    order: 2;
+
+    .ImageWrapper {
+      width: 100%;
+      position: relative;
+      height: 0;
+      padding-bottom: 60%;
+      overflow: visible;
+
+      .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: 50% 50%;
+        border-radius: 8px;
+      }
+
+      &:first-child .img {
+        transform: translateX(-1rem);
+      }
+
+      &:last-child .img {
+        transform: translateX(1rem);
+      }
+    }
+  }
+
+  .CopyBlock {
+    width: 100%;
+    max-width: 36rem;
+    font-size: 0.79rem;
+    color: var(--gray);
+    order: 3;
+
+    .DesktopContent {
+      display: none;
+    }
+
+    .MobileTabletContent {
+      display: block;
+    }
+
+    h1,
+    h2,
+    h4,
+    h5,
+    h6 {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .ImagesBlock {
+      flex-direction: row;
+      gap: 1rem;
+      max-width: 45rem;
+
+      .ImageWrapper {
+        flex: 1;
+        padding-bottom: 40%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    align-items: stretch;
+    flex-direction: row;
+    gap: 4rem;
+
+    .TitleBlock {
+      display: none;
+    }
+
+    .ImagesBlock {
+      flex: 1 0 35%;
+      max-width: none;
+      flex-direction: column;
+      gap: 1.5rem;
+      order: unset;
+
+      .ImageWrapper {
+        flex: 1;
+        height: auto;
+        min-height: 220px;
+        padding-bottom: 0;
+        overflow: visible;
+
+        .img {
+          height: 100%;
+          object-fit: contain;
+        }
+
+        &:first-child .img {
+          transform: translateX(-1rem);
+        }
+
+        &:last-child .img {
+          transform: translateX(1rem);
+        }
+      }
+    }
+
+    .CopyBlock {
+      max-width: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      order: unset;
+
+      .DesktopContent {
+        display: block;
+      }
+
+      .MobileTabletContent {
+        display: none;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-bottom: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 1.25rem;
+      }
+    }
+
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &.mobileReverse {
+      .TitleBlock {
+        order: 3;
+      }
+      .ImagesBlock {
+        order: 2;
+      }
+      .CopyBlock {
+        order: 1;
+      }
+    }
+  }
+}

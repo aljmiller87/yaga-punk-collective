@@ -1,29 +1,29 @@
 ---
-title: Yaga Punk Collective - Homepage
+title: Yage Punk Collective - Homepage
 metadata:
   title: >-
-    Yaga Punk Collective - Building Community Through Radical Politics, DIY
+    Yage Punk Collective - Building Community Through Radical Politics, DIY
     Culture, and Punk Resistance
   description: >-
-    Join the Yaga Punk Collective in building community through radical
+    Join the Yage Punk Collective in building community through radical
     politics, DIY culture, and punk resistance. Discover our events, zines,
     music, and community initiatives.
   keywords: >-
-    Yaga Punk Collective, anarchist punk, DIY culture, radical politics, punk
+    Yage Punk Collective, anarchist punk, DIY culture, radical politics, punk
     resistance, community building, anarcho punk, hardcore punk, queer punk,
     anti-fascist
-  ogImage: /uploads/images/yaga-punk-collective-hero.jpg
+  ogImage: /uploads/images/Yaga-punk-collective-hero.jpg
   ogTitle: >-
-    Yaga Punk Collective - Building Community Through Radical Politics, DIY
+    Yage Punk Collective - Building Community Through Radical Politics, DIY
     Culture, and Punk Resistance
   ogDescription: >-
-    Join the Yaga Punk Collective in building community through radical
+    Join the Yage Punk Collective in building community through radical
     politics, DIY culture, and punk resistance. Discover our events, zines,
     music, and community initiatives.
   twitterCard: summary_large_image
 heroComponent:
-  image: /uploads/images/yaga-punk-collective-hero.jpg
-  title: Yaga Punk Collective
+  image: /uploads/images/Yaga-punk-collective-hero.jpg
+  title: Yage Punk Collective
   subtitle: >-
     Building community through radical politics, DIY culture, and punk
     resistance
@@ -31,6 +31,7 @@ heroComponent:
   ctaLabel: Join the Movement
 bookPromoSection:
   image: /uploads/images/book.jpg
+  image2: /uploads/images/book-back-cover.jpeg
   title: Down The Punk Rock Highway
   description: >
     Evoking and channelling the spirit of rebellion, energy and freedom that
@@ -59,9 +60,27 @@ bookPromoSection:
     completists dream.
   ctaUrl: "https://www.amazon.com/Down-Punk-Highway-Jared-Forman/dp/1916864368"
   ctaText: Read Now
+  review:
+    quote: >-
+      Forman emphasizes the movement's role as a catalyst for social change and
+      its ability to challenge norms and inspire action. Through stories of
+      activism and resistance, he highlights impact beyond music, showcasing its
+      influence on art, politics, and culture. Through these interviews,
+      Forman's exploration of punk rock's broader significance underscores the
+      power to provoke thought and inspire individuals to question the status
+      quo.
+    author: Thoughts Words Action
+    source: https://thoughtswordsaction.com/2024/08/01/down-the-punk-rock-highway-by-jared-forman-earth-island-books/
 zineSection:
-  title: "Yaga Punk Collective Zine"
-  subtitle: "Explore our radical publications that challenge the status quo and amplify underground voices"
-  zines:
-    - zine: content/zines/issue1.md
+  title: Yage Punk Collective Zine
+  subtitle: >-
+    Yage Punk Collective Zine is a raw, no-frills dispatch from the
+    underground—part manifesto, part scrapbook, part megaphone for anyone sick
+    of waiting for permission. Born out of basement shows, busted gear, and
+    late-night rants scribbled on torn flyers, this zine isn’t about polish or
+    profit—it’s about capturing the pulse of DIY punk as it thrashes in real
+    time. Expect interviews with bands that barely exist, art that looks like it
+    was photocopied five times too many, and words that hit like a sucker punch.
+    If it feels messy, chaotic, and a little unhinged, good—that’s exactly the
+    point.
 ---

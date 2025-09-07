@@ -37,7 +37,7 @@ This starter includes pre-configured content collections:
 
 ```bash
 # Clone this repository
-git clone https://github.com/aljmiller87/yaga-punk-collective.git my-project
+git clone https://github.com/aljmiller87/Yage-punk-collective.git my-project
 cd my-project
 
 # Remove the git history and start fresh
@@ -204,7 +204,7 @@ The template works with any platform that supports Next.js. Ensure you:
 
 - [Tina CMS Documentation](https://tina.io/docs/)
 - [Next.js Documentation](https://nextjs.org/docs)
-- [GitHub Issues](https://github.com/aljmiller87/yaga-punk-collective/issues)
+- [GitHub Issues](https://github.com/aljmiller87/Yage-punk-collective/issues)
 
 ## 🤝 Contributing
 

@@ -6,17 +6,17 @@ import EventsClient from "./EventsClient";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Events - Yaga Punk Collective",
+  title: "Events - Yage Punk Collective",
   description:
-    "Upcoming shows and events featuring Yaga Punk Collective. Charlotte's premier anarchist punk collective performing live music and supporting local communities.",
+    "Upcoming shows and events featuring Yage Punk Collective. Charlotte's premier anarchist punk collective performing live music and supporting local communities.",
   authors: {
     name: "Alex Miller",
     url: "www.alexmillerwebdev.com",
   },
-  creator: "Yaga Punk Collective",
-  publisher: "Yaga Punk Collective",
+  creator: "Yage Punk Collective",
+  publisher: "Yage Punk Collective",
   keywords: [
-    "Yaga Punk Collective Events",
+    "Yage Punk Collective Events",
     "YPC Shows",
     "Charlotte Punk Shows",
     "Anarcho Punk Events",
@@ -28,27 +28,27 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
-    url: "https://yagapunkcollective.com/events",
-    title: "Events - Yaga Punk Collective",
+    url: "https://Yagepunkcollective.com/events",
+    title: "Events - Yage Punk Collective",
     description:
-      "Upcoming shows and events featuring Yaga Punk Collective. Charlotte's premier anarchist punk collective performing live music and supporting local communities.",
-    siteName: "Yaga Punk Collective",
+      "Upcoming shows and events featuring Yage Punk Collective. Charlotte's premier anarchist punk collective performing live music and supporting local communities.",
+    siteName: "Yage Punk Collective",
     images: [
       {
-        url: "https://yagapunkcollective.com/uploads/images/yaga-punk-collective-hero.jpg",
+        url: "https://Yagepunkcollective.com/uploads/images/Yaga-punk-collective-hero.jpg",
         width: 1200,
         height: 1200,
-        alt: "Yaga Punk Collective Logo - Anarchist Punk Collective",
+        alt: "Yage Punk Collective Logo - Anarchist Punk Collective",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Events - Yaga Punk Collective",
+    title: "Events - Yage Punk Collective",
     description:
-      "Upcoming shows and events featuring Yaga Punk Collective. Charlotte's premier anarchist punk collective performing live music and supporting local communities.",
+      "Upcoming shows and events featuring Yage Punk Collective. Charlotte's premier anarchist punk collective performing live music and supporting local communities.",
     images: [
-      "https://yagapunkcollective.com/uploads/images/yaga-punk-collective-hero.jpg",
+      "https://Yagepunkcollective.com/uploads/images/Yaga-punk-collective-hero.jpg",
     ],
   },
 };
@@ -58,7 +58,7 @@ const Events = async () => {
 
   return (
     <div>
-      <PageBanner title={"Yaga Punk Collective Events"} />
+      <PageBanner title={"Yage Punk Collective Events"} />
       <EventsClient allEvents={allEvents} />
       <FullWidthImageContent />
     </div>

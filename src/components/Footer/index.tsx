@@ -8,20 +8,12 @@ const Footer = () => {
   const socials: ISocial[] = [
     {
       platform: "facebook",
-      url: "https://www.facebook.com/yagapunkcollective/",
+      url: "https://www.facebook.com/Yagepunkcollective/",
     },
     {
-      platform: "instagram",
-      url: "https://www.instagram.com/yagapunkcollective/",
+      platform: "email",
+      url: "yagepunkcollective@tutamail.com",
     },
-    {
-      platform: "youtube",
-      url: "https://www.youtube.com/@YagaPunkCollective",
-    },
-    // {
-    //   platform: "tiktok",
-    //   url: "www.tiktok.com",
-    // },
   ];
 
   return (

@@ -1,22 +1,22 @@
 ---
 title: Jared Smith
 metadata:
-  title: About Jared - Yaga Punk Collective
+  title: About Jared - Yage Punk Collective
   description: >-
-    Learn about Jared Smith and their role in the Yaga Punk Collective. Discover
+    Learn about Jared Smith and their role in the Yage Punk Collective. Discover
     their journey, music, and punk philosophy.
-  keywords: "Jared Smith, Yaga Punk Collective, Punk Musician, About Jared"
-  ogTitle: About Jared - Yaga Punk Collective
+  keywords: "Jared Smith, Yage Punk Collective, Punk Musician, About Jared"
+  ogTitle: About Jared - Yage Punk Collective
   ogDescription: >-
-    Learn about Jared Smith and their role in the Yaga Punk Collective. Discover
+    Learn about Jared Smith and their role in the Yage Punk Collective. Discover
     their journey, music, and punk philosophy.
   twitterCard: summary_large_image
 image: /uploads/images/Jared-Forman.jpg
 socialMediaUrls:
   - platform: instagram
-    url: "https://instagram.com/jaredyagapunk"
+    url: "https://instagram.com/jaredYagepunk"
   - platform: twitter
-    url: "https://twitter.com/jaredyagapunk"
+    url: "https://twitter.com/jaredYagepunk"
 ---
 
 Punk Rock filled a gap Jared didn't know existed in his life. He first stumbled across the scene when learning to skateboard, and as one band inevitably led to another, it soon became his overbearing and overriding passion. Jared embraced DIY culture without hesitation, releasing his first 7-inch record whilst still in the 10th Grade, and by the time he was eighteen, he was living in his first Punk House, where he stayed for the next seven years.

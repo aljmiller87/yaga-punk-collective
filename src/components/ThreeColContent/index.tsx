@@ -49,12 +49,23 @@ const ThreeColContent: React.FC<ThreeColContentProps> = ({
       }))
     : columns || [];
 
+  // Determine the number of columns based on the number of items
+  const getColumnClass = (itemCount: number) => {
+    if (itemCount === 1) return styles.OneColumn;
+    if (itemCount === 2) return styles.TwoColumns;
+    return styles.ThreeColumns; // 3 or more items
+  };
+
+  const columnClassName = `${styles.ColumnsContainer} ${getColumnClass(
+    displayItems.length
+  )}`;
+
   return (
     <section className={styles.ThreeColContent}>
       <h2 className={styles.Title}>{title}</h2>
       <p className={styles.Subtitle}>{subtitle}</p>
 
-      <div className={styles.ColumnsContainer}>
+      <div className={columnClassName}>
         {displayItems.map((item, index) => (
           <div key={index} className={styles.Column}>
             <div className={styles.ColumnImage}>

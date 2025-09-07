@@ -6,17 +6,17 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Join Us - Yaga Punk Collective",
+  title: "Join Us - Yage Punk Collective",
   description:
-    "Join Yaga Punk Collective! We're seeking musicians, graphic designers, promoters, and mutual aid liaisons to help grow Charlotte's anarchist punk community.",
+    "Join Yage Punk Collective! We're seeking musicians, graphic designers, promoters, and mutual aid liaisons to help grow Charlotte's anarchist punk community.",
   authors: {
     name: "Alex Miller",
     url: "www.alexmillerwebdev.com",
   },
-  creator: "Yaga Punk Collective",
-  publisher: "Yaga Punk Collective",
+  creator: "Yage Punk Collective",
+  publisher: "Yage Punk Collective",
   keywords: [
-    "Join Yaga Punk Collective",
+    "Join Yage Punk Collective",
     "YPC Membership",
     "Charlotte Punk Community",
     "Anarchist Musicians",
@@ -28,27 +28,27 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
-    url: "https://yagapunkcollective.com/join-us",
-    title: "Join Us - Yaga Punk Collective",
+    url: "https://Yagepunkcollective.com/join-us",
+    title: "Join Us - Yage Punk Collective",
     description:
-      "Join Yaga Punk Collective! We're seeking musicians, graphic designers, promoters, and mutual aid liaisons to help grow Charlotte's anarchist punk community.",
-    siteName: "Yaga Punk Collective",
+      "Join Yage Punk Collective! We're seeking musicians, graphic designers, promoters, and mutual aid liaisons to help grow Charlotte's anarchist punk community.",
+    siteName: "Yage Punk Collective",
     images: [
       {
-        url: "https://yagapunkcollective.com/uploads/images/yaga-punk-collective-hero.jpg",
+        url: "https://Yagepunkcollective.com/uploads/images/Yaga-punk-collective-hero.jpg",
         width: 1200,
         height: 1200,
-        alt: "Yaga Punk Collective Logo - Anarchist Punk Collective",
+        alt: "Yage Punk Collective Logo - Anarchist Punk Collective",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Join Us - Yaga Punk Collective",
+    title: "Join Us - Yage Punk Collective",
     description:
-      "Join Yaga Punk Collective! We're seeking musicians, graphic designers, promoters, and mutual aid liaisons to help grow Charlotte's anarchist punk community.",
+      "Join Yage Punk Collective! We're seeking musicians, graphic designers, promoters, and mutual aid liaisons to help grow Charlotte's anarchist punk community.",
     images: [
-      "https://yagapunkcollective.com/uploads/images/yaga-punk-collective-hero.jpg",
+      "https://Yagepunkcollective.com/uploads/images/Yaga-punk-collective-hero.jpg",
     ],
   },
 };
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
 const JoinUs = () => {
   return (
     <>
-      <PageBanner title={"Join the Yaga Punk Collective"} />
+      <PageBanner title={"Join the Yage Punk Collective"} />
       <Section>
         <h2>WHAT DO YOU WANT HERE?</h2>
       </Section>

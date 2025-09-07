@@ -28,23 +28,21 @@ const CopyAndImage = ({
   };
 
   return (
-    <Section>
-      <div className={componentClass()}>
-        <div className={styles.ImageBlock}>
-          <div>
-            <Image
-              style={{ objectPosition: imgPosition, objectFit: imgStyle }}
-              src={img}
-              alt=""
-              className={styles.img}
-              priority
-              fill
-            />
-          </div>
+    <div className={componentClass()}>
+      <div className={styles.ImageBlock}>
+        <div>
+          <Image
+            style={{ objectPosition: imgPosition, objectFit: imgStyle }}
+            src={img}
+            alt=""
+            className={styles.img}
+            priority
+            fill
+          />
         </div>
-        <div className={styles.CopyBlock}>{children}</div>
       </div>
-    </Section>
+      <div className={styles.CopyBlock}>{children}</div>
+    </div>
   );
 };
 

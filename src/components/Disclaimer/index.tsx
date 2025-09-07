@@ -7,7 +7,7 @@ const Disclaimer = () => {
     <>
       <h3>Disclaimer:</h3>
       <p className={sectionStyles.large}>
-        Yaga Punk Collective is a hardcore anarchist punk collective from
+        Yage Punk Collective is a hardcore anarchist punk collective from
         Charlotte, NC. The project was recently started by{" "}
         <Link href={"/about-jared"}>collective members</Link> who are looking
         for musicians, artists, and community organizers to join. Currently, all

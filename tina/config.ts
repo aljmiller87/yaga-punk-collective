@@ -145,7 +145,13 @@ export default defineConfig({
             required: true,
           },
           {
-            type: "datetime",
+            type: "image",
+            name: "coverImage2",
+            label: "Cover Image 2",
+            required: true,
+          },
+          {
+            type: "string",
             name: "releaseDate",
             label: "Release Date",
             required: true,
@@ -637,6 +643,12 @@ export default defineConfig({
                 required: true,
               },
               {
+                type: "image",
+                name: "image2",
+                label: "Book Image 2",
+                required: true,
+              },
+              {
                 type: "string",
                 name: "title",
                 label: "Section Title",
@@ -660,6 +672,35 @@ export default defineConfig({
                 name: "ctaText",
                 label: "Call to Action Text",
                 description: "Text for the call to action button (optional)",
+              },
+              {
+                type: "object",
+                name: "review",
+                label: "Review",
+                description: "Review or testimonial for the book",
+                fields: [
+                  {
+                    type: "string",
+                    name: "quote",
+                    label: "Quote",
+                    description: "Review quote or testimonial text",
+                    ui: {
+                      component: "textarea",
+                    },
+                  },
+                  {
+                    type: "string",
+                    name: "author",
+                    label: "Author",
+                    description: "Name of the review author",
+                  },
+                  {
+                    type: "string",
+                    name: "source",
+                    label: "Source URL",
+                    description: "URL to the original review source",
+                  },
+                ],
               },
             ],
           },
@@ -685,28 +726,35 @@ export default defineConfig({
                 },
                 required: true,
               },
-              {
-                type: "object",
-                name: "zines",
-                label: "Featured Zines",
-                description: "Select zines to feature in this section",
-                list: true,
-                fields: [
-                  {
-                    type: "reference",
-                    name: "zine",
-                    label: "Zine",
-                    description: "Select a zine to feature",
-                    collections: ["zineRelease"],
-                    required: true,
-                  },
-                ],
-              },
             ],
           },
         ],
         ui: {
           router: ({ document }) => `/`,
+        },
+      },
+      {
+        name: "labelPage",
+        label: "Label Page",
+        path: "content/label-page",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Page Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "rich-text",
+            name: "description",
+            label: "Description",
+            description: "Main description content for the label page",
+            required: true,
+          },
+        ],
+        ui: {
+          router: ({ document }) => `/label`,
         },
       },
     ],

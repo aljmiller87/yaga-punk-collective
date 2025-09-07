@@ -7,6 +7,7 @@ export interface IZineRelease {
   title: string;
   issue?: string;
   coverImage: string;
+  coverImage2?: string;
   releaseDate: string;
   originalDate: Date;
   description?: string;
@@ -55,6 +56,7 @@ export function getAllZineReleases(): IZineRelease[] {
         title: zineData.title,
         issue: zineData.issue,
         coverImage: zineData.coverImage,
+        coverImage2: zineData.coverImage2,
         releaseDate: formattedDate,
         originalDate: releaseDate, // Store original date for sorting
         description: zineData.description,

@@ -24,18 +24,18 @@ export async function generateMetadata(): Promise<Metadata> {
     const metadata = content.metadata;
 
     return {
-      title: metadata?.title || "About Jared - Yaga Punk Collective",
+      title: metadata?.title || "About Jared - Yage Punk Collective",
       description:
         metadata?.description ||
-        "Learn about Jared and their role in the Yaga Punk Collective.",
+        "Learn about Jared and their role in the Yage Punk Collective.",
       authors: {
-        name: "Yaga Punk Collective",
+        name: "Yage Punk Collective",
       },
-      creator: "Yaga Punk Collective",
-      publisher: "Yaga Punk Collective",
+      creator: "Yage Punk Collective",
+      publisher: "Yage Punk Collective",
       keywords: metadata?.keywords?.split(",").map((k) => k.trim()) || [
         "Jared",
-        "Yaga Punk Collective",
+        "Yage Punk Collective",
         "Punk Musician",
         "About",
       ],
@@ -43,23 +43,23 @@ export async function generateMetadata(): Promise<Metadata> {
       robots: { index: true, follow: true },
       openGraph: {
         type: "website",
-        url: "https://yagapunkcollective.com/about-jared",
+        url: "https://Yagepunkcollective.com/about-jared",
         title:
           metadata?.ogTitle ||
           metadata?.title ||
-          "About Jared - Yaga Punk Collective",
+          "About Jared - Yage Punk Collective",
         description:
           metadata?.ogDescription ||
           metadata?.description ||
-          "Learn about Jared and their role in the Yaga Punk Collective.",
-        siteName: "Yaga Punk Collective",
+          "Learn about Jared and their role in the Yage Punk Collective.",
+        siteName: "Yage Punk Collective",
         images: metadata?.ogImage
           ? [
               {
                 url: metadata.ogImage,
                 width: 1200,
                 height: 1200,
-                alt: `${content.title} - Yaga Punk Collective`,
+                alt: `${content.title} - Yage Punk Collective`,
               },
             ]
           : [],
@@ -69,20 +69,20 @@ export async function generateMetadata(): Promise<Metadata> {
         title:
           metadata?.ogTitle ||
           metadata?.title ||
-          "About Jared - Yaga Punk Collective",
+          "About Jared - Yage Punk Collective",
         description:
           metadata?.ogDescription ||
           metadata?.description ||
-          "Learn about Jared and their role in the Yaga Punk Collective.",
+          "Learn about Jared and their role in the Yage Punk Collective.",
         images: metadata?.ogImage ? [metadata.ogImage] : [],
       },
     };
   } catch (error) {
     console.error("Error generating metadata:", error);
     return {
-      title: "About Jared - Yaga Punk Collective",
+      title: "About Jared - Yage Punk Collective",
       description:
-        "Learn about Jared and their role in the Yaga Punk Collective.",
+        "Learn about Jared and their role in the Yage Punk Collective.",
     };
   }
 }

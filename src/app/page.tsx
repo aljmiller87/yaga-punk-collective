@@ -7,11 +7,12 @@ import matter from "gray-matter";
 // Components
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
-// import AudioGallery from "@/components/AudioGallery";
-import Disclaimer from "@/components/Disclaimer";
-import "../styles/theme.css";
 import CopyAndImage from "@/components/CopyAndImage";
 import ThreeColContent from "@/components/ThreeColContent";
+import ZineSection from "@/components/ZineSection";
+import { getAllZineReleases } from "@/utils/zines";
+import "../styles/theme.css";
+import CopyAndTwoImage from "@/components/CopyAndTwoImage";
 
 // Temporary function to read homepage data directly until Tina types are regenerated
 async function getHomepageData() {
@@ -67,7 +68,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   if (!homepage) {
     return {
-      title: "Yaga Punk Collective",
+      title: "Yage Punk Collective",
       description:
         "Building community through radical politics, DIY culture, and punk resistance",
     };
@@ -76,12 +77,12 @@ export async function generateMetadata(): Promise<Metadata> {
   const { metadata } = homepage;
 
   return {
-    title: metadata?.title || "Yaga Punk Collective",
+    title: metadata?.title || "Yage Punk Collective",
     description:
       metadata?.description ||
       "Building community through radical politics, DIY culture, and punk resistance",
     keywords: metadata?.keywords?.split(",").map((k: string) => k.trim()) || [
-      "Yaga Punk Collective",
+      "Yage Punk Collective",
       "anarchist punk",
       "DIY culture",
       "radical politics",
@@ -89,20 +90,20 @@ export async function generateMetadata(): Promise<Metadata> {
     ],
     openGraph: {
       type: "website",
-      url: "https://yagapunkcollective.com",
-      title: metadata?.ogTitle || metadata?.title || "Yaga Punk Collective",
+      url: "https://Yagepunkcollective.com",
+      title: metadata?.ogTitle || metadata?.title || "Yage Punk Collective",
       description:
         metadata?.ogDescription ||
         metadata?.description ||
         "Building community through radical politics, DIY culture, and punk resistance",
-      siteName: "Yaga Punk Collective",
+      siteName: "Yage Punk Collective",
       images: metadata?.ogImage
         ? [
             {
               url: metadata.ogImage,
               width: 1200,
               height: 1200,
-              alt: "Yaga Punk Collective",
+              alt: "Yage Punk Collective",
             },
           ]
         : [],
@@ -114,7 +115,7 @@ export async function generateMetadata(): Promise<Metadata> {
           | "summary"
           | "player"
           | "app") || "summary_large_image",
-      title: metadata?.title || "Yaga Punk Collective",
+      title: metadata?.title || "Yage Punk Collective",
       description:
         metadata?.description ||
         "Building community through radical politics, DIY culture, and punk resistance",
@@ -125,19 +126,16 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function Home() {
   const homepageData = await getHomepageData();
+  const allZines = getAllZineReleases();
+  const latestZine = allZines.length > 0 ? allZines[0] : undefined;
 
-  console.log("homepageData", homepageData);
-
-  // Fetch zine data if zineSection exists
-  const zines = homepageData?.zineSection
-    ? await getZinesFromHomepage(homepageData.zineSection)
-    : [];
+  console.log("homepageData", homepageData?.zineSection?.zines);
 
   const heroProps = {
     image:
       homepageData?.heroComponent?.image ||
-      "/uploads/images/yaga-punk-collective-hero.jpg",
-    title: homepageData?.heroComponent?.title || "Yaga Punk Collective",
+      "/uploads/images/Yaga-punk-collective-hero.jpg",
+    title: homepageData?.heroComponent?.title || "Yage Punk Collective",
     subtitle:
       homepageData?.heroComponent?.subtitle ||
       "Building community through radical politics, DIY culture, and punk resistance",
@@ -149,14 +147,80 @@ export default async function Home() {
     <>
       <Hero {...heroProps} />
       <Section>
-        <CopyAndImage
-          imgStyle="contain"
-          img={
+        <CopyAndTwoImage
+          img1={
             homepageData?.bookPromoSection?.image || "/uploads/images/book.jpg"
           }
+          img2={
+            homepageData?.bookPromoSection?.image2 || "/uploads/images/book.jpg"
+          }
           reverse={true}
+          img1Style="contain"
+          img2Style="contain"
+          img1Alt="Book Image 1"
+          img2Alt="Book Image 2"
         >
-          <h2>{homepageData?.bookPromoSection?.title || "Our Latest Zine"}</h2>
+          <h2>{homepageData?.bookPromoSection?.title}</h2>
+
+          {/* Review Section */}
+          {homepageData?.bookPromoSection?.review && (
+            <div
+              style={{
+                margin: "2rem 0",
+              }}
+            >
+              <blockquote
+                style={{
+                  margin: "0 0 1rem 0",
+                  fontStyle: "italic",
+                  fontSize: "1.1rem",
+                  fontWeight: "300",
+                  lineHeight: "1.6",
+                  color: "var(--gray)",
+                }}
+              >
+                &ldquo;{homepageData.bookPromoSection.review.quote}&rdquo;
+              </blockquote>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  flexWrap: "wrap",
+                  gap: "1rem",
+                }}
+              >
+                <cite
+                  style={{
+                    fontWeight: "600",
+                    color: "var(--darkTealBg)",
+                    fontSize: "0.9rem",
+                    fontStyle: "normal",
+                  }}
+                >
+                  — {homepageData.bookPromoSection.review.author}
+                </cite>
+                {homepageData.bookPromoSection.review.source && (
+                  <a
+                    href={homepageData.bookPromoSection.review.source}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      color: "var(--redLight)",
+                      textDecoration: "none",
+                      fontSize: "0.9rem",
+                      fontWeight: "500",
+                      borderBottom: "1px solid var(--redLight)",
+                      transition: "all 0.3s ease",
+                    }}
+                  >
+                    See full review
+                  </a>
+                )}
+              </div>
+            </div>
+          )}
+          <h3>Summary</h3>
           <p>
             {homepageData?.bookPromoSection?.description ||
               "Discover our latest zine featuring radical politics, DIY culture, and punk resistance. Join the conversation and be part of the movement."}
@@ -183,21 +247,21 @@ export default async function Home() {
                 {homepageData.bookPromoSection.ctaText}
               </a>
             )}
-        </CopyAndImage>
+        </CopyAndTwoImage>
       </Section>
 
       {/* Zine Section */}
       {homepageData?.zineSection && (
         <Section>
-          <ThreeColContent
+          <ZineSection
             title={homepageData.zineSection.title || "Our Zines"}
             subtitle={
               homepageData.zineSection.subtitle ||
               "Explore our radical publications"
             }
-            zines={zines}
-            mainButtonText="View All Zines"
-            mainButtonUrl="/zine"
+            latestZine={latestZine}
+            ctaUrl="/zine"
+            ctaText="Explore All Zines"
           />
         </Section>
       )}

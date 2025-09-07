@@ -1,4 +1,4 @@
-# CMS Integration for Yaga Punk Collective
+# CMS Integration for Yage Punk Collective
 
 ## Overview
 
