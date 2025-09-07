@@ -5,17 +5,22 @@
   src: url('./Crass.ttf');
 }
 :root {
-  --redPrimary: #d11b1b;
-  --redHover: #9a1414;
-  --redLight: #db3737;
-  --redExtraLight: #CBB0AE;
+  --primary: #A01B66ff;
+  --secondary: #2CABE1ff;
+  --tertiary: #A01B66ff;
+  --surface: #1F3639ff;
+  --background: #020102ff;
+  --text: #E3E3E3;
   --gray: #E3E3E3;
-  --background: #121212;
-  --surface: #1F1F1F;
+
   
 
+  /* --white-smoke: #F2F3F2ff;
+  --picton-blue: #2CABE1ff;
+  --murrey: #A01B66ff;
+  --gunmetal: #1F3639ff;
+  --black: #020102ff; */
 }
-
 
 * {
     box-sizing: border-box;

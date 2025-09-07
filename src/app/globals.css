@@ -19,7 +19,7 @@ label {
 textarea {
   padding: 1rem;
   font-size: 1.3rem;
-  border: 2px solid var(--redLight);
+  border: 2px solid var(--secondary);
 
 }
 
@@ -29,7 +29,7 @@ blockquote {
   max-width: 50rem;
   margin: 0 auto;
   padding: 1rem;
-  border-left: 4px solid var(--redPrimary);
+  border-left: 2px solid var(--secondary);
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.5;
@@ -55,7 +55,7 @@ a,button {
 }
 
 a {
-  color: var(--redLight);
+  color: var(--secondary);
   font-weight: 600;
   text-decoration: none;
 }
@@ -77,7 +77,7 @@ h2 {
 h3 {
   font-size: 36px;
   /* line-height: 48px; */
-  color: #c4c3c3;
+  color: var(--text);
 }
 
 p {
@@ -97,12 +97,12 @@ button {
   font-size: 1.25rem;
   justify-content: center;
   align-items: center;
-  color: var(--redLight);
+  color: var(--secondary);
   background: var(--surface);
   border-radius: 4px;
   text-transform: uppercase;
   font-weight: 600;
-  border: 3px solid var(--redLight);
+  border: 3px solid var(--secondary);
   flex: 1 1 0;
   letter-spacing: 1px;
   transition: all 0.2s linear;
@@ -111,17 +111,17 @@ button {
 .Btn-primary:hover,
 .Btn-primary:active,
 .Btn-primary:focus {
-  color: var(--redPrimary);
+  color: var(--primary);
   background: rgba(255,255,255, 0.7);
-  border: 3px solid var(--redPrimary);
+  border: 3px solid var(--primary);
 
 }
 
 .Btn-primary:disabled,
 .Btn-primary[disabled]{
-  border: 1px solid #999999;
-  background-color: #cccccc;
-  color: #666666;
+  border: 1px solid var(--gray);
+  background-color: var(--gray);
+  color: var(--surface);
 }
 
 

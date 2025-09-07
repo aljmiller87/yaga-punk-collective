@@ -50,8 +50,8 @@
     90deg,
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0.3) 25%,
-    rgba(0, 0, 0, 1) 50%,
-    rgba(0, 0, 0, 1) 100%
+    var(--background) 50%,
+    var(--background) 100%
   );
   z-index: 2;
 }
@@ -67,7 +67,7 @@
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0.2) 40%,
     rgba(0, 0, 0, 0.6) 60%,
-    rgba(0, 0, 0, 1) 100%
+    var(--background) 100%
   );
   z-index: 2;
 }
@@ -87,7 +87,7 @@
   flex-direction: column;
   gap: 1.5rem;
   max-width: 600px;
-  color: white;
+  color: var(--gray);
 }
 
 .title {
@@ -107,8 +107,8 @@
 }
 
 .ctaButton {
-  background: #ff4444;
-  color: white;
+  background: var(--primary);
+  color: var(--gray);
   border: none;
   padding: 1rem 2rem;
   font-size: 1.1rem;
@@ -122,7 +122,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 
   &:hover {
-    background: #ff6666;
+    background: var(--primary);
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
   }
@@ -166,7 +166,7 @@
     text-align: left;
     align-items: flex-start;
     margin-left: 2rem;
-    color: #cacaca;
+    color: var(--text);
     max-width: 55%;
   }
 

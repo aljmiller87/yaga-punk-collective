@@ -13,7 +13,7 @@
   color: var(--darkTealBg);
   margin-bottom: 3rem;
   padding: 0 3rem 1rem;
-  border-bottom: 2px solid var(--redLight);
+  border-bottom: 2px solid var(--secondary);
   display: flex;
   justify-content: center;
   text-align: center;
@@ -47,9 +47,9 @@
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: white;
+  background: var(--gray);
   padding: 8px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--gray);
 
   // Polaroid-style effect
   &::before {
@@ -88,7 +88,7 @@
   left: 4px;
   right: 4px;
   bottom: 4px;
-  border: 2px solid var(--redLight);
+  border: 2px solid var(--secondary);
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 2;

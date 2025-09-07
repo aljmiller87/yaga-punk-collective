@@ -54,7 +54,13 @@ const EventsClient: React.FC<EventsClientProps> = ({ allEvents }) => {
       {displayedEvents.length > 0 ? (
         displayedEvents.map((event, ind) => <Event key={ind} {...event} />)
       ) : (
-        <p style={{ textAlign: "center", fontStyle: "italic", color: "#666" }}>
+        <p
+          style={{
+            textAlign: "center",
+            fontStyle: "italic",
+            color: "var(--surface)",
+          }}
+        >
           {activeView === "past"
             ? "No past events found."
             : "No upcoming events found."}

@@ -61,7 +61,7 @@
     justify-content: center;
     gap: 2rem;
     font-size: 1.4rem;
-    color: #fff;
+    color: var(--gray);
     padding-right: 2rem;
     list-style: none;
     font-family: "Playpen Sans", Arial, Helvetica, sans-serif;
@@ -77,11 +77,11 @@
         right: 0;
         width: 100%;
         height: 2px;
-        background-color: #fff;
+        background-color: var(--gray);
       }
 
       a {
-        color: #fff;
+        color: var(--gray);
       }
     }
   }

@@ -5,8 +5,8 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  color: #129499;
-  text-shadow: #000;
+  color: var(--secondary);
+  text-shadow: var(--background);
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;

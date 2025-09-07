@@ -1,5 +1,5 @@
 .Socials {
-  fill: var(--redLight);
+  fill: var(--secondary);
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -19,8 +19,8 @@
 
     a:hover {
       svg {
-        fill: #fff;
-        color: #fff;
+        fill: var(--gray);
+        color: var(--gray);
       }
     }
   }

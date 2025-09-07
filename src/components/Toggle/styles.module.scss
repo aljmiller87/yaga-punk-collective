@@ -3,7 +3,7 @@
   gap: 0;
   border-radius: 4px;
   overflow: hidden;
-  border: 3px solid var(--redLight);
+  border: 3px solid var(--secondary);
   max-width: 300px;
   margin: 0 auto 4rem auto;
 }
@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--redLight);
+  color: var(--secondary);
   background: var(--surface);
   text-transform: uppercase;
   font-weight: 600;
@@ -27,18 +27,18 @@
   text-align: center;
 
   &:hover {
-    color: var(--redPrimary);
+    color: var(--primary);
     background: rgba(255, 255, 255, 0.9);
   }
 
   &.active {
-    color: var(--redPrimary);
+    color: var(--primary);
     background: rgba(255, 255, 255, 0.9);
-    border: 3px solid var(--redPrimary);
+    border: 3px solid var(--primary);
   }
 
   &:not(.active) {
-    border-right: 1px solid var(--redLight);
+    border-right: 1px solid var(--secondary);
 
     &:last-child {
       border-right: none;

@@ -38,7 +38,7 @@
   }
 
   .text {
-    color: #ededed;
+    color: var(--text);
     position: relative;
     display: flex;
     flex-direction: column;

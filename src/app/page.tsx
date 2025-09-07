@@ -207,11 +207,11 @@ export default async function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
-                      color: "var(--redLight)",
+                      color: "var(--secondary)",
                       textDecoration: "none",
                       fontSize: "0.9rem",
                       fontWeight: "500",
-                      borderBottom: "1px solid var(--redLight)",
+                      borderBottom: "1px solid var(--secondary)",
                       transition: "all 0.3s ease",
                     }}
                   >
@@ -233,8 +233,8 @@ export default async function Home() {
                 className="cta-button"
                 style={{
                   display: "inline-block",
-                  background: "#ff4444",
-                  color: "white",
+                  background: "var(--primary)",
+                  color: "var(--gray)",
                   padding: "1rem 2rem",
                   textDecoration: "none",
                   borderRadius: "4px",

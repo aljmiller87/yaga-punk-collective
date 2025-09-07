@@ -5,7 +5,7 @@
   margin-bottom: 2rem;
   padding: 1rem;
   border-radius: 8px;
-  border: 1px solid #e9ecef;
+  border: 1px solid var(--gray);
 }
 
 .filterLabel {
@@ -16,10 +16,10 @@
 
 .filterSelect {
   padding: 0.75rem 1rem;
-  border: 2px solid #dee2e6;
+  border: 2px solid var(--surface);
   border-radius: 6px;
-  background: white;
-  color: #495057;
+  background: var(--gray);
+  color: var(--surface);
   font-size: 0.95rem;
   font-weight: 500;
   cursor: pointer;
@@ -33,19 +33,19 @@
   padding-right: 2.5rem;
 
   &:hover {
-    border-color: #0f8185;
+    border-color: var(--secondary);
   }
 
   &:focus {
     outline: none;
-    border-color: #0f8185;
-    box-shadow: 0 0 0 3px rgba(15, 129, 133, 0.1);
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(44, 171, 225, 0.1);
   }
 
   option {
     padding: 0.5rem;
-    background: white;
-    color: #495057;
+    background: var(--gray);
+    color: var(--surface);
   }
 }
 
