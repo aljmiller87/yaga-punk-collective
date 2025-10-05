@@ -1,0 +1,23 @@
+.TextLink {
+  color: var(--secondary);
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+  }
+}
+
+.small {
+  font-size: 1em;
+}
+
+.large {
+  font-size: 1.2em;
+}

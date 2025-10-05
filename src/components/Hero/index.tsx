@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import Button from "../Button";
 import styles from "./Hero.module.scss";
 
 interface HeroProps {
@@ -57,9 +57,9 @@ const Hero: React.FC<HeroProps> = ({
           <h1 className={styles.title}>{title}</h1>
           <p className={styles.description}>{subtitle}</p>
           {ctaUrl && ctaLabel && (
-            <Link href={ctaUrl} className={styles.ctaButton}>
+            <Button href={ctaUrl} variant="primary">
               {ctaLabel}
-            </Link>
+            </Button>
           )}
         </div>
       </div>

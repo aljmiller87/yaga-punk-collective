@@ -1,26 +1,49 @@
 ---
-title: Jared Smith
+title: Jared Foreman
+summary: ''
 metadata:
   title: About Jared - Yage Punk Collective
   description: >-
-    Learn about Jared Smith and their role in the Yage Punk Collective. Discover
-    their journey, music, and punk philosophy.
-  keywords: "Jared Smith, Yage Punk Collective, Punk Musician, About Jared"
+    Learn about Jared Foreman and their role in the Yage Punk Collective.
+    Discover their journey, music, and punk philosophy.
+  keywords: 'Jared Foreman, Yage Punk Collective, Punk Musician, About Jared'
   ogTitle: About Jared - Yage Punk Collective
   ogDescription: >-
-    Learn about Jared Smith and their role in the Yage Punk Collective. Discover
-    their journey, music, and punk philosophy.
+    Learn about Jared Foreman and their role in the Yage Punk Collective.
+    Discover their journey, music, and punk philosophy.
   twitterCard: summary_large_image
 image: /uploads/images/Jared-Forman.jpg
+bio: >
+  Jared Foreman is a DIY punk author and cultural critic known for his raw,
+  unfiltered takes on underground music, art, and resistance. Growing up in the
+  squats and basement venues of the Midwest punk scene, Foreman developed a
+  fierce commitment to the do-it-yourself ethos that defines his writing. His
+  work captures the tension between chaos and community—how the same noise that
+  rattles walls can also hold people together. Whether documenting late-night
+  zine sessions or the politics of punk ethics, Foreman’s voice is both
+  rebellious and deeply human.
+
+
+  His breakout book, Down the Punk Rock Highway, weaves personal memoir with
+  oral history, chronicling decades of shows, protests, and friendships forged
+  through distortion and dissent. Rather than glorify the past, Foreman uses it
+  as a mirror—examining what DIY means in an age of algorithms and burnout. His
+  writing resonates with punks old and new, offering both a critique of
+  commercialization and a love letter to the stubborn persistence of underground
+  culture.
+
+
+  Outside of his books, Foreman remains an active participant in the scene. He
+  tours community spaces instead of corporate venues, donates proceeds to mutual
+  aid projects, and mentors younger zinesters and bands trying to find their
+  footing. True to his DIY roots, he still prints his own patches and writes
+  most of his essays on a clunky thrift-store typewriter. For Foreman, punk
+  isn’t a phase or aesthetic—it’s a lifelong practice of defiance, creation, and
+  care.
 socialMediaUrls:
   - platform: instagram
-    url: "https://instagram.com/jaredYagepunk"
+    url: 'https://instagram.com/jaredYagepunk'
   - platform: twitter
-    url: "https://twitter.com/jaredYagepunk"
+    url: 'https://twitter.com/jaredYagepunk'
 ---
 
-Punk Rock filled a gap Jared didn't know existed in his life. He first stumbled across the scene when learning to skateboard, and as one band inevitably led to another, it soon became his overbearing and overriding passion. Jared embraced DIY culture without hesitation, releasing his first 7-inch record whilst still in the 10th Grade, and by the time he was eighteen, he was living in his first Punk House, where he stayed for the next seven years.
-
-That house was where Jared became more politically and socially active, where his band, Inept, started through a mutual passion for Food Not Bombs, and booked all their shows (and promoted a lot more for other bands). He gradually fell in love with touring and travel, and journeyed from Coast to Coast, squatting and meeting punks and experienced the duality of ABC No Rio and Gilman Street, two vastly different scene institutions on either end of the United States that were born from a similar need, run with the same purpose and forged from the same ideals.
-
-Jared started writing to, interviewing and trading records with people from all over the world, and much later viewed social media as a revolutionary way to bring punks together. His new book, Down The Punk Rock Highway, in a strange sort of way is the story of his life, and the people, places, and music that have made it what it is.

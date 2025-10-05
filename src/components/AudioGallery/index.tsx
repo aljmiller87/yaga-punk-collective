@@ -1,5 +1,6 @@
 import React from "react";
 import Section from "../Section";
+import Button from "../Button";
 import styles from "./styles.module.scss";
 import AudioPlayer from "../AudioPlayer";
 
@@ -34,9 +35,9 @@ const AudioGallery = ({
       </div>
       {addCta && (
         <div className={styles["AudioGallery-buttons"]}>
-          <a href="/music" className="Btn-primary">
+          <Button href="/music" variant="primary">
             See More!
-          </a>
+          </Button>
         </div>
       )}
     </Section>

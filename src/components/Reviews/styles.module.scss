@@ -1,0 +1,52 @@
+.Reviews {
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--darkTealBg);
+}
+
+.reviewCard {
+  padding: 2rem;
+  border-left: 4px solid var(--darkTealBg);
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
+}
+
+.quote {
+  margin: 0 0 1rem 0;
+  font-style: italic;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--gray);
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.author {
+  font-weight: 600;
+  color: var(--darkTealBg);
+  font-size: 0.9rem;
+  font-style: normal;
+}

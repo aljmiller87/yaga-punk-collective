@@ -1,25 +1,69 @@
 .Button {
   padding: 1rem 1.5rem;
-  display: flex;
-  font-size: 1.25rem;
+  display: inline-flex;
+  font-size: 1.1rem;
   justify-content: center;
   align-items: center;
-  color: var(--primary);
-  background: var(--gray);
   border-radius: 4px;
   text-transform: uppercase;
   font-weight: 600;
-  border: 3px solid var(--primary);
-  flex: 1 1 0;
   letter-spacing: 1px;
-  max-width: 220px;
-  transition: background linear 0.2s;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+  border: 3px solid transparent;
 
-  &:hover {
-    background: var(--surface);
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+// Primary color variant (default)
+.primary {
+  background: var(--primary);
+  color: var(--gray);
+  border-color: var(--primary);
+
+  &:hover:not(:disabled) {
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
   }
 
-  @media screen and (min-width: 1024px) {
-    max-width: 440px;
+  // Inverse/outlined style
+  &.inverse {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+
+    &:hover:not(:disabled) {
+      background: var(--primary);
+      color: var(--gray);
+    }
+  }
+}
+
+// Secondary color variant
+.secondary {
+  background: var(--secondary);
+  color: var(--gray);
+  border-color: var(--secondary);
+
+  &:hover:not(:disabled) {
+    background: transparent;
+    border-color: var(--secondary);
+  }
+
+  // Inverse/outlined style
+  &.inverse {
+    background: transparent;
+    color: var(--secondary);
+    border-color: var(--secondary);
+
+    &:hover:not(:disabled) {
+      background: var(--secondary);
+      color: var(--gray);
+    }
   }
 }

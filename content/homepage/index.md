@@ -27,7 +27,7 @@ heroComponent:
   subtitle: >-
     Building community through radical politics, DIY culture, and punk
     resistance
-  ctaUrl: /join-us
+  ctaUrl: 'https://www.facebook.com/Yagepunkcollective/'
   ctaLabel: Join the Movement
 bookPromoSection:
   image: /uploads/images/book.jpg

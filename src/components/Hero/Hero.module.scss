@@ -106,32 +106,6 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.ctaButton {
-  background: var(--primary);
-  color: var(--gray);
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  align-self: flex-start;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
-  &:hover {
-    background: var(--primary);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-  }
-
-  &:active {
-    transform: translateY(0);
-  }
-}
-
 /* Desktop Styles */
 @media screen and (min-width: 768px) {
   .Hero {

@@ -2,16 +2,15 @@ import React from "react";
 import { Metadata } from "next";
 import client from "../../../tina/__generated__/client";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
+import ReactMarkdown from "react-markdown";
 
 // Components
 import CopyAndImage from "@/components/CopyAndImage";
 import PageBanner from "@/components/PageBanner";
-import Socials, { ISocial } from "@/components/Socials";
-import MarkdownRenderer from "@/components/MarkdownRenderer";
+import PageSummary from "@/components/PageSummary";
 
 // Styles
-import styles from "./styles.module.scss";
-import FullWidthImageContent from "@/components/FullWidthImageContent";
+import Section from "@/components/Section";
 
 // Generate metadata from TinaCMS content
 export async function generateMetadata(): Promise<Metadata> {
@@ -110,18 +109,24 @@ export default async function AboutJared() {
   return (
     <>
       <PageBanner title={content.title || "About Jared"} />
+      <PageSummary summary={content.summary} />
+      <Section>
+        <CopyAndImage
+          img={content.image}
+          imgPosition="center top"
+          reverse={false}
+          mobileReverse={false}
+        >
+          <h2>{content.title}</h2>
 
-      <CopyAndImage
-        img={content.image}
-        imgPosition="center top"
-        reverse={false}
-        mobileReverse={false}
-      >
-        <h2>{content.title}</h2>
+          {/* Handle both plain string and rich-text object formats */}
+          {typeof content.bio === "string" ? (
+            <ReactMarkdown>{content.bio}</ReactMarkdown>
+          ) : content.bio?.type === "root" && content.bio?.children ? (
+            <TinaMarkdown content={content.bio} />
+          ) : null}
 
-        <TinaMarkdown content={content.bio} />
-
-        {/* {content.socialMediaUrls && content.socialMediaUrls.length > 0 && (
+          {/* {content.socialMediaUrls && content.socialMediaUrls.length > 0 && (
           <div className={styles.socialContainer}>
             <Socials
               socials={
@@ -135,9 +140,8 @@ export default async function AboutJared() {
             />
           </div>
         )} */}
-      </CopyAndImage>
-
-      {/* <FullWidthImageContent /> */}
+        </CopyAndImage>
+      </Section>
     </>
   );
 }

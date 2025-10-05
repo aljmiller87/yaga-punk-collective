@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import Button from "../Button";
 import styles from "./styles.module.scss";
 
 interface ZineData {
@@ -78,17 +78,17 @@ const ThreeColContent: React.FC<ThreeColContentProps> = ({
             </div>
             <h3 className={styles.ColumnTitle}>{item.title}</h3>
             <p className={styles.ColumnDescription}>{item.description}</p>
-            <Link href={item.url} className={styles.ColumnButton}>
+            <Button href={item.url} variant="primary">
               {item.buttonText}
-            </Link>
+            </Button>
           </div>
         ))}
       </div>
 
       <div className={styles.CenterButton}>
-        <Link href={mainButtonUrl} className={styles.MainButton}>
+        <Button href={mainButtonUrl} variant="secondary">
           {mainButtonText}
-        </Link>
+        </Button>
       </div>
     </section>
   );

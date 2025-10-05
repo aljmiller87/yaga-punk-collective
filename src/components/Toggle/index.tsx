@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button";
 import styles from "./styles.module.scss";
 
 interface ToggleOption {
@@ -21,17 +22,20 @@ const Toggle: React.FC<ToggleProps> = ({
 }) => {
   return (
     <div className={`${styles.toggle} ${className}`}>
-      {options.map((option) => (
-        <button
-          key={option.value}
-          onClick={() => onChange(option.value)}
-          className={`${styles.toggleButton} ${
-            value === option.value ? styles.active : ""
-          }`}
-        >
-          {option.label}
-        </button>
-      ))}
+      {options.map((option) => {
+        const isActive = value === option.value;
+        return (
+          <Button
+            key={option.value}
+            onClick={() => onChange(option.value)}
+            variant="secondary"
+            inverse={!isActive}
+            className={styles.toggleButton}
+          >
+            {option.label}
+          </Button>
+        );
+      })}
     </div>
   );
 };

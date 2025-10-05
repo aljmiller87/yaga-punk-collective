@@ -3,45 +3,15 @@
   gap: 0;
   border-radius: 4px;
   overflow: hidden;
-  border: 3px solid var(--secondary);
-  max-width: 300px;
   margin: 0 auto 4rem auto;
 }
 
 .toggleButton {
   flex: 1;
-  padding: 1rem 1.5rem;
+  border-radius: 0;
   font-size: 1.25rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--secondary);
-  background: var(--surface);
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 1px;
-  transition: all 0.2s linear;
-  border: none;
-  cursor: pointer;
-  hyphens: auto;
-  text-align: center;
 
-  &:hover {
-    color: var(--primary);
-    background: rgba(255, 255, 255, 0.9);
-  }
-
-  &.active {
-    color: var(--primary);
-    background: rgba(255, 255, 255, 0.9);
-    border: 3px solid var(--primary);
-  }
-
-  &:not(.active) {
+  &:not(:last-child) {
     border-right: 1px solid var(--secondary);
-
-    &:last-child {
-      border-right: none;
-    }
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import Button from "../Button";
 import { IZineRelease } from "@/utils/zines";
 import styles from "./styles.module.scss";
 
@@ -97,9 +97,9 @@ const ZineSection: React.FC<ZineSectionProps> = ({
 
         {/* CTA Button Section */}
         <div className={styles.CtaSection}>
-          <Link href={ctaUrl} className={styles.CtaButton}>
+          <Button href={ctaUrl} variant="secondary">
             {ctaText}
-          </Link>
+          </Button>
         </div>
       </div>
     </div>

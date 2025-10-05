@@ -1,6 +1,7 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-
+import TextLink from "../TextLink";
+import Button from "../Button";
 import styles from "./styles.module.scss";
 import { formatDate } from "@/utils";
 
@@ -51,14 +52,12 @@ const Event = ({
             Other bands:{" "}
             {otherBands.map((otherBand, index) => (
               <span key={index}>
-                <a
-                  href={otherBand.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {otherBand.name}
-                </a>{" "}
-                &nbsp;
+                <TextLink
+                  label={otherBand.name}
+                  url={otherBand.url}
+                  variant="small"
+                />
+                {index < otherBands.length - 1 && " "}
               </span>
             ))}
           </p>
@@ -66,24 +65,14 @@ const Event = ({
       </div>
       <div className={styles["Event-buttons"]}>
         {!!venueUrl && (
-          <a
-            className="Btn-primary"
-            href={venueUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Button href={venueUrl} variant="secondary" inverse>
             Venue
-          </a>
+          </Button>
         )}
         {!!ticketUrl && !isEventInPast && (
-          <a
-            className="Btn-primary"
-            href={ticketUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Button href={ticketUrl} variant="secondary" inverse>
             Tickets
-          </a>
+          </Button>
         )}
       </div>
     </div>

@@ -2,6 +2,7 @@
 import React, { SyntheticEvent, useEffect, useState } from "react";
 import Input from "../Input";
 import styles from "./styles.module.scss";
+import Button from "../Button";
 
 type IFormValues = {
   name: string;
@@ -107,9 +108,14 @@ const GetInvolvedForm = () => {
           </label>
         </p>
         <p>
-          <button disabled={isDisabled} className="Btn-primary" type="submit">
+          <Button
+            disabled={isDisabled}
+            type="submit"
+            variant="secondary"
+            inverse
+          >
             Send
-          </button>
+          </Button>
         </p>
       </form>
       <p className={styles.success}>Form submission successful!</p>

@@ -417,6 +417,13 @@ export default defineConfig({
             required: true,
           },
           {
+            type: "rich-text",
+            name: "summary",
+            label: "Page Summary",
+            description:
+              "Optional brief summary displayed under the page title",
+          },
+          {
             type: "object",
             name: "metadata",
             label: "Metadata",
@@ -762,14 +769,296 @@ export default defineConfig({
           },
           {
             type: "rich-text",
-            name: "description",
-            label: "Description",
-            description: "Main description content for the label page",
-            required: true,
+            name: "summary",
+            label: "Page Summary",
+            description:
+              "Optional brief summary displayed under the page title",
           },
         ],
         ui: {
           router: ({ document }) => `/label`,
+        },
+      },
+      {
+        name: "eventsPage",
+        label: "Events Page",
+        path: "content/events-page",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Page Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "rich-text",
+            name: "summary",
+            label: "Page Summary",
+            description:
+              "Optional brief summary displayed under the page title",
+          },
+          {
+            type: "object",
+            name: "metadata",
+            label: "Metadata",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Meta Title",
+                description: "Title for search engines and social sharing",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "description",
+                label: "Meta Description",
+                description:
+                  "Description for search engines and social sharing",
+                ui: {
+                  component: "textarea",
+                },
+                required: true,
+              },
+              {
+                type: "string",
+                name: "keywords",
+                label: "Meta Keywords",
+                description: "Comma-separated keywords for SEO",
+              },
+              {
+                type: "image",
+                name: "ogImage",
+                label: "Open Graph Image",
+                description: "Image for social media sharing",
+              },
+            ],
+          },
+        ],
+        ui: {
+          router: ({ document }) => `/events`,
+        },
+      },
+      {
+        name: "zinePage",
+        label: "Zine Page",
+        path: "content/zine-page",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Page Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "rich-text",
+            name: "summary",
+            label: "Page Summary",
+            description:
+              "Optional brief summary displayed under the page title",
+          },
+          {
+            type: "object",
+            name: "metadata",
+            label: "Metadata",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Meta Title",
+                description: "Title for search engines and social sharing",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "description",
+                label: "Meta Description",
+                description:
+                  "Description for search engines and social sharing",
+                ui: {
+                  component: "textarea",
+                },
+                required: true,
+              },
+              {
+                type: "string",
+                name: "keywords",
+                label: "Meta Keywords",
+                description: "Comma-separated keywords for SEO",
+              },
+              {
+                type: "image",
+                name: "ogImage",
+                label: "Open Graph Image",
+                description: "Image for social media sharing",
+              },
+            ],
+          },
+        ],
+        ui: {
+          router: ({ document }) => `/zine`,
+        },
+      },
+      {
+        name: "bookPage",
+        label: "Book Page",
+        path: "content/book-page",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Page Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "rich-text",
+            name: "summary",
+            label: "Page Summary",
+            description:
+              "Optional brief summary displayed under the page title",
+          },
+          {
+            type: "object",
+            name: "reviews",
+            label: "Reviews",
+            description: "Reviews and testimonials for the book",
+            list: true,
+            fields: [
+              {
+                type: "string",
+                name: "quote",
+                label: "Quote",
+                description: "Review quote or testimonial text",
+                ui: {
+                  component: "textarea",
+                },
+                required: true,
+              },
+              {
+                type: "string",
+                name: "author",
+                label: "Author",
+                description: "Name of the review author",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "source",
+                label: "Source URL",
+                description: "URL to the original review source",
+              },
+            ],
+          },
+          {
+            type: "object",
+            name: "metadata",
+            label: "Metadata",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Meta Title",
+                description: "Title for search engines and social sharing",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "description",
+                label: "Meta Description",
+                description:
+                  "Description for search engines and social sharing",
+                ui: {
+                  component: "textarea",
+                },
+                required: true,
+              },
+              {
+                type: "string",
+                name: "keywords",
+                label: "Meta Keywords",
+                description: "Comma-separated keywords for SEO",
+              },
+              {
+                type: "image",
+                name: "ogImage",
+                label: "Open Graph Image",
+                description: "Image for social media sharing",
+              },
+            ],
+          },
+        ],
+        ui: {
+          router: ({ document }) => `/book`,
+        },
+      },
+      {
+        name: "joinUsPage",
+        label: "Join Us Page",
+        path: "content/join-us-page",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Page Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "rich-text",
+            name: "summary",
+            label: "Page Summary",
+            description:
+              "Optional brief summary displayed under the page title",
+          },
+          {
+            type: "rich-text",
+            name: "content",
+            label: "Page Content",
+            description: "Main content for the join us page",
+          },
+          {
+            type: "object",
+            name: "metadata",
+            label: "Metadata",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Meta Title",
+                description: "Title for search engines and social sharing",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "description",
+                label: "Meta Description",
+                description:
+                  "Description for search engines and social sharing",
+                ui: {
+                  component: "textarea",
+                },
+                required: true,
+              },
+              {
+                type: "string",
+                name: "keywords",
+                label: "Meta Keywords",
+                description: "Comma-separated keywords for SEO",
+              },
+              {
+                type: "image",
+                name: "ogImage",
+                label: "Open Graph Image",
+                description: "Image for social media sharing",
+              },
+            ],
+          },
+        ],
+        ui: {
+          router: ({ document }) => `/join-us`,
         },
       },
     ],

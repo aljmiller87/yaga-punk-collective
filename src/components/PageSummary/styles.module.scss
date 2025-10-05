@@ -1,0 +1,56 @@
+.PageSummary {
+  width: 100%;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--color-text, #333);
+
+    p {
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    a {
+      color: var(--color-primary, #0f8185);
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    ul,
+    ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 3rem 2rem;
+
+    .container {
+      font-size: 1.25rem;
+    }
+  }
+}

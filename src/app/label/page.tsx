@@ -1,21 +1,38 @@
 import React from "react";
 import PageBanner from "@/components/PageBanner";
+import PageSummary from "@/components/PageSummary";
 import Section from "@/components/Section";
 import CopyAndImage from "@/components/CopyAndImage";
+import Button from "@/components/Button";
 import MarkdownRenderer from "@/components/MarkdownRenderer";
 import { getAllBands, IBand } from "@/utils/bands";
-import { getLabelPageContent } from "@/utils/labelPage";
+import client from "../../../tina/__generated__/client";
 
-export default function LabelPage() {
+export default async function LabelPage() {
   const bands = getAllBands();
-  const labelPageContent = getLabelPageContent();
+
+  let labelPageContent;
+  try {
+    const response = await client.queries.labelPage({
+      relativePath: "index.md",
+    });
+    labelPageContent = response.data.labelPage;
+  } catch (error) {
+    console.error("Error fetching label page content:", error);
+    return (
+      <div>
+        <PageBanner title="Label Page" />
+        <p>
+          Content not found. Please create the labelPage content in TinaCMS.
+        </p>
+      </div>
+    );
+  }
 
   return (
     <>
-      <PageBanner title={labelPageContent.title} />
-      <Section>
-        <MarkdownRenderer content={labelPageContent.description} />
-      </Section>
+      <PageBanner title={labelPageContent.title || "Label Page"} />
+      <PageSummary summary={labelPageContent.summary} />
       <Section>
         {bands.map((band: IBand, index: number) => (
           <div
@@ -31,9 +48,11 @@ export default function LabelPage() {
               <h2>{band.title}</h2>
               <MarkdownRenderer content={band.description} />
               {band.link && (
-                <p>
-                  <a href={band.link}>Listen</a>
-                </p>
+                <div style={{ marginTop: "1.5rem" }}>
+                  <Button href={band.link} variant="secondary">
+                    Listen
+                  </Button>
+                </div>
               )}
             </CopyAndImage>
           </div>

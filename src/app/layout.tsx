@@ -22,7 +22,6 @@ export default function RootLayout({
         <UtilityHeader />
         <Header />
         <main>{children}</main>
-        {/* <FullWidthImageContent /> */}
         <Footer />
       </body>
     </html>

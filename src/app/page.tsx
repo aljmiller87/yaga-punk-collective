@@ -11,6 +11,8 @@ import CopyAndImage from "@/components/CopyAndImage";
 import ThreeColContent from "@/components/ThreeColContent";
 import ZineSection from "@/components/ZineSection";
 import PictureCollage from "@/components/PictureCollage";
+import TextLink from "@/components/TextLink";
+import Button from "@/components/Button";
 import { getAllZineReleases } from "@/utils/zines";
 import "../styles/theme.css";
 import CopyAndTwoImage from "@/components/CopyAndTwoImage";
@@ -162,7 +164,10 @@ export default async function Home() {
           img2Alt="Book Image 2"
         >
           <h2>{homepageData?.bookPromoSection?.title}</h2>
-
+          <p>
+            {homepageData?.bookPromoSection?.description ||
+              "Discover our latest zine featuring radical politics, DIY culture, and punk resistance. Join the conversation and be part of the movement."}
+          </p>
           {/* Review Section */}
           {homepageData?.bookPromoSection?.review && (
             <div
@@ -174,9 +179,8 @@ export default async function Home() {
                 style={{
                   margin: "0 0 1rem 0",
                   fontStyle: "italic",
-                  fontSize: "1.1rem",
+                  fontSize: "1rem",
                   fontWeight: "300",
-                  lineHeight: "1.6",
                   color: "var(--gray)",
                 }}
               >
@@ -202,52 +206,31 @@ export default async function Home() {
                   — {homepageData.bookPromoSection.review.author}
                 </cite>
                 {homepageData.bookPromoSection.review.source && (
-                  <a
-                    href={homepageData.bookPromoSection.review.source}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      color: "var(--secondary)",
-                      textDecoration: "none",
-                      fontSize: "0.9rem",
-                      fontWeight: "500",
-                      borderBottom: "1px solid var(--secondary)",
-                      transition: "all 0.3s ease",
-                    }}
-                  >
-                    See full review
-                  </a>
+                  <TextLink
+                    label="See full review"
+                    url={homepageData.bookPromoSection.review.source}
+                    variant="small"
+                  />
                 )}
+              </div>
+              <div
+                style={{ display: "flex", gap: "1rem", marginTop: "1.5rem" }}
+              >
+                {homepageData?.bookPromoSection?.ctaUrl &&
+                  homepageData?.bookPromoSection?.ctaText && (
+                    <Button
+                      href={homepageData.bookPromoSection.ctaUrl}
+                      variant="secondary"
+                    >
+                      {homepageData.bookPromoSection.ctaText}
+                    </Button>
+                  )}
+                <Button href="/book" variant="secondary">
+                  Get More Info
+                </Button>
               </div>
             </div>
           )}
-          <h3>Summary</h3>
-          <p>
-            {homepageData?.bookPromoSection?.description ||
-              "Discover our latest zine featuring radical politics, DIY culture, and punk resistance. Join the conversation and be part of the movement."}
-          </p>
-          {homepageData?.bookPromoSection?.ctaUrl &&
-            homepageData?.bookPromoSection?.ctaText && (
-              <a
-                href={homepageData.bookPromoSection.ctaUrl}
-                className="cta-button"
-                style={{
-                  display: "inline-block",
-                  background: "var(--primary)",
-                  color: "var(--gray)",
-                  padding: "1rem 2rem",
-                  textDecoration: "none",
-                  borderRadius: "4px",
-                  fontWeight: "600",
-                  textTransform: "uppercase",
-                  letterSpacing: "1px",
-                  marginTop: "1rem",
-                  transition: "all 0.3s ease",
-                }}
-              >
-                {homepageData.bookPromoSection.ctaText}
-              </a>
-            )}
         </CopyAndTwoImage>
       </Section>
 

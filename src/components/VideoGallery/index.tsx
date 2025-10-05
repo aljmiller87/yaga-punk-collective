@@ -1,6 +1,7 @@
 import React from "react";
 import VideoPlayer from "../VideoPlayer";
 import Section from "../Section";
+import Button from "../Button";
 import styles from "./styles.module.scss";
 const VideoGallery = ({
   title,
@@ -19,9 +20,9 @@ const VideoGallery = ({
       </div>
       {addCta && (
         <div className={styles["VideoGallery-buttons"]}>
-          <a href="/gallery" className="Btn-primary">
+          <Button href="/gallery" variant="primary">
             See More!
-          </a>
+          </Button>
         </div>
       )}
     </Section>

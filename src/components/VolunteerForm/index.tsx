@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button";
 import Section from "../Section";
 import styles from "./styles.module.scss";
 import Input from "../Input";
@@ -140,9 +141,9 @@ const VolunteerForm = () => {
           placeholder="Other comment"
         />
         <div className={styles.btn}>
-          <button type="submit" className="Btn-primary">
+          <Button type="submit" variant="secondary" inverse>
             Join Us!
-          </button>
+          </Button>
         </div>
       </form>
     </Section>
